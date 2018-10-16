@@ -1,0 +1,6228 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.container-margin {
+	margin: 40px 0px;
+}
+
+.container-top {
+	margin-top: 60px;
+}
+
+.container-bottom {
+	margin-bottom: 75px !important;
+}
+
+body {
+	color: #424242;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a {
+	color: #424242;
+	outline: none !important;
+}
+
+/*a:hover {
+	color: #397bf3;
+	outline: none;
+}*/
+
+.banner_ctas>a:focus,
+.banner_ctas>.banner_in_flag+span,
+.banner_uae_flag+span,
+.banner_sg_flag+span a:focus {
+	color: none;
+	text-decoration: none;
+}
+
+body * {
+	text-rendering: optimizelegibility;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300
+}
+
+.h1,
+.h2 {
+	letter-spacing: -0.5px !important;
+}
+
+li {
+	list-style: none;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-right {
+	margin-right: 0px;
+}
+
+/* css related to navigation menu */
+
+.top-bar {
+	background-color: #1f303a;
+	/*border-bottom: 1px solid #f2f2f2;*/
+	height: 36px;
+	line-height: 30px;
+	text-align: right;
+	font-size: 12px;
+	transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	-webkit-transition: all ease 0.8s;
+	color: #fff;
+}
+
+header {
+	background-color: #3d5164;
+	height: 75px;
+}
+
+.btn-request {
+	color: white;
+	font-weight: 400;
+	background-color: #397bf3;
+	border: none;
+	line-height: 1;
+	padding: 2px 8px;
+}
+
+.btn-request:hover {
+	color: white;
+}
+.btn-pp{
+	min-width: 228px; 
+	font-size:18px; 
+	padding:10px 12px;
+	background-color:transparent;
+	border:1px solid #FFF;
+	color:#FFF;
+}
+
+header #main-header {
+	height: 55px;
+	position: absolute;
+	background-color: #3d5164;
+	top: auto;
+	border-bottom: 0;
+	width: 100%;
+	padding: 5px 0px;
+	z-index: 9999;
+}
+
+.navbar-inner,
+.navbar-default {
+	background-color: #3d5164;
+	/*background:transparent;*/
+	border: 0px;
+	animation: smoothScrolldefault 1s;
+}
+@keyframes smoothScrolldefault {
+	0% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
+.brand-logo {
+	background-image: url("https://cdn-web.gofrugal.com/images/home-images/Logo-Dark-White-Sprite.svg");
+	background-position: 0 -78px;
+	background-repeat: no-repeat;
+	height: 59px;
+	position: relative;
+	top: 4px;
+	width: 229px;
+	z-index: 0;
+/*	transition: .3s ease;*/
+}
+
+.brand-logo1 {
+	background-image: url("https://cdn-web.gofrugal.com/images/home-images/Logo-Dark-White-Sprite.svg");
+	background-position: 0 -83px;
+	background-repeat: no-repeat;
+	height: 59px;
+	top: 3px;
+	transform: scale(0.8);
+	width: 231px;
+	z-index: 0;
+}
+
+.right-addon i {
+	position: absolute;
+	right: 0px;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+
+.right-addon input {
+	width: 40px;
+	padding-right: 30px;
+	margin-top: 5px;
+	height: 28px;
+}
+
+.banner-container {
+	width: 100%;
+	position: relative;
+	height: 0;
+	padding-top: 50.6%;
+	/* (img-height / img-width * width) */
+	/* (853 / 1280 * 100) */
+	-webkit-transition: background-image 0.3s ease-in-out;
+	transition: background-image 0.3s ease-in-out;
+}
+
+.video-container {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+video {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+}
+
+.buz-solution {
+	margin-top: 15px;
+}
+
+.buz-solution ul {
+	text-align: center;
+	display: inline-block;
+	font-size: 50px;
+}
+
+.buz-solution li {
+	display: inline-block;
+	float: left;
+	padding: 0 20px;
+	line-height: 45px;
+}
+
+.buz-solution a {
+	color: white;
+}
+
+.buz-solution a:hover {
+	text-decoration: none !important;
+}
+
+.banner {
+	background: url("https://cdn-web.gofrugal.com/images/home/home-retail.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 0;
+	padding-top: 48.1%;
+	/* (img-height / img-width * width) */
+	/* (853 / 1280 * 100) */
+	position: relative;
+	-webkit-transition: background-image 0.3s ease-in-out;
+	transition: background-image 0.3s ease-in-out;
+}
+
+.banner-bg1 {
+	background: url("https://cdn-web.gofrugal.com/images/home/home-restaurantl.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 0;
+	padding-top: 48.1%;
+	/* (img-height / img-width * width) */
+	/* (853 / 1280 * 100) */
+	position: relative;
+	-webkit-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+}
+
+.mobile-banner {
+	display: none;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.offering-link {
+	width: 100px;
+	height: 40px;
+}
+
+.glyphicon-menu-hamburger {
+	font-size: 1.6em;
+	color: white;
+	padding: 13px 0px 0px 22px;
+}
+
+.pointer {
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat -704px -189px;
+	width: 16px;
+	height: 10px;
+	bottom: -1px;
+	display: none;
+	left: 25px;
+	position: absolute;
+}
+
+.icon-white {
+	padding: 10px;
+	color: #fff;
+	height: 30px;
+	width: 25px;
+	padding-left: 6px;
+}
+
+/*********************************************************************************************/
+
+/*** Drop Menu CSS Classes ***/
+
+.nav-area ul li,
+.nav-area-fnb ul li,
+.nav-area-snd ul li {
+	list-style: none;
+}
+
+#nav ul li {
+	margin: 0 5px !important;
+}
+
+.nav-area,
+.nav-area-fnb,
+.nav-area-snd,
+.nav-area-more {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	text-align: left;
+	top: 113px;
+	border-bottom: 1px solid #3D5164;
+	background-color: #507191;
+}
+
+.nav>li:last-child {
+	display: none;
+}
+
+.nav-area .menu,
+.nav-area-fnb .menu {
+	position: relative;
+	height: 70px;
+	width: 1075px;
+	margin: 0 auto;
+}
+
+.nav-area-snd .menu {
+	width: 900px;
+	margin: 0 auto;
+	height: 70px;
+	position: relative;
+	padding-left: 200px;
+}
+
+.nav-area-fnb .menu {
+	width: 876px
+}
+
+.nav-area .menu li,
+.nav-area-fnb .menu li {
+	float: left;
+	position: relative;
+	z-index: 99;
+	width: 138px;
+}
+
+.nav-area-snd .menu li {
+	float: left;
+	position: relative;
+	z-index: 99;
+	width: 170px;
+}
+
+.nav-area .menu li:first-child {
+	width: 185px
+}
+
+.nav-area .menu li:nth-child(2) {
+	width: 195px
+}
+
+.nav-area-fnb .menu li {
+	width: 175px
+}
+
+.nav-area .menu li a,
+.nav-area-fnb .menu li a,
+.nav-area-snd .menu li a,
+.nav-area-more .menu li a {
+	font-size: 13px;
+	font-weight: 400;
+	color: #fff;
+	display: block;
+	padding-top: 20px;
+	text-decoration: none;
+	line-height: 15px;
+}
+
+.nav-area .menu li a:hover,
+.nav-area-fnb .menu li a:hover,
+.nav-area-snd .menu li a:hover {
+	text-decoration: none
+}
+
+.nav-area .menu li a span,
+.nav-area-fnb .menu li a span,
+.nav-area-snd .menu li a span {
+	cursor: pointer;
+	background: url("https://cdn-web.gofrugal.com/images/common-sprite.png") no-repeat;
+	width: 56px;
+	display: inline-block;
+	float: left;
+	height: 38px;
+}
+
+.nav-area-fnb .menu li a em {
+	line-height: 30px;
+	font-style: normal
+}
+
+.nav-area .menu li a span.snh {
+	background-position: -10px -31px;
+}
+
+.nav-area .menu li a:hover span.snh {
+	background-position: -10px -180px;
+}
+
+.nav-area .menu li a span.fnv {
+	background-position: -65px -31px;
+}
+
+.nav-area .menu li a:hover span.fnv {
+	background-position: -65px -180px;
+}
+
+.nav-area .menu li a span.pnh {
+	background-position: -119px -27px;
+}
+
+.nav-area .menu li a:hover span.pnh {
+	background-position: -119px -176px;
+}
+
+.nav-area .menu li a span.anf {
+	background-position: -180px -27px;
+}
+
+.nav-area .menu li a:hover span.anf {
+	background-position: -180px -176px;
+}
+
+.nav-area .menu li a span.ene {
+	background-position: -227px -28px;
+}
+
+.nav-area .menu li a:hover span.ene {
+	background-position: -227px -176px;
+}
+
+.nav-area .menu li a span.lnf {
+	background-position: -278px -30px;
+}
+
+.nav-area .menu li a:hover span.lnf {
+	background-position: -278px -180px;
+}
+
+.nav-area .menu li a span.spr {
+	background-position: -327px -29px;
+}
+
+.nav-area .menu li a:hover span.spr {
+	background-position: -327px -176px;
+}
+
+.nav-area-fnb .menu li a span.rnb {
+	background-position: -17px -80px;
+}
+
+.nav-area-fnb .menu li a:hover span.rnb {
+	background-position: -17px -229px;
+}
+
+.nav-area-fnb .menu li a span.qsr {
+	background-position: -66px -78px;
+}
+
+.nav-area-fnb .menu li a:hover span.qsr {
+	background-position: -66px -229px;
+}
+
+.nav-area-fnb .menu li a span.bkr {
+	background-position: -114px -78px;
+}
+
+.nav-area-fnb .menu li a:hover span.bkr {
+	background-position: -114px -229px;
+}
+
+.nav-area-fnb .menu li a span.snc {
+	background-position: -168px -78px;
+}
+
+.nav-area-fnb .menu li a:hover span.snc {
+	background-position: -168px -229px;
+}
+
+.nav-area-fnb .menu li a span.fnc {
+	background-position: -170px -78px;
+}
+
+.nav-area-fnb .menu li a:hover span.fnc {
+	background-position: -170px -229px;
+}
+
+.nav-area-fnb .menu li a span.ftc {
+	background-position: -224px -78px;
+}
+
+.nav-area-fnb .menu li a:hover span.ftc {
+	background-position: -224px -229px;
+}
+
+.nav-area-snd .menu li a span.fmcg {
+	background-position: -13px -126px;
+}
+
+.nav-area-snd .menu li a:hover span.fmcg {
+	background-position: -13px -276px;
+}
+
+.nav-area-snd .menu li a span.ppf {
+	background-position: -119px -27px;
+}
+
+.nav-area-snd .menu li a:hover span.ppf {
+	background-position: -98px -163px;
+}
+
+.nav-area-snd .menu li a span.sph {
+	background-position: -119px -27px;
+}
+
+.nav-area-snd .menu li a:hover span.sph {
+	background-position: -119px -176px;
+}
+
+.nav-area-snd .menu li a span.lub {
+	background-position: -52px -126px;
+	width: 53px;
+}
+
+.nav-area-snd .menu li a:hover span.lub {
+	background-position: -52px -276px;
+}
+
+.nav-area-snd .menu li a span.spr {
+	background-position: -327px -27px;
+}
+
+.nav-area-snd .menu li a:hover span.spr {
+	background-position: -327px -176px;
+}
+
+.nav-area-more .menu {
+	width: 1110px;
+	margin: 0 auto;
+	height: 70px;
+	padding: 0px;
+}
+
+.nav-area-more .menu li {
+	float: left;
+	position: relative;
+	z-index: 99;
+	width: 138px;
+}
+
+.nav-area-more .menu li a span {
+	cursor: pointer;
+	background: url("https://cdn-web.gofrugal.com/images/common-sprite.png") no-repeat;
+	width: 56px;
+	display: inline-block;
+	float: left;
+	height: 38px;
+}
+
+.nav-area-more .menu li a span.dpos {
+	background-position: -6px -334px;
+}
+
+.nav-area-more .menu li a:hover span.dpos {
+	background-position: -6px -390px;
+}
+
+.nav-area-more .menu li a span.cpos {
+	background-position: -60px -334px;
+}
+
+.nav-area-more .menu li a:hover span.cpos {
+	background-position: -60px -390px;
+}
+
+.nav-area-more .menu li a span.ipos {
+	background-position: -112px -334px;
+}
+
+.nav-area-more .menu li a:hover span.ipos {
+	background-position: -112px -390px;
+}
+
+.nav-area-more .menu li a span.mapps {
+	background-position: -227px -28px;
+}
+
+.nav-area-more .menu li a:hover span.mapps {
+	background-position: -227px -176px;
+}
+
+.nav-area-more .menu li a span.pos-integration {
+	background-position: -161px -334px;
+}
+
+.nav-area-more .menu li a:hover span.pos-integration {
+	background-position: -161px -390px;
+}
+
+.nav-area-more .menu li a span.msm {
+	background-position: -205px -334px;
+	width: 53px;
+}
+
+.nav-area-more .menu li a:hover span.msm {
+	background-position: -205px -390px;
+	width: 53px;
+}
+
+.nav-area-more .menu li a span.assu {
+	background-position: -249px -328px;
+	width: 49px;
+}
+
+.nav-area-more .menu li a:hover span.assu {
+	background-position: -249px -384px;
+	width: 49px;
+}
+
+.nav-area-more .menu li a span.part {
+	background-position: -290px -328px;
+}
+
+.nav-area-more .menu li a:hover span.part {
+	background-position: -290px -386px;
+}
+
+.nav-area-more .menu li a em {
+	line-height: 30px;
+	font-style: normal
+}
+
+/*** Drop Menu CSS Classes ***/
+
+/***************************************/
+
+.fix-menu {
+	background-color: #3d5164;
+	transition: all .4s;
+  animation: smoothScrollfixed 1s forwards;
+}
+@keyframes smoothScrollfixed {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+/* css for banner content */
+
+.banner-content {
+	color: white;
+	height: 270px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0px;
+	top: -21px;
+	margin: auto;
+	text-align: center;
+}
+
+.banner-content>h1 {
+	font-size: 40px;
+}
+
+.banner-content h2 {
+	line-height: 0.5;
+	font-size: 24px;
+}
+
+/* customize button */
+
+.ban-btn {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb3001', endColorstr='#fc672b');
+	background-color: #397bf3;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 10px 12px;
+	text-decoration: none;
+	margin: 25px 5px 0 5px;
+	min-width: 228px;
+	border: none;
+}
+
+.ban-btn:active {
+	position: relative;
+	top: 1px;
+}
+
+.ban-btn a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	padding: 0;
+	float: left;
+}
+
+.vcenter {
+	display: table;
+	height: inherit;
+}
+
+.vcenter-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.banner-btn {
+	margin-top: 35px;
+}
+
+.video-btn {
+	background-color: #808080;
+	text-align: left;
+}
+
+.video-btn span {
+	vertical-align: middle;
+}
+
+.video-icon {
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	height: 30px;
+	width: 30px;
+	background-position: -542px -225px;
+	display: inline-block;
+	margin-left: 9px;
+	position: absolute;
+}
+
+.footer {
+	color: #b6b6b6;
+	background-color: #181e28;
+	height: 450px;
+	font-size: 14px;
+	line-height: 25px;
+	padding-top: 40px;
+	border-bottom: 1px solid #292e37;
+}
+
+.footer a {
+	color: #b6b6b6;
+}
+
+.footer a:hover {
+	color: #b6b6b6;
+}
+
+.footer>div {
+	padding-bottom: 10px;
+	height: 410px;
+}
+
+.footer ul {
+	padding: 0px;
+}
+
+.copy-right {
+	overflow: hidden;
+	padding-top: 12px;
+	width: auto;
+	height: 50px;
+}
+
+.copy-right p {
+	display: inline-block;
+	float: right;
+	font-size: 11px;
+	margin-right: 15.33333333%;
+	color: #b6b6b6;
+}
+
+.copy-right span {
+	float: left;
+	padding-left: 7.33333333%;
+}
+
+.copy-right span a {
+	font-size: 11px;
+	color: #b6b6b6;
+}
+
+ul.soci-icons li a {
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	margin: 0 4px 0 0;
+	padding: 0 2px;
+	width: 28px;
+}
+
+.soci-icons {
+	width: 192px;
+}
+
+ul.soci-icons li.face a {
+	background-position: -392px -142px;
+}
+
+ul.soci-icons li.gplus a {
+	background-position: -424px -142px;
+}
+
+ul.soci-icons li.lin a {
+	background-position: -456px -142px;
+}
+
+ul.soci-icons li.twit a {
+	background-position: -488px -142px;
+}
+
+ul.soci-icons li.ytube a {
+	background-position: -552px -143px;
+}
+
+ul.soci-icons li.rssfee a {
+	background-position: -553px -143px;
+}
+
+.mobile-footer {
+	color: #b6b6b6;
+	background-color: #181e28;
+	padding: 20px 15px;
+	font-size: 14px;
+}
+
+.mobile-footer p a {
+	color: #b6b6b6;
+}
+
+.mobile-footer p a:hover {
+	color: #b6b6b6;
+}
+
+#mobile-footer {
+	display: none;
+}
+
+.media-img-bg {
+	background-color: white;
+	height: 125px;
+	width: 125px;
+	border-radius: 80px;
+	position: relative;
+	margin-top: 25px;
+}
+
+.read-more {
+	font-size: 13px;
+	background: none repeat scroll 0 0 #767676;
+	border-radius: 4px;
+	display: inline-block;
+	line-height: 16px;
+	padding: 4px 8px;
+	margin-top: 10px;
+}
+
+a.read-more {
+	color: white;
+}
+
+.read-more a:link,
+.read-more a:hover,
+.read-more a:visited {
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 0 3px;
+	text-decoration: none;
+}
+
+#offering {
+	width: 40px;
+	display: inline-block;
+	height: 40px;
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat;
+	background-position: -352px -6px;
+	margin-left: 10px;
+}
+
+#offering+ul {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#offering+ul.dropdown-menu>li>a {
+	line-height: 2.42857143;
+	color: white;
+}
+
+#offering+ul.dropdown-menu>li>a:hover {
+	background-color: rgba(20, 20, 20, 1);
+}
+
+.navbar .dropdown-menu::after {
+	position: absolute;
+	top: -6px;
+	right: 10px;
+	display: inline-block;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid rgba(0, 0, 0, 0.8);
+	border-left: 8px solid transparent;
+	content: '';
+}
+
+/* remove box glow */
+
+.removeglow {
+	outline: none;
+	border: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.form-control:focus {
+	border-color: white;
+}
+
+.company-info {
+	text-align: center;
+}
+
+.company-info h2 {
+	margin: 0px 0px 10px 0px;
+}
+
+.company-detail {
+	margin: 20px auto auto;
+}
+
+/*Back to top button */
+
+#back-top {
+	bottom: 135px;
+	position: fixed;
+	right: 20px;
+	display: none;
+	z-index: 300;
+}
+
+#back-top a {
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	display: block;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	width: 45px;
+	padding: 0;
+	margin: 0;
+}
+
+#back-top a:hover {
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	box-shadow: 0 0 8px #999999;
+	color: #000000;
+	padding: 0;
+	margin: 0;
+	transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+}
+
+#back-top span {
+	width: 45px;
+	height: 45px;
+	display: block;
+	background: url("https://cdn-web.gofrugal.com/images/common-sprite.png") no-repeat center center;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	background-position: -469px -78px;
+}
+
+/* customer-image fadeIn fadeOut effect */
+
+@keyframes cf4FadeInOut {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 0;
+	}
+	92% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes cf4FadeInOut {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 0;
+	}
+	92% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.mfp-iframe-holder {
+	padding-top: 80px !important;
+}
+
+/**************css for responsive sliding menu sliding menu***********************/
+
+a.nav-expander {
+	background-color: none repeat scroll 0 0 #000000;
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat;
+	background-position: -344px -4px;
+	color: #FFFFFF;
+	display: block;
+	font-size: 15px;
+	font-weight: 400;
+	height: 50px;
+	margin-right: 0;
+	padding: 1em 1.6em 2em;
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 0;
+	transition: right 0.3s ease-in-out 0s;
+	width: 54px;
+	z-index: 12;
+	transition: right 0.3s ease-in-out 0s;
+	-webkit-transition: right 0.3s ease-in-out 0s;
+	-moz-transition: right 0.3s ease-in-out 0s;
+	-o-transition: right 0.3s ease-in-out 0s;
+}
+
+a.nav-expander:hover {
+	cursor: pointer;
+}
+
+nav {
+	background: #222;
+	display: block;
+	overflow: auto;
+	position: fixed;
+	font-size: 15px;
+	width: 100%;
+	height: 0px;
+	margin-top: 50px;
+	transition: right 0.3s ease-in-out 0s;
+	-webkit-transition: right 0.3s ease-in-out 0s;
+	-moz-transition: right 0.3s ease-in-out 0s;
+	-o-transition: right 0.3s ease-in-out 0s;
+	-webkit-transition: height 0.5s;
+	/* For Safari 3.1 to 6.0 */
+	transition: height 0.5s;
+}
+
+.hidden-sm .main-menu {
+	display: none;
+}
+
+body.nav-expanded {
+	margin-left: 0em;
+	transition: right 0.4s ease-in-out 0s;
+	-webkit-transition: right 0.4s ease-in-out 0s;
+	-moz-transition: right 0.4s ease-in-out 0s;
+	-o-transition: right 0.4s ease-in-out 0s;
+	position: fixed;
+}
+
+#nav-close {
+	font-weight: 400;
+	padding-right: 20px;
+	top: 18px;
+	font-size: 18px;
+	color: #fff;
+	display: none;
+}
+
+.main-menu {
+	padding-top: 12px;
+}
+
+.main-menu li {
+	border-bottom: 1px solid #323131;
+	font-size: 18px;
+	text-align: center;
+	text-align: center;
+}
+
+.main-menu li:first-child {
+	border-top: 1px solid #484848;
+}
+
+.main-menu li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	height: inherit;
+	width: inherit;
+	display: block;
+	padding: 12px;
+}
+
+.main-menu li a:hover {
+	color: #898989;
+	text-decoration: none;
+}
+
+.main-menu li .sub-nav {
+	border-bottom: 0px;
+	padding: 4px;
+}
+
+.main-menu a .caret {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-top: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+	margin-top: 8px;
+}
+
+.main-menu a:hover .caret {
+	border-top-color: #4f5963;
+}
+
+.main-menu li.open>a>.caret {
+	border-top: none;
+	border-bottom: 4px solid #4f5963;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}
+
+.main-menu li.open>a:hover>.caret {
+	border-bottom-color: #4f5963;
+}
+
+.main-menu li>a>span.icon {
+	font-size: 12px;
+	top: 4px;
+	float: right;
+	margin: 0.1em 1.7em -0.1em 0;
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.main-menu li>a:hover>span.icon {
+	float: right;
+	margin: 0.1em 0.8em -0.1em 0;
+	opacity: 1;
+}
+
+.website-primary-color {
+	color: #397bf3;
+}
+
+.customer-logo>div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	height: 180px;
+}
+
+.customer-logo>div>div {
+	width: 90%;
+	max-width: 509px;
+	margin: 0 auto;
+	font-size: 26px;
+	padding: 0px 0px 30px 0px;
+	line-height: 32px;
+}
+
+.uae-customer-logo>div {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 26px;
+	padding: 0px 0px 30px 0px;
+	line-height: 32px;
+}
+
+.dark-stripe {
+	width: 100%;
+	height: 4px;
+	background-color: #80868e;
+}
+
+.hq-stripe {
+	width: 100%;
+	height: 60px;
+	background-color: #FEEFDE;
+}
+
+/* centered columns styles */
+
+.row-centered {
+	text-align: center;
+}
+
+.col-centered {
+	display: inline-block;
+	float: none;
+	text-align: left;
+	margin-right: -4px;
+	min-width: 215px;
+	vertical-align: top;
+}
+
+#yearbegin-process {
+	margin-top: -45px;
+	transition: all 1.5s ease 0s;
+}
+
+.yearbegin-process-content {
+	margin: 3px auto;
+	text-align: center;
+	position: relative;
+	font-size: 18px;
+}
+
+.yearbegin-process-content a>span {
+	color: #FC672B;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.yearbegin-process-content a:hover {
+	text-decoration: none;
+}
+
+.yearbegin-process-content>div {
+	/*border: 1px solid #63625A;*/
+	border-radius: 50%;
+	height: 20px;
+	position: absolute;
+	right: 20px;
+	top: 3px;
+	width: 20px;
+}
+
+#close-notification {
+	font-size: 24px;
+	position: relative;
+	top: -4px;
+	color: #63625A;
+	opacity: 1;
+}
+
+#close-notification:hover {
+	cursor: pointer;
+	color: #63625A;
+}
+
+.smartreport-section {
+	color: white;
+}
+
+.smartreport-section img {
+	margin: 40px 0px;
+	max-width: 1126px;
+	width: 100%;
+}
+
+.smartreport-mobile {
+	display: none;
+}
+
+/* @group Blink */
+
+.blink {
+	-webkit-animation: blink 1.4s linear infinite;
+	-moz-animation: blink 1.4s linear infinite;
+	-ms-animation: blink 1.4s linear infinite;
+	-o-animation: blink 1.4s linear infinite;
+	animation: blink 1.4s linear infinite;
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	50.01% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	50.01% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-o-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	50.01% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	50.01% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.white-trans-btn {
+	background: none;
+	border: 1px solid white;
+	color: white;
+}
+
+/* notification bar css */
+
+.uae-contact-number,
+.whatsnow-announcement {
+	padding: 0;
+	/*max-width: 273px;
+    width: 300px;*/
+	display: inline;
+	float: left;
+}
+
+.whatsnow-announcement {
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+
+.uae_call_header {
+	max-width: 260px;
+	display: inline;
+	float: left;
+}
+
+.uae_call_mob {
+	display: none;
+}
+
+.uae_assure_header {
+	float: right;
+	max-width: 418px;
+}
+
+.announcment-icon {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png") no-repeat;
+	height: 30px;
+	width: 40px;
+	background-position: -524px -556px;
+}
+
+.announcment-icon+span {
+	vertical-align: 10px;
+}
+
+.notification-bar {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	padding: 20px 0px 20px 20px;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 99999999;
+	color: white;
+	display: none;
+}
+
+.notification-icon {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat;
+	height: 30px;
+	width: 40px;
+	background-position: -445px -872px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.notification-content {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 0px;
+	position: relative;
+	padding: 0px 45px;
+	text-align: left;
+	width: 100%;
+	line-height: 22px;
+}
+
+.close-notification {
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	float: right;
+	color: gray;
+	line-height: 30px;
+}
+
+.close-notification:hover {
+	color: white;
+}
+
+.retail-banner-icon,
+.restaurant-banner-icon,
+.distribution-banner-icon {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/international/uae-sprite.png") no-repeat -14px -33px;
+	height: 38px;
+	width: 35px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.restaurant-banner-icon {
+	background-position: -64px -33px;
+}
+
+.distribution-banner-icon {
+	background-position: -113px -33px;
+}
+
+.pos-content {
+	font-size: 36px;
+	padding: 25px;
+	color: #fff;
+	line-height: 1em;
+}
+
+.home-left-quote,
+.home-right-quote {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat scroll 0 -143px;
+	height: 60px;
+	position: absolute;
+	width: 70px;
+}
+
+.home-left-quote {
+	background-position: -222px -140px !important;
+	left: 45px;
+	top: 53px;
+}
+
+.home-right-quote {
+	background-position: -295px -143px !important;
+}
+
+.input-reg,
+.otp-box {
+	width: 250px;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 6px;
+	padding: 8px 10px;
+	margin: 2px;
+	font-size: 14px;
+	border: 1px solid gray;
+}
+
+.otp-box {
+	left: 43px;
+}
+
+.input-mob {
+	padding-left: 50px;
+}
+
+#inline-reg-btn {
+	padding: 8px 10px;
+	margin: 2px 5px 0 5px;
+	min-width: 250px;
+	display: inline-block;
+	height: 44px;
+	border: transparent;
+}
+
+#reg-btn {
+	padding: 8px 10px;
+	margin: 2px 5px 0 5px;
+	min-width: 250px;
+	display: inline-block;
+	height: 44px;
+	border: transparent;
+}
+
+.otp-box {
+	display: none;
+}
+
+.home-otp-val {
+	position: relative;
+	left: 33px;
+}
+
+.inline-resend-otp,
+.inline-send-otp {
+	position: relative;
+	right: 55px;
+	background: transparent;
+	color: white;
+	border: none;
+}
+
+.uae_call_mob,
+.uae_call_desktop {
+	display: inline-block;
+}
+
+.inline-resend-otp {
+	display: inline;
+}
+
+#uae-banner,
+#home-banner {
+	height: 480px;
+	margin: 170px 0px -120px 10px;
+}
+
+#footer {
+	height: 480px;
+}
+
+.img_width {
+	width: 100%;
+}
+
+#retail-slide,
+#restaurant-slide,
+#distribution-slide {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	margin: 0 auto;
+	border: 1px solid #d7e6f2;
+	background-color: #fff;
+	display: inline-block;
+	color: #fff;
+	margin: 30px 30px 13px 30px;
+}
+
+.link-content {
+	position: relative;
+	border: 1px;
+	font-size: 17px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#registration-box,
+#thanku-box {
+	width: 350px;
+	background: rgba(128, 128, 128, 0.2);
+	padding: 30px 0px;
+	;
+	border-radius: 5px;
+}
+
+#thanku-box {
+	padding: 20px 0px;
+	display: none
+}
+.all-uae-banner-img{
+	background-size: cover;	
+}
+.uae-bg {
+	padding: 80px 0px;
+	background-color: #34AFAA;
+}
+
+.landing-btn {
+	padding: 10px 40px;
+	display: inline-block;
+	height: 44px;
+}
+
+.retail-slide {
+	background-color: #34AFAA;
+}
+
+.restaurant-slide {
+	background-color: #EAEFF5;
+}
+
+.distribution-slide {
+	background-color: #41B790;
+}
+
+#uae-banner>div>h1,
+#home-banner>div>h1 {
+	color: #fff;
+	font-weight: 300;
+	font-size: 36px;
+}
+
+.cust-text {
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.7em;
+	font-weight: 300;
+	padding: 0px 25px;
+	margin: 15px;
+	padding-left: 30px;
+}
+
+#customer-story {
+	text-align: center;
+	color: #fff;
+	padding: 120px 0px 80px 0px;
+}
+
+.video-title {
+	font-size: 36px;
+	padding-bottom: 70px;
+	line-height: 1.2em;
+}
+
+.uae-flag {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat;
+	height: 30px;
+	width: 40px;
+	background-position: -4px -6px;
+}
+
+.uae-flag+span {
+	vertical-align: 10px;
+}
+
+.video-title {
+	width: 100%
+}
+
+.app-link {
+	padding: 1.1em;
+}
+
+.app-link>img {
+	padding: 8px;
+}
+
+#restaurant-banner-icon:hover {
+	color: #000
+}
+
+a#menu-anchor:hover {
+	color: #000;
+}
+
+#mobile-otp,
+#inline-otp-box {
+	display: none;
+}
+
+#inline-email-otp {
+	visibility: hidden;
+	float: right;
+	z-index: 2;
+	margin-top: 14px;
+}
+
+.col-md-12.slide-img {
+	padding: 25px 10px;
+}
+
+.section {}
+
+.slide-img {
+	text-align: center;
+}
+
+.slide-img>h2 {
+	color: #FFFFFF;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.slide-img>a {
+	margin-top: 10px;
+}
+
+.home-video-content {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0px 20px 0px 20px;
+	max-width: 494px;
+	display: inline-block;
+}
+
+.home-video-content>div {
+	margin-top: 10px;
+}
+
+.home-video-content>a {
+	margin-top: 20px;
+}
+
+.cust-text+div {
+	font-size: 24px;
+	font-weight: bolder;
+	margin-top: 15px
+}
+
+.cust-text+div+div {
+	font-size: 18px;
+	margin-top: 10px
+}
+
+.home-global-customer {
+	background: url("https://cdn-web.gofrugal.com/images/international/uae/global-customers.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 545px;
+}
+
+.home-mygofrugal {
+	background-color: #03515D;
+	text-align: center;
+	color: #fff;
+	line-height: 30px
+}
+
+.home-mygofrugal>div>.col-md-6:nth-child(2) {
+	margin-top: 70px;
+	line-height: 30px;
+}
+
+.home-mygofrugal>div>.col-md-6:nth-child(1) {
+	top: 180px;
+}
+
+.blog-mygofrugal-img {
+	background-color: #9ED1EE;
+	text-align: center;
+	/*background-image:url("https://cdn-web.gofrugal.com/images/international/uae/pd-bg.png");background-repeat:no-repeat;background-position: left bottom;padding-top: 20px;*/
+}
+
+.blog-banner-content {
+	width: 66%;
+	left: 33%;
+	padding: 30px 0px;
+}
+
+.blog-banner-content>a {
+	margin-top: 15px;
+	padding: 5px 25px
+}
+
+.blog-banner-img {
+	width: 33%;
+	right: 66%
+}
+
+.blog-banner-img1 {
+	float: left;
+	margin-top: 30px;
+}
+
+.blog-posts {
+	background-color: #fff;
+	text-align: center
+}
+
+.blog-posts>div>div {
+	margin: 0px 0px 60px 0px;
+}
+
+.blog-post-content {
+	background-color: #EFF2F7;
+	border: 10px solid #FFF;
+	padding-right: 0px;
+	padding-left: 0px;
+	max-width: 350px;
+	display: inline-table;
+}
+
+.blog-post-content>div {
+	padding: 20px 10px 40px 10px
+}
+
+.blog-post-content>div>div {
+	font-size: 16px;
+	line-height: 1.2;
+	color: gray;
+	margin-bottom: 9px;
+}
+
+.blog-post-content>div>h4 {
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 1.3;
+}
+
+#customer-story>div {
+	background-color: #65BC47;
+	border-radius: 6px
+}
+
+.customer-store-img {
+	position: absolute;
+	width: 80%;
+	top: -60px;
+	right: 8%;
+}
+
+#header1 {
+	position: fixed;
+	height: 50px;
+	display: block;
+	width: 100%;
+	background: transparent;
+	z-index: 9;
+	text-align: center;
+	color: #f2f2f2;
+	padding: 20px 0 0 0;
+}
+
+.uae-flag+span {
+	width: 220px;
+	position: absolute;
+}
+
+.fp-slidesNav.bottom {
+	left: auto;
+	top: 44%;
+	;
+	right: 25px;
+}
+
+.fp-slidesNav ul li {
+	display: block;
+	padding: 12px 0px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span,
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+	height: 12px;
+	width: 12px;
+	margin: -6px 0 0 -6px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	background: #000;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	background: #fff;
+}
+
+/*.corporate-video_img{
+	border-radius: 10px;
+	border: 10px solid #000000;
+}*/
+
+.corporate-video_img {
+	padding: 50px 0px
+}
+
+.app-link>a>img {
+	margin: 10px 0px;
+}
+
+.banner-slider {
+	display: inline-block;
+	width: 130px;
+	color: #fff;
+}
+
+#customer-story>img {
+	margin-top: 80px;
+}
+
+.banner-contact-number {
+	margin-top: 20px;
+	font-size: 28px;
+	color: #00c0ff;
+}
+
+.inline-send-otp,
+.inline-resend-otp {
+	color: #FC672B;
+	font-weight: bold
+}
+
+#inline-sending-otp {
+	display: none;
+	color: #fff;
+}
+
+#customer-story>.col-md-12>.col-md-6 {
+	padding: 50px 0px 60px 30px
+}
+
+.mobile-quote {
+	display: none;
+	font-weight: bold;
+}
+
+#customer-story>.col-md-12>.col-md-6>.cust-text>span:nth-child(3) {
+	padding: 20px;
+}
+
+.blog-banner-content>h2 {
+	margin-top: 0px;
+}
+
+.blog-banner-content>p {
+	margin-top: 30px
+}
+
+.blog-banner-img1 {
+	top: 20px;
+	position: relative;
+	left: -21px;
+}
+
+.blog-banner-img>img {
+	position: relative;
+	top: 0px;
+}
+
+.inline-mobile-prefix {
+	position: absolute;
+	color: #999;
+	top: 40px;
+	margin: 1px 0px 0px -112px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.corporate-video_img {
+	width: 65%;
+}
+
+.product-video {
+	background: #EAEFF5;
+	text-align: center;
+}
+
+.product-video>div {
+	padding: 60px 0px;
+}
+
+.home-product-video {
+	background: #2B3D4B;
+	text-align: center;
+}
+
+.home-product-video>div>div>div>h2 {
+	padding: 0px 20px;
+}
+
+#thanku-box>img {
+	width: 46%;
+}
+
+.google_play-white,
+.google_play-black,
+.appstore-white,
+.appstore-black {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/international/uae-sprite.png") no-repeat;
+	height: 54px;
+	width: 165px;
+	background-position: -15px -333px;
+}
+
+.google_play-white {
+	background-position: -15px -279px;
+}
+
+.appstore-black,
+.google_play-black {
+	background-position: -15px -207px;
+	height: 54px;
+	width: 162px;
+}
+
+.appstore-black {
+	background-position: -15px -149px;
+}
+
+.mobile_cta {
+	display: none;
+}
+
+.global_cust_count {
+	position: absolute;
+	bottom: 100px;
+	margin-top: -5px;
+}
+
+.customer-collateral-btn {
+	position: absolute;
+	bottom: 40px;
+}
+
+.home-global-customer>h2 {
+	position: absolute;
+	width: 95%;
+	top: 42px;
+}
+
+.banner-slider>a {
+	text-decoration: none;
+}
+
+.blog-sprite-img1,
+.blog-sprite-img2,
+.blog-sprite-img3 {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/international/uae/blog-sprite.jpg") no-repeat;
+	height: 213px;
+	width: 320px;
+	background-position: -32px -19px;
+}
+.sg-blog-sprite-img1,
+.sg-blog-sprite-img2,
+.sg-blog-sprite-img3 {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/international/sg/blog-sprite.jpg") no-repeat;
+	height: 213px;
+	width: 350px;
+	background-position: -11px -9px;
+}
+.sg-blog-sprite-img2 {
+	background-position: -374px -9px;
+}
+
+.sg-blog-sprite-img3 {
+	background-position: -736px -9px;
+}
+.sg-blog-section{
+	margin-top: 70px;
+	margin-bottom: 45px;
+}
+.contact_uae {
+	position: relative;
+	top: -40px;
+	right: 20px;
+}
+
+.blog-sprite-img2 {
+	background-position: -365px -19px;
+}
+
+.blog-sprite-img3 {
+	background-position: -696px -19px;
+}
+
+.banner_in_flag,
+.banner_uae_flag,
+.banner_sg_flag {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat;
+	height: 16px;
+	width: 24px;
+	position: relative;
+	top: 4px;
+	left: 5px;
+}
+
+.banner_sg_flag {
+	background-position: -708px -821px;
+	float: left;
+	height: 18px;
+	margin-left: 1px;
+}
+
+.banner_in_flag {
+	background-position: -684px -821px;
+}
+
+.banner_uae_flag {
+	background-position: -659px -822px;
+}
+
+.banner_in_flag+span,
+.banner_uae_flag+span,
+.banner_sg_flag+span {
+	margin-left: 8px;
+	padding-right: 1px;
+	font-weight: 500;
+}
+
+.uae_call {
+	color: #00c0ff;
+	font-weight: 900;
+	font-size: 14px;
+}
+
+.uae_call_num {
+	font-size: 14px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.country_dropdown {
+	position: relative;
+	display: inline-block;
+	left: 6px;
+	font-size: 11px;
+}
+
+.country_dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 112px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 5px;
+	margin-left: -3px;
+	z-index: 999999999999999999999999999;
+	top: 36px;
+	border-radius: 4px;
+}
+
+.glyphicon.glyphicon-triangle-bottom {
+	color: #fff;
+}
+
+.country_dropdown:hover .country_dropdown-content {
+	display: block;
+}
+
+.arrow_up {
+	display: none;
+	position: absolute;
+	top: 19px;
+	margin-left: 0px;
+	height: 29px;
+	color: #fff;
+	width: 1px;
+	font-size: 39px;
+}
+
+.country_dropdown:hover .arrow_up {
+	display: block;
+}
+
+.country_dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.country_dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.flag_align {
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	float: left;
+}
+
+#offering {
+	cursor: pointer;
+}
+
+.assure_uae {
+	position: relative;
+	left: 5px;
+}
+
+.uae-mob-cta {
+	display: none !important;
+}
+
+.gm-style-iw h1 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.gm-style-iw div {
+	font-size: 10px;
+	line-height: 13px;
+	font-weight: 600;
+}
+
+#abc {
+	position: fixed;
+	z-index: 999999;
+}
+
+img#close {
+	position: absolute;
+	right: -14px;
+	top: -14px;
+	cursor: pointer
+}
+
+div#popupContact {
+	position: absolute;
+	left: 50%;
+	top: 28%;
+	margin-left: -202px;
+}
+
+#chatbot_live {
+	height: 460px;
+	max-width: 365px;
+	width: 100%;
+	display: none;
+	background-color: #fff;
+}
+
+.popupform {
+	max-width: 500px;
+	min-width: 450px;
+	padding: 10px 50px;
+	border: 1px solid #374f62;
+	border-radius: 10px;
+	background-color: #fff;
+	height: 400px;
+	right: 15%;
+	position: relative;
+}
+
+.popup_name {
+	/*background-image:url("https://cdn-web.gofrugal.com/images/name.jpg");*/
+	background-repeat: no-repeat;
+	background-position: 5px 7px;
+	border-radius: 4px;
+	padding: 8px 0 5px 15px !important;
+	width: 275px;
+	font-size: 16px;
+	border: 1px solid #e7e7e7;
+	position: relative;
+	top: 11px;
+}
+
+.popup_mobile {
+	border-radius: 4px;
+	position: relative;
+	padding: 8px 0 5px 30px;
+	width: 275px;
+	font-size: 16px;
+	margin-top: 5px;
+	border: 1px solid #e7e7e7;
+	top: 1px;
+}
+
+#popup_button {
+	width: 4%;
+	height: 29px;
+	border-radius: 3px;
+	background-color: #cd853f;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer
+}
+
+.popupcontent {
+	color: #fff;
+	text-align: center;
+	font-family: Open Sans;
+	position: relative;
+}
+
+.popupcontent h3 {
+	font-size: 24px;
+	font-weight: 200;
+}
+
+.popupcontent h4 {
+	font-size: 18px;
+	font-weight: 200;
+}
+
+#mygofrugalpopup {
+	background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -647px -726px;
+	width: 256px;
+	height: 92px;
+	left: 24%;
+	margin-top: 14px;
+}
+
+#popupcontent>h3 {
+	margin-top: 0px
+}
+
+/*.popup_submit {
+	width: 100%;
+	margin: 0px 5px 0 0px
+}*/
+
+.popup_form {
+	margin: auto;
+	text-align: center;
+	height: 76px;
+}
+
+#close {
+	background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -608px 598px;
+	width: 18px;
+	height: 29px;
+	position: absolute;
+	left: 93%;
+	top: 10px;
+	cursor: pointer;
+}
+
+.popup_gofrugal {
+	/* background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -658px -637px; */
+	bottom: 18px;
+	cursor: pointer;
+	height: 118px;
+	margin: 0;
+	position: fixed;
+	right: 25px;
+	width: 118px;
+}
+
+.popup_close {
+	background-position: -731px -637px;
+	z-index: 9999999;
+}
+
+#popup_notify {
+	background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -852px -641px;
+	bottom: 49px;
+	cursor: pointer;
+	height: 44px;
+	margin: 0;
+	position: fixed;
+	right: 27px;
+	width: 22px;
+}
+
+.box {
+	background-color: #218D9B;
+	height: 100px;
+	width: 100px;
+}
+
+.transform-active {
+	background-color: #45CEE0;
+	height: 100%;
+	width: 100%;
+}
+
+/*mobile*/
+
+.popup_mobile_res {
+	display: none;
+	margin-top: -91px;
+	transition-timing-function: linear;
+	/*transition: height 2s;*/
+	transition: all 1.5s ease;
+}
+
+#popup_mob_res {
+	/*visibility: hidden;*/
+	/*transition: all 1.5s ease;*/
+	background-color: #FFEA00;
+	height: 93px;
+	z-index: 9999999;
+}
+
+#popup_mob {
+	background-color: #C6DEE5;
+	height: 0px;
+}
+
+.popup_mob_logo {
+	background-image: url("https://cdn-web.gofrugal.com/images/home-image/gst-helpline-icon-mobile.png");
+	height: 77px;
+	margin-right: 26px;
+	width: 70px;
+	margin-top: 5px;
+}
+
+.pop_mob_content {
+	color: #000;
+	position: relative;
+	top: 0px;
+	font-family: Open Sans;
+}
+
+.pop_mob_content>h5 {
+	font-weight: 600;
+	font-weight: bold;
+}
+
+.pop_mob_content>h6 {
+	position: relative;
+	top: -6px;
+	font-weight: 400;
+}
+
+/*GST POPUP*/
+
+.GST_con {
+	font-size: 14px !important;
+	line-height: 16px;
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
+	top: 8px;
+}
+
+.GST_know {
+	position: relative;
+	top: 3px;
+	color: #FC672B;
+}
+
+.GST_whole {
+	right: 24px !important
+}
+
+/*GST POPUP ends here*/
+
+.rating_star {
+	position: relative;
+	top: -18px;
+}
+
+.popup_getapp {
+	position: relative;
+	top: -27px;
+}
+
+.popup_view {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	top: -76px;
+	left: 106%;
+}
+
+.popup_view>a {
+	color: #FC672B;
+}
+
+.popup_mob_close {
+	background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -608px 598px;
+	width: 18px;
+	height: 29px;
+	top: 34px;
+	margin-left: 3%;
+	font-size: 22px;
+	position: relative;
+	right: 10px;
+	cursor: pointer;
+}
+
+.dial_code_home {
+	font-size: 16px;
+	left: 19px;
+	margin-top: -30px;
+	position: absolute;
+	color: #808080;
+	opacity: 0.6;
+}
+	.portrait-mobile{
+		display: none;
+	}
+/*Event Alert Style starts*/
+.event-alert-sec{
+	background: #fff7a0;display:none
+}
+.event-alert-sec .container{
+	padding: 10px 0;font-weight: 600;
+}
+.event-alert-btn{
+	background:#397bf3; padding: 3px 10px; color: #fff;margin-right: 6px;border-radius: 4px;border:none;
+}
+.event-more-cta{
+	color:#397bf3;text-decoration: underline;
+}
+.event-close {
+	position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.gouri-bastralaya-testimonial{
+	padding: 40px 0 0; 
+    max-width: 800px;
+    clear: both;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.gouri-bastralaya-testimonial .cust_img{
+	background: url(https://cdn-web.gofrugal.com/images/home-image/home-sprite.png) no-repeat;
+    background-position: -19px -683px;
+    height: 76px;
+    width: 193px;
+    margin: 10px auto;
+}
+.gouri-bastralaya-testimonial .quote-left, .gouri-bastralaya-testimonial .quote-right{
+    background: url(https://cdn-web.gofrugal.com/images/global-sprite.png) no-repeat;
+    background-position: -764px -11px;
+    height: 36px;
+    width: 44px;
+	margin-left: 10px;
+    margin-right: 4px;
+    position: relative;
+    display: inline-block;
+	top:3px
+}
+ .gouri-bastralaya-testimonial .quote-right{
+	vertical-align: text-top;
+	 margin-left: 4px;
+	 background-position: -823px -11px;
+	 top:-3px
+}
+.gouri-bastralaya-testimonial .content-block{
+	max-width: 725px;
+	margin: auto
+}
+.gouri-bastralaya-testimonial h2{
+	font-size: 20px;
+    font-weight: 600;
+	margin-top: 5px;
+}
+.gouri-bastralaya-testimonial h4{
+	    font-size: 14px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+
+@media all and (max-width: 991px) {
+	.event-alert-sec .container{
+		padding: 10px 50px;
+		font-size: 13px;
+		    line-height: 1.6;
+	}	
+	.event-alert-btn{
+		padding: 1px 4px;
+	}
+}
+/*Event Alert Style Ends*/
+
+
+@media all and (max-width: 768px) {
+	.popup_mobile_res {
+		display: block;
+	}
+}
+@media all and (max-width: 767px) {
+	.gouri-bastralaya-testimonial .quote-left, .gouri-bastralaya-testimonial .quote-right{
+		display: none
+	}
+	.event-link img{
+		max-width: 320px;
+		width:100%
+	}
+	.gouri-bastralaya-testimonial h2{
+	font-size: 18px!important;
+}
+.gouri-bastralaya-testimonial h4{
+	    font-size: 12px!important;
+}
+
+}
+
+@media all and (max-width: 460px) {
+	#popup_mob_res {
+		display: block;
+	}
+}
+
+@media all and (max-width: 420px) {
+	.pop_mob_content>h5 {
+		font-size: 12px;
+	}
+	.pop_mob_content>h6 {
+		font-size: 12px;
+	}
+	.rating_star {
+		font-size: 12px;
+	}
+	.popup_getapp {
+		font-size: 12px;
+		top: -20px;
+	}
+	.popup_mob_logo {
+		right: 15px;
+	}
+	.pop_mob_content {
+		right: 24px;
+	}
+}
+
+/*responsive search*/
+
+.dropdown_responsive {
+	display: none;
+}
+
+.icon-white_res {
+	color: #fff;
+	display: none;
+	float: right;
+	top: 10px;
+}
+
+#search-mob {
+	float: right;
+	position: relative;
+	top: 10px;
+}
+
+.form-control-mob {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	color: #555;
+	display: block;
+	font-size: 14px;
+	height: 34px;
+	line-height: 1.42857;
+	padding: 6px 12px;
+	transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	width: 40px;
+}
+
+.small_search {
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	font-size: 16px;
+	background-color: white;
+	padding: 10px 20px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	z-index: 99999;
+	position: relative;
+	width: 100%;
+	display: none;
+	top: 40px;
+}
+
+.icon-small {
+	position: relative;
+	z-index: 99999;
+	top: 20px;
+	float: right;
+	right: 12px;
+	color: #fff;
+	display: none;
+}
+
+#offering {
+	cursor: pointer;
+}
+
+/* .small_res_search {
+	background-color: #222222;
+} */
+
+.glyphicon-search {
+	cursor: pointer;
+}
+
+@media all and (max-width: 1082px) {
+	.responsive_heading {
+		display: none !important;
+	}
+	.dropdown {
+		display: none;
+	}
+	.dropdown_responsive {
+		display: block;
+		position: relative;
+	}
+	.navbar-inner {
+		background: #3d5164;
+	}
+}
+
+/* new home page*/
+
+#business_boosters,
+#restaurant_section,
+#distribution_section,
+#retail_section {
+	margin-top: 50px;
+	margin-bottom: 75px;
+}
+
+#restaurant_section,
+.distribution_section {
+	padding: 0;
+}
+
+.business_boosters>.col-md-2,
+.restaurant_section>.col-md-2,
+.distribution_section>.col-md-2,
+.retail_section>.col-md-2 {
+	width: 50%;
+	vertical-align: top;
+	display: inline-block;
+	float: none;
+	margin: 20px 0px;
+	line-height: 18px;
+	max-width: 192px;
+	visibility: visible;
+	/*transform: scale(0.8, 0.8);
+	-webkit-transform: scale(0.8, 0.8);*/
+	transition: 1s ease;
+	-webkit-transition: 1s ease;
+}
+
+.distribution_section>.col-md-2 {
+	max-width: 233px;
+	width: 48.5%;
+}
+
+.business_boosters>.col-md-2.animate,
+.restaurant_section>.col-md-2.animate,
+.distribution_section>.col-md-2.animate,
+.retail_section>.col-md-2.animate {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+}
+
+.home_sellquick_img,
+.home_sellsmart_img,
+.home_servquick_img,
+.home_servjoy_img,
+.home_mypulse_img,
+.home_earnsmart_img,
+.home_whatsnow_img,
+.rest_hq_label,
+.rpos_label7,
+.rpos_label6,
+.hq_label,
+.truepos_label,
+.distribution_label,
+.integration_label {
+	background: url("https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png") no-repeat;
+	height: 100px;
+	width: 153px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-position: -150px -39px;
+}
+
+.home_sellsmart_img {
+	background-position: -280px -42px;
+	width: 151px;
+}
+
+.home_servquick_img {
+	background-position: -420px -39px;
+}
+
+.home_servjoy_img {
+	background-position: -186px -158px;
+}
+
+.home_mypulse_img {
+	background-position: -326px -158px;
+	width: 138px;
+}
+
+.home_earnsmart_img {
+	background-position: -188px -268px;
+	width: 150px;
+}
+
+.home_whatsnow_img {
+	background-position: -336px -268px;
+}
+
+.rpos_label7 {
+	background-position: -7px -39px;
+}
+
+.hq_label {
+	background-position: -7px -162px;
+}
+
+.rest_hq_label {
+	background-position: -7px -162px;
+}
+
+.truepos_label {
+	background-position: -469px -273px;
+	width: 138px;
+}
+
+.rpos_label6 {
+	background-position: -6px -268px;
+}
+
+.distribution_label {
+	background-position: -449px -162px;
+}
+
+.home_gofrugal_mobile,
+.home_sellquick_img_mobile,
+.home_sellsmart_img_mobile,
+.home_servquick_img_mobile,
+.home_servjoy_img_mobile,
+.home_mypulse_img_mobile,
+.home_earnsmart_img_mobile,
+.home_whatsnow_img_mobile,
+.rpos_label7_mobile,
+.rpos_label6_mobile,
+.hq_label_mobile,
+.truepos_label_mobile,
+.distribution_label_mobile,
+.integration_label_mobile {
+	background: url(https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png) no-repeat;
+	height: 61px;
+	width: 82px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background-position: -33px -431px;
+	display: none;
+}
+
+.home_gofrugal_mobile {
+	height: 43px;
+}
+
+.home_sellquick_img_mobile {
+	background-position: -114px -431px;
+}
+
+.home_sellsmart_img_mobile {
+	background-position: -209px -431px;
+}
+
+.home_servquick_img_mobile {
+	background-position: -303px -431px;
+}
+
+.home_servjoy_img_mobile {
+	background-position: -399px -431px;
+}
+
+.home_mypulse_img_mobile {
+	background-position: -486px -434px;
+}
+
+.home_earnsmart_img_mobile {
+	background-position: -163px -516px;
+	width: 85px;
+}
+
+.home_whatsnow_img_mobile {
+	background-position: -270px -514px;
+}
+
+.hq_label_mobile {
+	background-position: -29px -516px;
+}
+
+.truepos_label_mobile {
+	background-position: -379px -516px;
+}
+
+.rpos_label6_mobile {
+	background-position: -293px -1109px;
+}
+
+.distribution_label_mobile {
+	background-position: -175px -1109px;
+	width: 85px;
+}
+
+.integration_label_mobile {
+	background-position: -33px -296px;
+}
+
+.know_more_btn {
+	margin-top: 20px;
+	padding: 7px 0px;
+	border-radius: 6px;
+	min-width: 225px;
+}
+
+.retail_bg_circule {
+	background: #fff none repeat scroll 0 0;
+	border-radius: 100%;
+	display: inline-block;
+	height: 48px;
+	width: 48px;
+	/*margin: auto 20px;*/
+	border: 1px solid #e4dfdf;
+}
+
+.supermarket_logo,
+.departmental_store_logo,
+.pharma_logo,
+.apparel_footware_logo,
+.electrical_electronics_logo,
+.lifestyle_fashion_logo,
+.specialized_retail_logo,
+.restaurant_bar_logo,
+.qsr_logo,
+.bakery_logo,
+.food_court_logo,
+.packaged_food_logo,
+.lubricants_logo,
+.pharma_healthcare_logo,
+.specialized_distribution_logo {
+	background: url("https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png") no-repeat;
+	height: 46px;
+	width: 44px;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	background-position: -49px -633px;
+	/* display:none;*/
+}
+
+.departmental_store_logo {
+	background-position: -94px -633px;
+}
+
+.pharma_logo {
+	background-position: -138px -631px;
+}
+
+.apparel_footware_logo {
+	background-position: -184px -631px;
+}
+
+.electrical_electronics_logo {
+	background-position: -227px -631px;
+}
+
+.lifestyle_fashion_logo {
+	background-position: -270px -634px;
+}
+
+.specialized_retail_logo {
+	background-position: -308px -631px;
+}
+
+.restaurant_bar_logo {
+	background-position: -48px -679px;
+}
+
+.qsr_logo {
+	background-position: -88px -676px;
+}
+
+.bakery_logo {
+	background-position: -120px -679px;
+}
+
+.food_court_logo {
+	background-position: -159px -679px;
+}
+
+.packaged_food_logo {
+	background-position: -47px -726px
+}
+
+.lubricants_logo {
+	background-position: -80px -725px;
+}
+
+.pharma_healthcare_logo {
+	background-position: -115px -728px
+}
+
+.specialized_distribution_logo {
+	background-position: -156px -726px;
+}
+
+.food_truck_logo {
+	background: url(https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png) no-repeat;
+	height: 46px;
+	width: 44px;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	background-position: -200px -680px;
+	/* display:none;*/
+}
+
+.retail_feature,
+.restaurant_feature,
+.distribution_feature {
+	display: inline-block;
+	font-size: 13px;
+	margin: auto 1px;
+	width: 13%;
+	vertical-align: top;
+	line-height: 18px;
+}
+
+.restaurant_feature,
+.distribution_feature {
+	width: 109px;
+}
+
+.supermarket_logo_mob,
+.departmental_store_logo_mob,
+.pharma_logo_mob,
+.apparel_footware_logo_mob,
+.electrical_electronics_logo_mob,
+.lifestyle_fashion_logo_mob,
+.specialized_retail_logo_mob,
+.restaurant_bar_logo_mob,
+.qsr_logo_mob,
+.bakery_logo_mob,
+.food_court_logo_mob,
+.packaged_food_logo_mob,
+.lubricants_logo_mob,
+.pharma_healthcare_logo_mob,
+.specialized_distribution_logo_mob {
+	background: url(https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png) no-repeat;
+	height: 24px;
+	width: 24px;
+	left: 0;
+	right: 0;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	background-position: -369px -636px;
+	display: none;
+	float: left;
+}
+
+.departmental_store_logo_mob {
+	background-position: -368px -673px;
+}
+
+.pharma_logo_mob {
+	background-position: -368px -705px;
+}
+
+.apparel_footware_logo_mob {
+	background-position: -368px -741px;
+}
+
+.electrical_electronics_logo_mob {
+	background-position: -370px -775px;
+}
+
+.lifestyle_fashion_logo_mob {
+	background-position: -368px -809px;
+}
+
+.specialized_retail_logo_mob {
+	background-position: -367px -845px;
+}
+
+.restaurant_bar_logo_mob {
+	background-position: -408px -637px;
+}
+
+.qsr_logo_mob {
+	background-position: -408px -673px;
+}
+
+.bakery_logo_mob {
+	background-position: -408px -708px;
+}
+
+.food_court_logo_mob {
+	background-position: -408px -740px;
+}
+
+.packaged_food_logo_mob {
+	background-position: -55px -738px;
+}
+
+.lubricants_logo_mob {
+	background-position: -89px -738px;
+}
+
+.pharma_healthcare_logo_mob {
+	background-position: -127px -740px;
+}
+
+.specialized_distribution_logo_mob {
+	background-position: -165px -738px;
+}
+
+.product_new_logo {
+	background: url(https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png) no-repeat;
+	background: url("https://cdn-web.gofrugal.com/images/home-images/sprite-home-page.png") no-repeat;
+	height: 24px;
+	width: 28px;
+	left: 102px;
+	right: 0px;
+	top: 0px;
+	bottom: 0;
+	margin: auto;
+	background-position: -531px -595px;
+	float: left;
+	position: relative;
+}
+
+#restaurant_feature_section,
+#retail_feature_section,
+#distribution_feature_section {
+	margin: 10px 0px 20px 0px;
+	display: none;
+}
+
+.happycustomer-sprite-img1,
+.happycustomer-sprite-img2,
+.happycustomer-sprite-img3 {
+	display: inline-block;
+	background: url("https://cdn-web.gofrugal.com/images/home-image/home-videos.png") no-repeat;
+	height: 280px;
+	width: 350px;
+	background-position: 0px 4px;
+}
+
+.happycustomer-sprite-img2 {
+	background-position: -359px 0px;
+}
+
+.happycustomer-sprite-img3 {
+	background-position: -718px 0px;
+}
+
+.restaurant_feature_bg,
+.retail_feature_bg,
+.distribution_feature_bg {
+	text-align: center;
+	display: none;
+}
+
+.cust-video-content {
+	margin: 15px 15px;
+	padding-right: 0px;
+	padding-left: 0px;
+	max-width: 350px;
+	display: inline-block;
+}
+
+.cust-video-section .container {
+	padding: 0;
+}
+
+.cust-video-content>div {
+	padding: 20px 10px 40px 10px;
+}
+
+.cust-video-content>div>div {
+	font-size: 18px;
+}
+
+.cust-video-content>div>div:last-child {
+	font-size: 14px;
+	margin-top: 5px;
+	color: gray;
+}
+
+.cust-video-content>div>h4 {
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+.india-home-banner-mobile {
+	background: none;
+}
+
+#business_boosters a,
+#restaurant_section a,
+#distribution_section a,
+#retail_section a {
+	text-decoration: none;
+}
+
+#business_boosters a:hover,
+#restaurant_section a:hover,
+#distribution_section a:hover,
+#retail_section a:hover {
+	text-decoration: none;
+	color: #397bf3;
+}
+
+.retail_section_home>div:hover div {
+	color: #397bf3;
+}
+
+.cust-video-section>div>div {
+	margin: 60px 0px 10px 0px;
+}
+
+.vertical_tab_reg {
+	display: inline-block;
+}
+
+.vertical_tab_resend {
+	position: absolute;
+	right: inherit;
+	margin-left: -100px;
+	margin-top: 14px;
+}
+
+.vertical_tab_home-otp-val {
+	position: inherit;
+}
+
+.vertical_tab_send_otp {
+	float: none;
+	position: absolute;
+	right: 450px;
+}
+
+#desktop_retail_feature_section>.col-md-12>.retail_feature,
+#desktop_restaurant_feature_section>.col-md-12>.restaurant_feature,
+#desktop_distribution_feature_section>.col-md-12>.distribution_feature {
+	width: 60px;
+	margin-top: 20px;
+	line-height: 15px;
+}
+
+#desktop_retail_feature_section,
+#desktop_restaurant_feature_section,
+#desktop_distribution_feature_section {
+	padding-bottom: 5px;
+}
+
+.vertical_tab_reg>.input-reg,
+.otp-box {
+	color: #000;
+}
+
+#home-banner>div>h1 {
+	color: #1E9CD7;
+	font-weight: 500;
+	font-size: 36px;
+	max-width: 500px;
+	text-align: center;
+	display: inline-block;
+}
+
+.earnsmart_feature_img {
+	float: right;
+}
+
+.home_disp_tab_content {
+	padding-top: 10px;
+	width: 628px;
+}
+
+#retail_whatsnow_img {
+	left: 40px;
+	top: 60px;
+	width: 40%;
+	z-index: -1;
+	min-width: 442px;
+}
+
+#retail_whatsnow_mob {
+	background-image: url(https://cdn-web.gofrugal.com/images/home-images/whatsnow-mobile.jpg);
+	height: 492px;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+#retail_section,
+#retail_whatsnow_img {
+	padding-left: 0px;
+	padding-right: 0;
+}
+
+.btn-type1 {
+	background-color: #535353;
+	color: #fff;
+	border: none;
+}
+
+.distribution_section_img {
+	left: 50px;
+	min-width: 455px;
+	top: 200px;
+	width: 38%;
+}
+
+.product-video>div>div>.col-md-6 {
+	max-width: 530px;
+	display: inline-block;
+}
+
+.icon-inr {
+	font-family: "rupee";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-transform: none;
+}
+
+.home-ban-btn {
+	min-width: 200px;
+	padding: 8px;
+	text-align: center;
+}
+
+.home-banner-content {
+	left: 40%;
+	margin-top: 110px;
+	position: absolute;
+	text-align: left;
+	width: 600px;
+}
+
+.uae-home-banner {
+	left: 45%;
+	position: relative;
+	width: 600px;
+}
+
+.home-banner-img>h1 {
+	display: none;
+	font-weight: 500;
+}
+
+.home-banner-img>h3 {
+	display: none;
+	font-weight: 400;
+}
+
+.home-ban-video-icon {
+	width: 100px;
+	height: 100px;
+	background-position: -449px -900px;
+	top: 150px;
+	margin-left: 100px;
+	opacity: 1;
+}
+
+.home-banner-img-mobile {
+	display: none;
+}
+
+.product-video-mobile {
+	padding-right: 40px;
+	display: none;
+}
+
+.product-video-mobile span {
+	margin-top: -5px;
+	margin-left: 4px;
+}
+
+.home-ban-btn:hover {
+	color: #fff;
+}
+
+#cf4a picture:nth-of-type(1) {
+	animation-delay: 15s;
+	-webkit-animation-delay: 15s;
+}
+
+#cf4a picture:nth-of-type(2) {
+	animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+
+#cf4a picture:nth-of-type(3) {
+	animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+
+#cf4a {
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: inherit;
+}
+
+#cf4a>a {
+	height: inherit;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+#cf4a img {
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#cf4a picture {
+	animation-duration: 9s;
+	animation-iteration-count: infinite;
+	animation-name: cf4FadeInOut;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 15s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-name: cf4FadeInOut;
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+#cf4a picture {
+	height: inherit;
+	position: initial;
+}
+
+#logo-container {
+	margin: 0px 0px;
+	height: 130px;
+}
+#logo-container-mobile {
+	margin: 20px 0px;
+	height: 105px;
+}
+#sm-logo-container {
+	margin: 10px 0px;
+}
+
+#restaurant_section h2,
+#distribution_section h2,
+#retail_section h2 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+.icon-white-uae {
+	color: #fff;
+}
+
+.vertical_home_mobile_content {
+	display: none;
+}
+
+.home-banner-content>h3 {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 0;
+	max-width: 480px;
+}
+
+.home-banner-content>h1 {
+	color: #1691cc;
+	font-weight: 400;
+	font-size: 46px;
+	margin-top: 0px;
+}
+
+.uae-home-banner>h3 {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.uae-home-banner>h1 {
+	color: #157dad;
+	font-weight: 400;
+	font-size: 60px;
+	margin-top: 0px;
+}
+
+.dist-animation-logo1-animate {
+	top: -55px;
+	opacity: 1;
+}
+
+.dist-animation-logo2-animate {
+	top: 40px;
+	opacity: 1;
+}
+
+.dist-animation-logo3-animate {
+	top: -100px;
+	opacity: 1;
+}
+
+.dist-animation-logo4-animate {
+	top: -52px;
+	opacity: 1;
+}
+
+.dist-animation-logo5-animate {
+	top: -35px;
+	opacity: 1;
+}
+
+.assure_home_mobile {
+	float: right;
+	width: 400px;
+}
+
+/*hamburger*/
+
+.hamburger {
+	padding: 15px 15px;
+	display: inline-block;
+	cursor: pointer;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	overflow: visible;
+	float: right;
+	margin-top: -52px;
+	text-decoration: none;
+	position: relative;
+	top: 55px;
+}
+
+.hamburger-box {
+	width: 40px;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+}
+
+.hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	width: 26px;
+	height: 0.2em;
+	background-color: #fff;
+	border-radius: 4px;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+	content: "";
+	display: block;
+}
+
+.hamburger-inner::before {
+	top: -10px;
+}
+
+.hamburger-inner::after {
+	bottom: -10px;
+}
+
+.hamburger--slider .hamburger-inner {
+	top: 2px;
+}
+
+.hamburger--slider .hamburger-inner::before {
+	top: 7px;
+	transition-property: transform, opacity;
+	transition-timing-function: ease;
+	transition-duration: 0.2s;
+	height: 0.2em;
+}
+
+.hamburger--slider .hamburger-inner::after {
+	top: 14px;
+}
+
+.hamburger--slider.is-active .hamburger-inner {
+	transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.hamburger--slider.is-active .hamburger-inner::before {
+	transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+	opacity: 0;
+}
+
+.hamburger--slider.is-active .hamburger-inner::after {
+	transform: translate3d(0, -14px, 0) rotate(-90deg);
+}
+
+.small_search_click {
+	float: left;
+	left: 0px;
+	position: fixed;
+	top: 80px;
+}
+
+.gst_img {
+	float: left;
+	margin-left: 190px;
+	margin-top: -89px;
+	position: relative;
+}
+
+#gst_section_mobile {
+	display: none;
+	padding: 4px 0;
+	text-align: center;
+	margin-top: -40px;
+}
+
+.india-home-banner-mobile>h1 {
+	color: #157dad;
+	margin-top: 0;
+}
+
+#yearbegin-process>div>div {
+	background-color: rgb(255, 255, 255);
+	padding: 7px 5px;
+	width: 680px;
+}
+
+#home_mob_reg_btn {
+	display: none;
+}
+
+/*UAE Rewamp*/
+
+.uae_reg_btn_resp {
+	margin-bottom: 45px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.vertical-cust-testimonial {
+	max-width: 900px;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 70px;
+}
+
+.vertical-cust-testimonial .flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: -18px;
+	text-align: center;
+	display: inherit;
+	top: auto;
+}
+
+.vertical-cust-testimonial li {
+	margin-bottom: 10px !important;
+}
+
+.vertical-double-quote-left,
+.vertical-double-quote-right {
+	background: hsla(0, 0%, 0%, 0) url("https://cdn-web.gofrugal.com/images/global-sprite.png") no-repeat scroll;
+	display: inline-block;
+	height: 35px;
+	width: 42px;
+}
+
+.vertical-double-quote-left {
+	position: relative;
+	top: 6px;
+	background-position: -765px -14px;
+}
+
+.vertical-double-quote-right {
+	background-position: -826px -14px;
+	position: absolute;
+	margin-left: 6px;
+}
+
+.vertical-cust-testimonial .cust-testimonial-content {
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 30px;
+}
+
+.happycustomer-sprite-img1-uae,
+.happycustomer-sprite-img2-uae,
+.happycustomer-sprite-img3-uae {
+	display: inline-block;
+	background: url(https://cdn-web.gofrugal.com/images/home-images/uae/uae-videos.jpg) no-repeat;
+	height: 280px;
+	width: 350px;
+	background-position: 0px 0px;
+}
+
+.happycustomer-sprite-img2-uae {
+	background-position: -359px 0px;
+}
+
+.happycustomer-sprite-img3-uae {
+	background-position: -718px 0px;
+}
+
+.uae-customer-logos-resp,
+.uae_request_resp,
+.uae_cta_mob {
+	display: none;
+}
+
+.uae_request_resp {
+	margin-top: -10px;
+	position: relative;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
+
+/*new home page rewamp*/
+
+.supermarket_set_img,
+.hyper_set_img,
+.pharma_set_img,
+.apparel_set_img,
+.electrical_set_img,
+.lifestyle_set_img,
+.salon_set_img,
+.other_set_img {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png");
+	background-position: -8px 0;
+	height: 90px;
+	margin: auto;
+	width: 94px;
+}
+
+.hyper_set_img {
+	background-position: -107px 0px;
+	top: 5px;
+	position: relative;
+}
+
+.pharma_set_img {
+	background-position: -203px 2px;
+}
+
+.apparel_set_img {
+	background-position: -298px 4px;
+}
+
+.electrical_set_img {
+	background-position: -388px 2px;
+	width: 78px;
+}
+
+.lifestyle_set_img {
+	background-position: -479px 2px;
+}
+
+.other_set_img {
+	background-position: -586px 2px;
+	width: 100px;
+}
+.salon_set_img {
+	background-position: -461px -168px;
+	width: 100px;
+}
+
+.whatsnow_business,
+.sellquick_business,
+.sellsmart_business,
+.insight_business,
+.serquick_business,
+.servjoy_business,
+.mypulse_business,
+.earnsmart_business {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll -12px -284px;
+	height: 67px;
+	margin: auto;
+	width: 99px;
+	cursor: pointer;
+}
+
+.sellquick_business {
+	background-position: -112px -286px;
+}
+
+.sellsmart_business {
+	background-position: -209px -285px;
+}
+
+.insight_business {
+	background-position: -302px -286px;
+}
+
+.serquick_business {
+	background-position: -16px -372px;
+}
+
+.servjoy_business {
+	background-position: -110px -375px;
+}
+
+.mypulse_business {
+	background-position: -204px -376px;
+}
+
+.earnsmart_business {
+	background-position: -11px -458px;
+}
+
+.retail_set {
+	max-width: 800px;
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+.supermarket_set {
+	/*border: 1px solid #d3d3d3;*/
+	display: inline-block;
+	float: none;
+	min-width: 136px;
+	width: 20%;
+	margin-right: 3px;
+	width: 186px;
+	padding: 0;
+}
+
+/*.supermarket_set, .distribution_set, .restaurant_set1 {
+	Opacity: 0;
+}*/
+
+.supermarket_set:hover {
+	text-decoration: underline;
+	text-decoration-color: #397bf3;
+}
+
+.restaurant_set:hover {
+	text-decoration: underline;
+	text-decoration-color: #397bf3;
+}
+
+.business_link:hover {
+	text-decoration: none;
+}
+
+.single_market {
+	background-color: #535353;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	cursor: pointer;
+	font-size: 12px;
+	font-size: 11px;
+	line-height: 22px;
+}
+
+.chain_market {
+	color: #fc672b;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	text-decoration: underline;
+	font-size: 11px;
+	width: 38px;
+}
+
+.retail_set,
+.restaurant_sec_home,
+.distribution_sec_home {
+	margin-top: 50px;
+}
+
+.retail_size {
+	font-size: 13px;
+	line-height: 16px;
+	height: 22px;
+}
+
+.Retail_boosters {
+	font-size: 21px;
+	margin-bottom: 25px;
+}
+
+.restaurant_set {
+	display: inline-block;
+	float: none;
+	min-width: 136px;
+	width: 186px;
+	margin-right: 3px;
+	padding: 0;
+}
+
+.restaurant_sec_home {
+	max-width: 800px;
+	margin: auto;
+	display: block;
+	float: none;
+}
+
+.fmcg_con {
+	width: 152px;
+}
+
+.bar_set_img,
+.qsr_set_img,
+.bakery_set_img,
+.court_set_img,
+.truck_set_img,
+.sweet_set_img,
+.icecream_set_img {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png");
+	background-position: -15px -82px;
+	height: 90px;
+	margin: auto;
+	width: 98px;
+}
+
+.qsr_set_img {
+	background-position: -117px -88px;
+	width: 78px;
+}
+
+.bakery_set_img {
+	background-position: -192px -82px;
+}
+
+.court_set_img {
+	background-position: -293px -82px;
+}
+
+.truck_set_img {
+	background-position: -379px -82px;
+}
+
+.icecream_set_img {
+	background-position: -471px -82px;
+}
+
+.sweet_set_img {
+	background-position: -367px -169px;
+}
+
+.single_chn {
+	height: 32px;
+}
+
+.single_market,
+.chain_market,
+.retail_resp {
+	display: none;
+}
+
+.fmcg_set_img,
+.pharma_set_img1,
+.lubricants_set_img,
+.special_set_img {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png");
+	height: 90px;
+	margin: auto;
+	width: 106px;
+	margin-top: 10px;
+}
+
+.fmcg_set_img {
+	width: 115px;
+	background-position: -13px -170px;
+	right: 10px;
+	position: relative;
+}
+
+.pharma_set_img1 {
+	background-position: -196px 2px;
+}
+
+.lubricants_set_img {
+	background-position: -134px -170px;
+}
+
+.special_set_img {
+	background-position: -586px 2px;
+}
+
+.app_nam {
+	font-size: 13px;
+}
+
+.circule-playstore-icon,
+.circule-appstore-icon {
+	background: url(https://cdn-web.gofrugal.com/images/home-image/home-sprite.png) no-repeat;
+	height: 50px;
+	width: 50px;
+	background-position: -20px -545px;
+	display: inline-block;
+	margin: 5px;
+	float: right;
+	position: relative;
+	right: 15px;
+}
+
+.circule-playstore-icon {
+	background-position: -82px -545px;
+}
+
+.whatsnow_boost,
+.sellquick_boost,
+.sellsmart_boost,
+.insight_boost,
+.servquick_boost,
+.servjoy_boost,
+.mypulse_boost,
+.earnsmart_boost,
+.whatsnow_second,
+.insight_second,
+.whatsnow_third,
+.mypulse_first {
+	background: url(https://cdn-web.gofrugal.com/images/home-image/add-on-tab-sprite.png);
+	background-position: -13px -18px;
+	display: block;
+	width: 353px;
+	height: 227px;
+	float: right;
+}
+
+.sellquick_boost {
+	background-position: -64px -252px;
+	display: block;
+	height: 227px;
+	padding: 0;
+	width: 387px;
+}
+
+.sellsmart_boost {
+	background-position: -363px -17px;
+	display: block;
+	width: 353px;
+	height: 227px;
+}
+
+.insight_boost {
+	background-position: -459px -250px;
+	display: block;
+	width: 383px;
+	height: 227px;
+}
+
+.servquick_boost {
+	background-position: -6px -499px;
+	display: block;
+	width: 367px;
+	height: 227px;
+}
+
+.servjoy_boost {
+	background-position: -377px -501px;
+	display: block;
+	width: 355px;
+	height: 227px;
+}
+
+.mypulse_boost {
+	background-position: -16px -765px;
+	display: block;
+	width: 421px;
+	height: 227px;
+}
+
+.whatsnow_second {
+	background-position: -18px -1029px;
+	display: block;
+	height: 227px;
+	width: 353px;
+}
+
+.insight_second {
+	background-position: -400px -1030px;
+	display: block;
+	height: 227px;
+	width: 384px;
+}
+
+.earnsmart_boost {
+	background-position: -427px -765px;
+	display: block;
+	width: 356px;
+	height: 227px;
+}
+
+.whatsnow_third {
+	background-position: -26px -1276px;
+	display: block;
+	height: 227px;
+	width: 353px;
+}
+
+.mypulse_first {
+	background-position: -399px -1276px;
+	display: block;
+	height: 227px;
+	width: 380px;
+}
+
+.booster {
+	background-color: #f6f6f6;
+	border: 1px solid #e5e5e5;
+	height: 228px;
+	float: none;
+	margin: 0 auto;
+	max-width: 1063px;
+	display: inline-block;
+	padding: 0 0 0 15px;
+}
+
+.boost-left {
+	margin-top: 30px;
+	padding: 0px 0px 0px 30px;
+}
+
+.boost-center {
+	bottom: -150px;
+	display: inline-block;
+	right: 7px;
+}
+
+.boost-left>h2 {
+	font-size: 15px !important;
+	font-weight: bold !important;
+	text-align: left;
+}
+
+.boost-left>h4 {
+	font-size: 15px;
+	text-align: left;
+	position: relative;
+	top: -7px;
+	font-weight: 400;
+	line-height: 22px;
+}
+
+.booster_sellquick,
+.booster_sellsmart,
+.booster_insight,
+.booster_servjoy,
+.booster_mypulse,
+.booster_whatsnow1,
+.booster_insight1,
+.booster_insight2,
+.booster_whatsnow2,
+.booster_mypulse_ret {
+	display: none;
+}
+
+.booster_btn {
+	float: left;
+	margin-top: 0;
+	min-width: 125px;
+}
+
+.booster_arrow {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll -7px -612px;
+	display: block;
+	height: 35px;
+	margin-top: -86px;
+	position: absolute;
+	top: 67px;
+	width: 41px;
+}
+
+.booster_1 {
+	left: 122px;
+}
+
+.booster_2 {
+	left: 132px;
+	background-position: -48px -612px;
+}
+
+.booster_3 {
+	left: 311px;
+}
+
+.booster_res1 {
+	left: 122px;
+}
+
+.booster_res2 {
+	left: 117px;
+	background-position: -48px -612px;
+}
+
+.booster_res3 {
+	left: 284px;
+}
+
+.reg_cta {
+	margin-bottom: 75px;
+}
+
+.india_home_first {
+	margin-top: 40px;
+}
+
+.earnsmart_lines {
+	line-height: 13px !important;
+}
+
+.booster_arrow2 {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll -7px -612px;
+	display: block;
+	height: 86px;
+	width: 41px;
+}
+
+.booster_tab {
+	display: none;
+}
+
+.boosters_desk {
+	margin-top: 45px;
+}
+
+.business_boosters {
+	border-right: 1px solid #d3d3d3;
+	display: inline-block;
+	float: none;
+	margin-bottom: 20px;
+}
+
+.home_new_img {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll -152px -545px;
+	display: block;
+	height: 52px;
+	left: 41px;
+	top: 296px;
+	width: 37px;
+	z-index: 3;
+}
+
+svg {
+	position: relative;
+	right: 102px;
+	top: 274px;
+	-webkit-animation: mymove 4s;
+	/* Safari 4.0 - 8.0 */
+	-webkit-animation-iteration-count: infinite;
+	/* Safari 4.0 - 8.0 */
+	animation: mymove 4s;
+	animation-iteration-count: infinite;
+	z-index: 1;
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes mymove {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+@keyframes mymove {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+.pulsating-circle2 {
+	display: none;
+}
+
+.boosters_resp {
+	display: none
+}
+
+.app_nam {
+	cursor: pointer;
+}
+
+.gst-home-banner-sec {
+	background: url(https://cdn-web.gofrugal.com/images/home-image/gst-banner-bg.jpg);
+	height: 326px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gst-home-banner-content {
+	text-align: center;
+	padding-top: 31px;
+}
+
+.gst-home-banner-content img {
+	max-width: 457px;
+	width: 100%
+}
+
+.gst-home-btn {
+	background: #01A8FF;
+	color: #FFF;
+	margin: 6px 5px 0;
+	min-width: 228px;
+	padding: 5px 12px;
+}
+
+.gst-home-btn-link {
+	color: #FFF600;
+	font-size: 17px;
+	margin-top: 10px;
+	position: relative;
+	text-decoration: underline;
+	top: 5px;
+}
+
+/*mygoFrugal chat*/
+
+#live_chat {
+	bottom: 120px;
+	margin: 0;
+	position: fixed;
+	right: 33px;
+	width: 365px;
+	-webkit-box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.32);
+	-moz-box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.32);
+	box-shadow: 0px 11px 25px -2px rgba(0, 0, 0, 0.32);
+	border-radius: 6px;
+	z-index: 99999;
+	background: #fff;
+}
+
+.live_chat_img {
+	background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -666px -730px;
+	cursor: pointer;
+	display: block;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 165px;
+}
+
+.secion_one {
+	background-color: #283947;
+	padding-bottom: 3px;
+	padding-top: 14px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+.live_chat_content {
+	box-shadow: 1px 32px 5px 0px rgba(211, 211, 211, 1);
+}
+
+.secion_one>h4 {
+	color: #fff;
+	margin-top: 3px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 100;
+	font-family: helvetica;
+}
+
+.live_chat_form {
+	background-color: #F6F7F9;
+	border-radius: 6px;
+}
+
+.live_chat_form>form {
+	background-color: #F6F7F9;
+	padding-top: 40px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.form-control:focus {
+	box-shadow: none;
+}
+
+.chat_msg {
+	display: inline-block;
+	box-shadow: none;
+	padding: 6px 33px;
+	height: 40px;
+	margin: 25px 24px 25px 28px;
+	width: 60%;
+	font-size: 13px;
+}
+
+.chat_submit {
+	background-color: #fff;
+	border: 1px solid #d3d3d3;
+	box-shadow: none;
+	color: #808080;
+	margin-top: 5px;
+	max-width: 360px;
+	padding: 2px 9px;
+	position: relative;
+	border-radius: 5px;
+	opacity: 0.6;
+}
+
+.live_chat_submit {
+	margin-top: 25px;
+}
+
+.ndmsg,
+.loading-dots,
+.wave {
+	display: none;
+	height: 35px;
+}
+
+.thankyou_msg_live,
+.thankyou_live,
+#popup_notify {
+	display: none;
+}
+
+.thankyou_msg_live {
+	padding-bottom: 45px;
+	padding-top: 45px;
+}
+
+.thankyou_msg_live>h4 {
+	font-family: helvetica;
+	font-size: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	position: relative;
+	text-align: center;
+	top: -10px;
+}
+
+.st_msg {
+	height: 35px;
+}
+
+.app_img,
+.playstore_img,
+.sell_appstore-black,
+.sell_google_play-black {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/sellsmart/appstore-logo-min.png") repeat scroll 0 0;
+	border-radius: 10px;
+	display: inline-block;
+	height: 50px;
+	left: 17px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	transform: scale(0.7);
+	width: 163px;
+}
+
+.playstore_img,
+.sell_google_play-black {
+	background-position: 161px 100px;
+}
+
+.popup_form {
+	width: 275px;
+	position: relative;
+	top: 0px;
+}
+
+.form-control {
+	opacity: 1;
+}
+
+.form-control::-moz-placeholder,
+#emailID::-moz-placeholder,
+#mob_no::-moz-placeholder {
+	color: #808080;
+}
+
+.chat_msg::-webkit-input-placeholder,
+#emailID::-webkit-input-placeholder,
+#mob_no::-webkit-input-placeholder {
+	color: #808080;
+}
+
+audio {
+	display: none;
+}
+
+.sell_appstore-black_chat {
+	position: relative;
+	left: 12px;
+	display: table-cell;
+}
+
+.sell_google_play-black_chat {
+	left: 36px;
+	display: table-cell;
+}
+
+.ae-home-video-content {
+	font-size: 16px;
+	line-height: 1.7em;
+	padding: 0px 20px 0px 20px;
+	max-width: 494px;
+	display: inline-block;
+	color: #fff;
+}
+
+#new_cust_sec {
+	background-color: #2B3C4B;
+	padding-top: 30px;
+	padding-bottom: 53px;
+}
+
+.cust_inside {
+	display: block;
+	float: none;
+	margin: 36px auto 5px;
+	margin-top: 20px;
+}
+
+.cust-loop {
+	display: inline-block;
+	float: none;
+	margin: 0 auto;
+	min-width: 300px;
+}
+
+.cust_sec>h4,
+.cust_sec>h2 {
+	color: #fff;
+	text-align: center;
+}
+
+.cust1_img,
+.cust2_img,
+.cust3_img {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-videos.png") no-repeat scroll 0 0;
+	background-position: -103px -298px;
+	height: 240px;
+	width: 279px;
+	display: block;
+	margin: 0 auto;
+	border: 4px solid #000;
+}
+
+.cust2_img {
+	background-position: -675px -298px;
+}
+
+.cust3_img {
+	background-position: -390px -298px;
+}
+
+.cust-button {
+	background-color: #fff;
+	color: #000;
+	min-width: 290px;
+}
+
+.need-convince1 {
+	background-image: url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png");
+	background-position: -428px -321px;
+	cursor: pointer;
+	display: block;
+	float: right;
+	height: 102px;
+	margin-bottom: 0;
+	position: absolute;
+	right: -10px;
+	top: 271px;
+	width: 260px;
+}
+
+.modal-backdrop {
+	background: none;
+}
+
+.gst_modal_popup {
+	z-index: 2147483647;
+	background: transparent;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	top: -300px;
+	opacity: 0;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.gst_modal_popup.in {
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transform: translate3d(0, 000px, 0);
+	transform: translate3d(0, 00px, 0);
+	opacity: 0.92;
+	top: 0px;
+	bottom: inherit;
+}
+
+.gst_modal_popup .modal-dialog {
+	width: 100%;
+	margin: 0px;
+	background: #06689C;
+	color: #fff
+}
+
+.gst_modal_popup .modal-content {
+	background: transparent;
+}
+
+.gst_modal_popup .modal-header {
+	border-bottom: none
+}
+
+.gst_modal_popup h4 {
+	font-weight: 400;
+}
+
+.gst_modal_popup .close {
+	color: hsl(0, 0%, 100%);
+	float: right;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: unset;
+	opacity: 1;
+	text-shadow: unset;
+	margin-top: -11px;
+}
+
+.gst_reg_new {
+	background-image: url(https://cdn-web.gofrugal.com/images/home-image/home-sprite.png);
+	background-position: -12px -665px;
+	height: 129px;
+	margin-left: -125px;
+	margin-top: -69px;
+	position: absolute;
+	width: 127px;
+	cursor: pointer;
+}
+
+.gst-ready-arrow {
+	background-image: url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png");
+	background-position: -611px -212px;
+	height: 58px;
+	margin-left: -56px;
+	margin-top: -16px;
+	position: absolute;
+	width: 58px;
+}
+
+.gst-ready {
+	font-weight: 600;
+	position: relative;
+	top: 15px;
+	text-align: left;
+	font-size: 20px;
+	width: 360px;
+}
+
+.mod_head {
+	position: fixed;
+}
+
+.mod_second_head {
+	background: transparent none repeat scroll 0 0;
+}
+
+.header-background {
+	background: #06689c none repeat scroll 0 0;
+	color: #fff;
+	margin: 0;
+	width: 100%;
+	padding: 20px 0;
+	position: fixed;
+	z-index: 999999999;
+	top: -155px;
+	opacity: 0.92;
+}
+
+.header-background .close {
+	color: hsl(0, 0%, 100%);
+	float: right;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: unset;
+	margin-top: -11px;
+	opacity: 1;
+	text-shadow: unset;
+	right: 20px;
+	position: relative;
+}
+
+.live-top {
+	background-color: #397bf3;
+	border-radius: 12px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	width: 108px;
+}
+
+.live-top:hover {
+	color: #fff;
+}
+
+.home-banner-text {
+	color: #157dad;
+	font-size: 58px;
+	font-weight: 400;
+	line-height: 68px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	text-align: left
+}
+
+.banner_ctas {
+	text-align: left;
+}
+
+.req_quote {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #d3d3d3;
+}
+
+.new-banner {
+	background: url(https://cdn-web.gofrugal.com/images/home-images/bg-image.png);
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	background-repeat: no-repeat;
+}
+
+.business-img {
+	position: relative;
+	top: 62px;
+	transform: matrix3d(0.996195, 0, -0.0871557, 0, -0.00456138, 0.99863, -0.0521368, 0, 0.0870363, 0.052336, 0.994829, 0, 0, 0, 65, 1);
+	transform-origin: 50% 50% 0;
+	width: 100%;
+}
+
+.break {
+	margin-bottom: 2px;
+}
+
+.new_top {
+	height: 25px;
+	position: relative;
+	top: 2px;
+}
+
+.gst-update {
+	display: inline-block;
+	color: #fff;
+	font-weight: 600;
+}
+
+.gst-update1 {
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.business-img-res,
+.banner_ctas1 {
+	display: none;
+}
+
+.india-home-banner,
+.india-home-banner-mobile {
+	background: #e1effc;
+	/* Old Browsers */
+	background: -webkit-linear-gradient(bottom, #e1effc, #ffffff);
+	/*Safari 5.1-6*/
+	background: -o-linear-gradient(bottom, #e1effc, #ffffff);
+	/*Opera 11.1-12*/
+	background: -moz-linear-gradient(bottom, #e1effc, #ffffff);
+	/*Fx 3.6-15*/
+	background: linear-gradient(to top, #e1effc, #ffffff);
+	/*Standard*/
+}
+
+.announcement_pic {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll -101px -608px;
+	cursor: pointer;
+	display: inline-block;
+	height: 35px;
+	margin: auto;
+	width: 59px;
+	vertical-align: middle;
+}
+
+.home_articles {
+	padding: 75px 0;
+	text-align: center;
+	height: 430px;
+}
+
+.news-articles {
+	background-color: #fff;
+	display: block;
+	padding: 17px 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 300px;
+	width: 100%;
+	vertical-align: middle;
+	-moz-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+	height: 178px;
+	box-shadow: -1px 1px 6px 0px rgba(136, 136, 136, 0.47);
+}
+
+.home-news {
+	max-width: 1200px;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.news_img {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/article-sprite.jpg") repeat scroll -5px 6px;
+	display: block;
+	height: 65px;
+	margin: auto;
+	width: 193px;
+	text-align: center;
+}
+
+.news-2 {
+	background-position: -215px 6px;
+	width: 207px;
+}
+
+.news-3 {
+	background-position: -7px -58px;
+	width: 211px;
+}
+
+.news-4 {
+	background-position: -240px -58px;
+	width: 185px;
+}
+
+.news-5 {
+	background-position: -7px -131px;
+	width: 185px;
+}
+
+.news-6 {
+	background-position: -226px -124px;
+	width: 185px;
+}
+
+.news-7 {
+	background-position: -3px -186px;
+	width: 130px;
+}
+
+.news-8 {
+	background-position: -145px -186px;
+	width: 185px;
+}
+.news-9 {
+    background-position: 31px 111px;
+    width: 211px;
+}
+.news_cont {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	padding: 5px 11px 15px;
+	text-align: center;
+}
+
+.news_art {
+	color: #7FD086;
+	font-size: 12px;
+	font-weight: 700;
+	padding-right: 10px;
+	text-align: right;
+	display: none;
+}
+
+.news-articles:hover .news_art {
+	display: block;
+}
+
+.news-articles:hover {
+	transform: scale(1.1);
+}
+
+#logo-container {
+	margin-bottom: 25px;
+}
+
+/*UAE Page Re-wamp*/
+
+.uae_small {
+	float: left;
+	width: 132px;
+	display: none;
+}
+
+.uae_mobile2 {
+	left: -7px;
+	position: absolute;
+	top: 504px;
+}
+
+.uae_second {
+	display: none;
+}
+
+#slider-text {
+	padding-top: 40px;
+	display: block;
+}
+
+#slider-text .col-md-6 {
+	overflow: hidden;
+}
+
+#slider-text h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin: 30px auto;
+	padding-left: 40px;
+}
+
+#slider-text h2::after {
+	border-top: 2px solid #c7c7c7;
+	content: "";
+	position: absolute;
+	bottom: 35px;
+	width: 100%;
+}
+
+#itemslider h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	margin: 10px auto 3px;
+}
+
+#itemslider h5 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 3px auto 2px;
+}
+
+#itemslider h6 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	;
+	font-size: 10px;
+	margin: 2px auto 5px;
+}
+
+.badge {
+	background: #b20c0c;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	line-height: 31px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	border: 2px solid #FFF;
+	box-shadow: 0 0 0 1px #b20c0c;
+	top: 5px;
+	right: 25%;
+}
+
+#slider-control img {
+	padding-top: 76px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+	#slider-control img {
+		padding-top: 70px;
+		margin: 0 auto;
+	}
+}
+
+.carousel-showmanymoveone .carousel-control {
+	width: 4%;
+	background-image: none;
+}
+
+.carousel-showmanymoveone .carousel-control.left {
+	margin-left: -43px;
+}
+
+.carousel-showmanymoveone .carousel-control.right {
+	margin-right: -43px;
+}
+
+.carousel-showmanymoveone .cloneditem-1,
+.carousel-showmanymoveone .cloneditem-2,
+.carousel-showmanymoveone .cloneditem-3,
+.carousel-showmanymoveone .cloneditem-4,
+.carousel-showmanymoveone .cloneditem-5 {
+	display: none;
+}
+
+@media all and (min-width: 768px) {
+	.carousel-showmanymoveone .carousel-inner>.active.left,
+	.carousel-showmanymoveone .carousel-inner>.prev {
+		left: -50%;
+	}
+	.carousel-showmanymoveone .carousel-inner>.active.right,
+	.carousel-showmanymoveone .carousel-inner>.next {
+		left: 50%;
+	}
+	.carousel-showmanymoveone .carousel-inner>.left,
+	.carousel-showmanymoveone .carousel-inner>.prev.right,
+	.carousel-showmanymoveone .carousel-inner>.active {
+		left: 0;
+	}
+	.carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+		display: block;
+	}
+}
+
+@media all and (min-width: 768px) and (transform-3d),
+all and (min-width: 768px) and (-webkit-transform-3d) {
+	.carousel-showmanymoveone .carousel-inner>.item.active.right,
+	.carousel-showmanymoveone .carousel-inner>.item.next {
+		-webkit-transform: translate3d(50%, 0, 0);
+		transform: translate3d(50%, 0, 0);
+		left: 0;
+	}
+	.carousel-showmanymoveone .carousel-inner>.item.active.left,
+	.carousel-showmanymoveone .carousel-inner>.item.prev {
+		-webkit-transform: translate3d(-50%, 0, 0);
+		transform: translate3d(-50%, 0, 0);
+		left: 0;
+	}
+	.carousel-showmanymoveone .carousel-inner>.item.left,
+	.carousel-showmanymoveone .carousel-inner>.item.prev.right,
+	.carousel-showmanymoveone .carousel-inner>.item.active {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		left: 0;
+	}
+}
+
+@media all and (min-width: 992px) {
+	.carousel-showmanymoveone .carousel-inner>.active.left,
+	.carousel-showmanymoveone .carousel-inner>.prev {
+		left: -16.666%;
+	}
+	.carousel-showmanymoveone .carousel-inner>.active.right,
+	.carousel-showmanymoveone .carousel-inner>.next {
+		left: 16.666%;
+	}
+	.carousel-showmanymoveone .carousel-inner>.left,
+	.carousel-showmanymoveone .carousel-inner>.prev.right,
+	.carousel-showmanymoveone .carousel-inner>.active {
+		left: 0;
+	}
+	.carousel-showmanymoveone .carousel-inner .cloneditem-2,
+	.carousel-showmanymoveone .carousel-inner .cloneditem-3,
+	.carousel-showmanymoveone .carousel-inner .cloneditem-4,
+	.carousel-showmanymoveone .carousel-inner .cloneditem-5,
+	.carousel-showmanymoveone .carousel-inner .cloneditem-6 {
+		display: block;
+	}
+}
+
+@media all and (min-width: 992px) and (transform-3d),
+all and (min-width: 992px) and (-webkit-transform-3d) {
+	.carousel-showmanymoveone .carousel-inner>.item.active.right,
+	.carousel-showmanymoveone .carousel-inner>.item.next {
+		-webkit-transform: translate3d(16.666%, 0, 0);
+		transform: translate3d(16.666%, 0, 0);
+		left: 0;
+	}
+	.carousel-showmanymoveone .carousel-inner>.item.active.left,
+	.carousel-showmanymoveone .carousel-inner>.item.prev {
+		-webkit-transform: translate3d(-16.666%, 0, 0);
+		transform: translate3d(-16.666%, 0, 0);
+		left: 0;
+	}
+	.carousel-showmanymoveone .carousel-inner>.item.left,
+	.carousel-showmanymoveone .carousel-inner>.item.prev.right,
+	.carousel-showmanymoveone .carousel-inner>.item.active {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		left: 0;
+	}
+}
+
+.carousel-inner>.item {
+	background-color: #F3F6FA;
+}
+
+.item .active {
+	background-color: :#F3F6FA;
+}
+
+.carousel-control {
+	display: table;
+}
+
+#wrap-carousel {
+	padding-left: 58px;
+	padding-top: 20px;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.caroufredsel_wrapper {
+	margin: 0 auto;
+}
+
+#carousel .news-articles {
+	height: 178px;
+	margin: 0px;
+	float: left;
+	display: block;
+	margin-top: 20px !important;
+	margin-bottom: 10px !important;
+	max-width: 242px;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+	position: relative;
+	left: -5px
+}
+
+#prev-cust,
+#next-cust,
+.left-resp,
+.right-resp {
+	background: transparent url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll;
+	text-indent: -999px;
+	display: block;
+	overflow: hidden;
+	width: 44px;
+	height: 86px;
+	position: absolute;
+	top: 82px;
+}
+
+#prev-cust {
+	background-position: -160px -608px;
+	left: 1px;
+}
+
+#next-cust {
+	background-position: -160px -608px;
+	right: 0px;
+}
+
+.left-resp {
+	background-position: -167px -608px;
+}
+
+.right-resp {
+	background-position: -207px -608px;
+}
+
+.soln-land #wrap-carousel {
+	border-top: 1px solid #D6D6D6;
+	padding-left: 72px;
+	padding-top: 40px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.soln-land .caroufredsel_wrapper {
+	margin: 0 auto;
+}
+
+.soln-land #carousel .news-articles {
+	width: 200px;
+	height: 200px;
+	margin: 0px;
+	float: left;
+	display: block;
+}
+
+.soln-land #prev-cust,
+#next-cust {
+	background: transparent url(https://cdn-web.gofrugal.com/images/right-arrow.png ) no-repeat 10px 0px;
+	text-indent: -999px;
+	display: block;
+	overflow: hidden;
+	width: 44px;
+	height: 86px;
+	position: absolute;
+	top: 52px;
+	transform: scale(0.6)
+}
+
+.soln-land #prev-cust {
+	background-position: 0 0;
+	left: 1px;
+}
+
+.soln-land #next-cust {
+	background-position: -44px 0;
+	right: 0px;
+}
+
+.sliderview {
+	background-color: #F3F6FA;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	display: block;
+}
+
+.sliderview1 {
+	background-color: #F3F6FA;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	display: none;
+}
+
+.home-container {
+	margin-bottom: 110px;
+	margin-top: 90px;
+}
+
+a:hover {
+	color: #23527c;
+	text-decoration: none;
+}
+
+#close {
+	background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -608px 598px;
+	width: 18px;
+	height: 29px;
+	position: absolute;
+	left: 93%;
+	top: 10px;
+	cursor: pointer;
+}
+
+#popup_gofrugal {
+	/* background-image: url("https://cdn-web.gofrugal.com/images/global-sprite.png");
+	background-position: -658px -637px; */
+	cursor: pointer;
+	height: 90px;
+	margin: 0;
+	position: fixed;
+	right: 30px;
+	width: 80px;
+	;
+}
+
+.popup_close {
+	background-position: -731px -637px !important;
+}
+
+.uae_quote,
+.uae_quote_cust {
+	font-size: 17px;
+}
+
+.uae_quote_cust1 {
+	font-size: 13px;
+	top: -3px;
+	position: relative;
+}
+
+.uae_request_resp a {
+	color: #fff;
+}
+
+.home-banner-text-2 {
+	top: 0px;
+	position: relative;
+}
+
+.uae_left,
+.uae_right {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll -203px -552px;
+	display: inline-block;
+	height: 38px;
+	margin-left: -20px;
+	position: relative;
+	width: 48px;
+}
+
+.uae_left {
+	top: 10px;
+}
+
+.uae_right {
+	background-position: -253px -552px;
+	margin-left: 4px;
+	position: absolute;
+}
+
+.container-fluid-uae {
+	background: #382e5b;
+	/* Old Browsers */
+	background: -webkit-linear-gradient(left, #382e5b, #008cc7);
+	/*Safari 5.1-6*/
+	background: -o-linear-gradient(left, #382e5b, #008cc7);
+	/*Opera 11.1-12*/
+	background: -moz-linear-gradient(left, #382e5b, #008cc7);
+	/*Fx 3.6-15*/
+	background: linear-gradient(to right, #382e5b, #008cc7);
+	/*Standard*/
+	height: 407px;
+	color: #fff !important;
+}
+
+.container-fluid-uae {
+	position: relative;
+	z-index: 0;
+	color: #fff;
+	font-family: Open Sans;
+	margin: 0 0 0px;
+	padding: 00px 20px 0px;
+	text-align: center;
+}
+
+.container-fluid-uae:after {
+	background: inherit;
+	content: "";
+	display: block;
+	height: 34%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+	-webkit-backface-visibility: hidden;
+}
+
+.container-fluid-uae:after {
+	bottom: 0;
+	-webkit-transform: skewY(-3.5deg);
+	transform: skewY(-3.5deg);
+	-webkit-transform-origin: 103%;
+	transform-origin: 103%;
+	/*transform-origin: 103% 43% 0;*/
+}
+
+.home-banner-uae {
+	color: #fff;
+	font-size: 42px;
+	font-weight: 400;
+	line-height: 54px;
+	text-align: left;
+	max-width: 550px;
+	    margin-top: 30px;
+}
+
+.extra-gradient {
+	background: #382e5b;
+	/* Old Browsers */
+	background: -webkit-linear-gradient(left, #382e5b, #1485c7);
+	/*Safari 5.1-6*/
+	background: -o-linear-gradient(left, #382e5b, #1485c7);
+	/*Opera 11.1-12*/
+	background: -moz-linear-gradient(left, #382e5b, #1485c7);
+	/*Fx 3.6-15*/
+	background: linear-gradient(to right, #382e5b, #1485c7);
+	/*Standard*/
+	bottom: -79px;
+	height: 41px;
+	left: 54px;
+	position: absolute;
+	transform: skewY(-3.5deg);
+	transform-origin: 55% 50% 0;
+	width: 97%;
+	z-index: 1;
+	width: calc(100vw - 54px);
+}
+
+.extra-gradient1,
+.extra-gradient2 {
+	background: #375497;
+	/* Old Browsers */
+	background: -webkit-linear-gradient(left, #375497, #008CC7);
+	/*Safari 5.1-6*/
+	background: -o-linear-gradient(left, #375497, #008CC7);
+	/*Opera 11.1-12*/
+	background: -moz-linear-gradient(left, #375497, #008CC7);
+	/*Fx 3.6-15*/
+	background: linear-gradient(to right, #375497, #008CC7);
+	/*Standard*/
+	bottom: -133px;
+	height: 69px;
+	left: 0;
+	position: absolute;
+	transform: skewY(-3.3deg);
+	transform-origin: 56% 50% 0;
+	width: 65.333%;
+	z-index: 0;
+}
+
+.extra-gradient2 {
+	bottom: -137px;
+	height: 36px;
+	z-index: 3;
+}
+
+.extra-gradient3 {
+	background-color: #dee4ea;
+	bottom: -87px;
+	height: 32px;
+	position: absolute;
+	right: 0px;
+	transform: skewY(-3.6deg);
+	transform-origin: 56% 50% 0;
+	width: 34.2%;
+}
+
+.backdrop-uae,
+.backdrop-uae1 {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/uae-home-vat-sprite.png") repeat scroll -8px -216px;
+	display: inline-block;
+	height: 547px;
+	position: absolute;
+	width: 211px;
+}
+
+.backdrop-uae {
+	left: 9px;
+}
+
+.backdrop-uae1 {
+	background-position: -251px -347px;
+	height: 400px;
+	right: 93px;
+	width: 213px;
+}
+
+.uae-home-vat {
+	padding: 30px 0 0;
+	display: flex;
+    align-items: center;
+
+}
+
+.business-img-uae {
+	position: relative;
+	left: -25px;
+	top: -40px;
+}
+
+.uae_h2 {
+	text-align: left;
+	font-weight: 300;
+	line-height: 30px;
+	font-size: 20px;
+	margin-top: 0;
+	max-width: 450px;
+}
+
+.uae_cta {
+	background-color: #FF6600;
+	float: left;
+}
+
+.banner_icons {
+	background: rgba(0, 0, 0, 0) url("https://cdn-web.gofrugal.com/images/home-image/uae-home-vat-sprite.png") repeat scroll -313px -236px;
+	display: inline-block;
+	height: 49px;
+	margin-left: -754px;
+	margin-top: 335px;
+	position: absolute;
+	width: 55px;
+}
+
+.banner_icons1 {
+	background-position: -371px -314px;
+	margin-left: -677px;
+	margin-top: 387px;
+}
+
+.banner_icons2 {
+	background-position: -456px -321px;
+	margin-left: -554px;
+	margin-top: 400px;
+}
+
+.banner_icons3 {
+	background-position: -409px -238px;
+	margin-left: -593px;
+	margin-top: 328px;
+}
+
+.banner_icons4 {
+	background-position: -350px -144px;
+	margin-left: -725px;
+	margin-top: 232px;
+}
+
+.banner_icons5 {
+	background-position: -425px -159px;
+	margin-left: -586px;
+	margin-top: 221px;
+}
+
+.banner_icons6 {
+	background-position: -365px -52px;
+	margin-left: -628px;
+	margin-top: 133px;
+}
+
+.banner_icons7 {
+	background-position: -667px -279px;
+	margin-left: -110px;
+	margin-top: 376px;
+}
+
+.banner_icons8 {
+	background-position: -751px -239px;
+	margin-left: -36px;
+	margin-top: 401px;
+}
+
+.banner_icons9 {
+	background-position: -596px -255px;
+	margin-left: -140px;
+	margin-top: 306px;
+}
+
+.banner_icons10 {
+	background-position: -682px -145px;
+	height: 60px;
+	margin-left: -90px;
+	margin-top: 223px;
+}
+
+.banner_icons11 {
+	background-position: -583px -171px;
+	margin-left: -158px;
+	margin-top: 180px;
+}
+
+.banner_icons12 {
+	background-position: -637px -80px;
+	margin-left: -89px;
+	margin-top: 110px;
+}
+
+.vatbox-container-fluid {
+	margin-top: 60px;
+	text-align: center;
+	background-color: #F3F6FA;
+	padding: 40px 15px;
+}
+
+.vat_container {
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 700px;
+	width: 100%;
+	font-weight: 500;
+}
+
+.vat_wrap {
+	background-color: #fff;
+	border-radius: 5px;
+	max-width: 1200px;
+	width: 100%;
+	margin: 40px auto;
+	padding: 40px 0;
+}
+
+.vatbox_img {
+	background: url(https://cdn-web.gofrugal.com/images/home-image/banner-sprite.png);
+	background-position: 10px -2px;
+	display: inline-block;
+	height: 360px;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+	width: 478px;
+}
+
+.vatbox_img1 {
+	background-position: -442px -16px;
+}
+
+.vatbox_img2 {
+	background-position: 10px -373px;
+	height: 360px;
+}
+
+.vatbox_img3 {
+	background-position: -442px -352px;
+	height: 360px;
+}
+
+.vatbox_con {
+	font-size: 22px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	max-width: 400px;
+	width: 100%;
+}
+
+.vatbox_con>h3 {
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+.vatbox_con>h4 {
+	font-weight: 400;
+	margin-top: 0;
+}
+
+.vat_list {
+	text-align: left;
+	font-size: 15px;
+	left: 15px;
+	position: relative;
+}
+
+.vat_cta {
+	margin: 0px 0 0;
+	background-color: #535353;
+	float: none;
+}
+
+.uae-chevron {
+	margin-top: 180px !important;
+}
+
+.home-banner-text-3 {
+	color: #000;
+	text-align: left;
+}
+
+.home-banner-text-2 {
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.vatbox_mob,
+.uae_mob,
+.uae_cta_mobi {
+	display: none;
+}
+
+.vat_head {
+	font-weight: 500;
+	line-height: 36px;
+	font-size: 37px;
+}
+
+.btn-default1 {
+	color: #333;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+.uae_download_cta,.uae_vat_cta{
+	background-color: #397bf3; 
+    padding: 8px 12px;
+    margin: 10px 3px 0;
+}
+
+.uae_vat_cta {
+	background-color: #fff;
+	color: #000;
+}
+
+#hero-wrapper {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#hero-wrapper .carousel-wrapper,
+#hero-carousel {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#hero-carousel img {
+	left: 0;
+	bottom: 0;
+	max-width: none;
+	width: auto;
+	height: auto;
+	width: 100%;
+}
+
+#hero-carousel i {
+	position: absolute;
+	top: 50%;
+}
+
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+.banner-flow-content {
+	position: absolute;
+	top: 23%;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+}
+
+.common-sol {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	margin: 40px 20px 11px 20px;
+}
+
+.solutions-banner {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ret-spe {
+	background: url(https://cdn-web.gofrugal.com/images/home-image/home-sprite.png);
+	background-position: -247px 176px;
+	width: 130px;
+	height: 93px;
+	display: inline-block;
+	position: relative;
+	opacity: 1;
+	top: 53px;
+	z-index: 99;
+}
+
+.res-spe {
+	background-position: -384px 176px;
+}
+
+.dis-spe {
+	background-position: -509px 176px;
+}
+
+.ret-con {
+	font-weight: 500;
+	color: #fff;
+	font-size: 25px;
+}
+
+.banner-flow-content h1 {
+	font-size: 65px;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+.banner-flow-content h3 {
+	font-size: 30px;
+	margin-top: 0;
+	font-weight: 500;
+}
+
+.new-arrow {
+	top: 50%;
+}
+
+.new-left,
+.new-right {
+	background: url(https://cdn-web.gofrugal.com/images/home-image/home-sprite.png);
+	background-position: -324px 273px;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+}
+
+.new-right {
+	background-position: -404px 273px;
+	left: 35%;
+}
+
+.all_images {
+	width: 100%;
+	height: 772px;
+	display: block;
+	background-size: cover;
+	background-position: center center;
+}
+
+.common-green {
+	background-color: rgba(0, 174, 25, 0.7);
+}
+
+.common-red {
+	background-color: rgba(255, 0, 0, 0.7);
+}
+
+.common-yellow {
+	background-color: rgba(255, 205, 0, 0.7);
+}
+
+.common-green:hover {
+	background-color: rgba(0, 174, 25, 1);
+}
+
+.common-red:hover {
+	background-color: rgba(255, 0, 0, 1);
+}
+
+.common-yellow:hover {
+	background-color: rgba(255, 205, 0, 1);
+}
+
+.ret-con:hover {
+	background-color: transparent !important;
+}
+
+.green-banner:hover .ret-con {
+	color: rgba(0, 174, 25, 1);
+}
+
+.red-banner:hover .ret-con {
+	color: rgba(255, 0, 0, 1);
+}
+
+.yellow-banner:hover .ret-con {
+	color: rgba(255, 205, 0, 1);
+}
+
+.footer-subscribe {
+	margin-top: 35px;
+}
+
+.footer-cta,
+.footer-cta:hover,
+.footer-cta:focus,
+.footer-cta:active {
+	background-color: #397BF3;
+	color: #fff;
+}
+
+.footer_mail::placeholder {
+	color: #939393;
+}
+
+.footer_mail {
+	color: #000;
+}
+
+.subscription-thankyou {
+	display: none;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+/*slide*/
+
+.slick-slide {
+	width: 305 !important;
+}
+
+/* carousel */
+
+.media-carousel {
+	margin-bottom: 0;
+	padding: 0 40px 30px 40px;
+	margin-top: 40px;
+}
+
+/* Previous button  */
+
+.media-carousel .carousel-control.left {
+	background: transparent url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll;
+	text-indent: -999px;
+	display: block;
+	overflow: hidden;
+	width: 44px;
+	height: 48px;
+	position: absolute;
+	top: 82px;
+	background-position: -161px -608px;
+}
+
+/* Next button  */
+
+.media-carousel .carousel-control.right {
+	background: transparent url("https://cdn-web.gofrugal.com/images/home-image/home-sprite.png") repeat scroll;
+	text-indent: -999px;
+	display: block;
+	overflow: hidden;
+	width: 44px;
+	height: 48px;
+	position: absolute;
+	top: 82px;
+	background-position: -206px -608px;
+}
+
+/* Changes the position of the indicators */
+
+.media-carousel .carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+
+/* Changes the colour of the indicators */
+
+.media-carousel .carousel-indicators li {
+	background: #c0c0c0;
+}
+
+.media-carousel .carousel-indicators .active {
+	background: #333333;
+}
+
+/* End carousel */
+
+.news-12 {
+	background-position: -339px -186px;
+	width: 146px;
+}
+
+.live-top {
+	display: inline-block;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+.ahar_home_cover {
+	background-image: url("https://cdn-web.gofrugal.com/images/aahar-banner.jpg");
+	height: 243px;
+	width: 100%;
+	background: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.aahar-content1 {
+	color: #eee207;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.aahar-content2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.aahar-content4 {
+	font-weight: bold;
+	margin-top: 7px;
+}
+
+.aahar-content5 {
+	background: #32a901;
+	max-width: 356px;
+	margin: auto;
+	text-align: center;
+}
+
+.aahar-event-banner-sec {
+	margin-bottom: 40px;
+}
+
+.yb-top-content-announcement {
+	display: none;
+}
+
+.yb-top-content {
+	font-size: 24px;
+	margin: 10px auto;
+	font-weight: bold;
+}
+
+.yb-top-content a {
+	color: #3379f9;
+	margin-right: 15px;
+}
+
+.yb-top-content span {
+	color: #ff0000;
+}
+
+.yb-top-content-announcement button{
+	margin: 10px;
+	font-size: 25px;
+	margin-right: 19px;
+}
+.close:focus, .close {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.yb-top-content a {
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+  }
+.yb-top-content a:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 2px solid;
+  margin-top: 2px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.yb-top-content a:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.yb-top-content a {
+	text-decoration: underline;
+}
+@media (max-width:1199px){
+	#cf4a img{width: 93%;}
+		.uae_download_cta, .uae_vat_cta{
+		    min-width:  215px;
+	}
+}
+@media (max-width: 767px) {
+	.yb-top-content {
+		font-size: 15px;
+	}
+}
+
+
+.cust-test-icon-sec .text-center{
+	text-align: center;
+	margin-top:60px;
+	color:#676767db;
+}
+.cust-test-icon-sec{
+	border-bottom: 1px solid #9e9a9a47;
+}
+
+.cust-test-icon-sec #logo-container{
+	margin: 0px;	
+}
+/*Header New style*/
+.navbar-nav>li>a{
+	padding:0;
+	margin: 15px 10px;	
+}

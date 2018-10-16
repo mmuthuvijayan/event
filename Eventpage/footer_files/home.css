@@ -1,0 +1,2734 @@
+@charset "utf-8";
+/* CSS Document */
+	#popup_gofrugal {
+		background: url(https://cdn-web.gofrugal.com/images/new-chat-icon.svg);
+		bottom: 20px;
+		right: 8px;
+		z-index: 999999998;
+		height: 44px;
+		width: 44px;
+		border-radius: 5px;
+		border: 3px solid #2659b7;
+		background-color: #00a2ff;
+		background-repeat: no-repeat;
+		padding: 26px;
+		background-position: 12px 14px;
+	}
+	.chat-ani{
+		animation-name: chat-ani;
+		animation-duration: 1s;
+		transition: ease-in-out;
+	}
+	@keyframes chat-ani{
+		0%{
+			right:-100px;
+		}
+		100%{
+			right: 8px;
+		}
+	}
+@media all and (max-width:725px) {
+	.blog-banner-img1 {
+		top: 85px;
+	}
+}
+
+@media all and (max-width: 1640px) {
+	.uae-home-banner {
+		left: 50%;
+	}
+	.uae-banner-img {
+		left: 5%;
+	}
+	.banner_icons {
+		margin-left: -632px;
+		margin-top: 362px;
+	}
+	.banner_icons1 {
+		margin-left: -617px;
+		margin-top: 450px;
+	}
+	.banner_icons2 {
+		margin-left: -516px;
+		margin-top: 379px;
+	}
+	.banner_icons3 {
+		margin-left: -534px;
+		margin-top: 322px;
+	}
+	.banner_icons4 {
+		margin-left: -600px;
+		margin-top: 213px;
+	}
+	.banner_icons5 {
+		margin-left: -520px;
+		margin-top: 242px;
+	}
+	.banner_icons6 {
+		margin-left: -528px;
+		margin-top: 139px;
+	}
+	.banner_icons7 {
+		background-position: -667px -279px;
+		margin-left: -110px;
+		margin-top: 376px;
+	}
+	.banner_icons8 {
+		background-position: -751px -239px;
+		margin-left: -36px;
+		margin-top: 401px;
+	}
+	.banner_icons9 {
+		background-position: -596px -255px;
+		margin-left: -140px;
+		margin-top: 306px;
+	}
+	.banner_icons10 {
+		background-position: -682px -145px;
+		height: 60px;
+		margin-left: -90px;
+		margin-top: 223px;
+	}
+	.banner_icons11 {
+		background-position: -583px -171px;
+		margin-left: -158px;
+		margin-top: 180px;
+	}
+	.banner_icons12 {
+		background-position: -637px -80px;
+		margin-left: -89px;
+		margin-top: 110px;
+	}
+	.extra-gradient {
+		bottom: -83px;
+	}
+	.extra-gradient3 {
+		bottom: -94px;
+	}
+	.all_images {
+		height: 700px;
+	}
+	.banner-flow-content {
+		top: 20%;
+	}
+	.banner-flow-content h1 {
+		font-size: 55px;
+	}
+	
+}
+
+@media all and (max-width: 1600px) {
+	#corporate-video {
+		width: 68%;
+		max-width: 525px;
+	}
+	.customer-store-img {
+		max-width: 400px;
+		top: -34px;
+	}
+	.corporate-video_img {
+		width: 60%;
+	}
+	.blog-banner-content>h2 {
+		margin-top: 30px;
+	}
+	#restaurant_section>.col-md-offset-3 {
+		margin-left: 15%
+	}
+}
+
+@media all and (min-width: 1400px) {
+	.moving-building-bg {
+		animation: animatedBackground 50s linear infinite;
+	}
+	.customer-logo {
+		height: 642px;
+		padding: 0;
+		background-size: cover;
+	}
+	.customer-logo>div {
+		height: 230px;
+	}
+	.customer-logo>div>div {
+		width: 655px;
+		max-width: 655px;
+		font-size: 34px;
+		line-height: 42px;
+	}
+	.copy-right span {
+		padding-left: 12.333333%;
+	}
+	.copy-right p {
+		margin-right: 12.33333333%;
+	}
+	.customer-store-img {
+		right: 4%
+	}
+	.blog-banner-content>h2 {
+		margin-top: 20px;
+	}
+}
+
+@media all and (max-width: 1400px) {
+	.hq-heading>div>div {
+		top: 0px
+	}
+	.blog-banner-img1 {
+		top: 63px;
+		width: 125%;
+	}
+	.corporate-video_img {
+		width: 50%;
+	}
+	#restaurant_section>.col-md-offset-3 {
+		margin-left: 10%;
+	}
+	#yearbegin-process>div>div {
+		max-width: 800px;
+	}
+	.gst-home-banner-sec {
+		background-position: left -200px center;
+	}
+	#live_chat {
+		bottom: 44px;
+		transform: scale(0.85);
+	}
+	.extra-gradient1,
+	.extra-gradient2 {
+		bottom: -122px;
+	}
+	.extra-gradient2 {
+		bottom: -126px;
+	}
+	.extra-gradient {
+		bottom: -75px;
+	}
+	.business-img-uae {
+		top: -45px;
+	}
+	.extra-gradient3 {
+		bottom: -86px;
+	}
+	.footer-subscribe {
+		width: 245px;
+	}
+}
+
+@media all and (max-width: 1320px) {
+	.footer {
+		height: 495px;
+	}
+	#chat {
+		height: 67vh;
+		bottom: 90px;
+	}
+	.extra-gradient {
+		bottom: -75px;
+	}
+	.all_images {
+		height: 573px;
+	}
+	.banner-flow-content {
+		top: 14%;
+	}
+}
+
+@media only screen and (max-width: 1320px) and (max-height: 600px) {
+	.banner-flow-content {
+		top: 14%;
+	}
+	.banner-flow-content h1 {
+		font-size: 57px;
+		font-weight: 300;
+	}
+	.banner-flow-content h3 {
+		font-size: 28px;
+		font-weight: 300;
+	}
+}
+
+@media only screen and (max-width: 1320px) and (min-width: 1200px) {
+	.popup_gofrugal {
+		bottom: 6px;
+		z-index: 1;
+	}
+	#popup_notify {
+		bottom: 33px;
+		z-index: 2;
+	}
+	.tW,
+	.tW1 {
+		bottom: 0;
+		z-index: 0;
+	}
+}
+
+@media all and (max-width: 1300px) {
+	.blog-banner-img1 {
+		top: 70px;
+	}
+	#restaurant_section>.col-md-offset-3 {
+		margin-left: 5%;
+	}
+	.uae-home-banner {
+		left: 52%;
+	}
+}
+
+@media all and (max-width: 1240px) {
+	.blog3 {
+		display: none
+	}
+	.home_disp_tab_content {
+		width: 600px;
+	}
+	.home_disp_tab_content h4 {
+		font-size: 17px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.blog-banner-img1 {
+		width: 150%;
+	}
+	.corporate-video_img {
+		padding: 40px 0px;
+	}
+	.slide_img_width {
+		width: 100%;
+	}
+	.customer-store-img {
+		top: -14px;
+		width: 84%;
+		right: 3%;
+	}
+	.cust-text {
+		padding: 0px 0px;
+		margin: 15px 0px;
+	}
+	#section8>div>div>.col-md-12:nth-child(1) {
+		margin-top: 50px;
+	}
+	.home-left-quote {
+		left: 30px;
+	}
+	.mobile_cta {
+		display: inline-block;
+	}
+	.desk_cta {
+		display: none;
+	}
+	.home-mygofrugal-video_img,
+	#uae_map {
+		width: 100%;
+	}
+	.home-customers-logos {
+		width: 100%;
+	}
+	#restaurant_section>.col-md-offset-3 {
+		margin-left: 1%;
+	}
+	.earnsmart_feature_img {
+		right: -80px;
+	}
+	.home_disp_tab_content {
+		width: 575px;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	.home-mygofrugal-video_img {
+		height: 331px;
+		width: 508px;
+	}
+	.product_new_logo {
+		left: 105px;
+	}
+	.home_hide_desk_content {
+		display: none;
+	}
+	.home_disp_tab_content {
+		display: inline-block;
+		float: none;
+		width: 628px;
+	}
+	.home_disp_tab_content h4 {
+		font-size: 18px;
+	}
+	.cust-video-content-tab {
+		display: none;
+	}
+	.uae-banner-img {
+		left: 0%;
+	}
+	.uae_images,
+	.uae-banner-res>span,
+	.uae-tab,
+	#banner-slides-tab,
+	.uae-printer,
+	.printer_anim {
+		display: none;
+	}
+	.uae_cta_mob {
+		display: inline-block;
+	}
+	.uae_first_banner {
+		margin-bottom: 0px;
+	}
+	.popup_notify {
+		display: none;
+	}
+	.app_nam {
+		font-size: 11px;
+	}
+	.mypulse_business_con {
+		width: 123px;
+	}
+	.fmcg_con {
+		width: auto;
+	}
+	.whatsnow_boost {
+		left: 0px;
+	}
+	.sellquick_boost,
+	.mypulse_boost {
+		width: 384px;
+	}
+	.earnsmart_business_con {
+		width: 127px;
+	}
+	.fmcg_set_img {
+		right: 0px;
+	}
+	.booster_1,
+	.booster_2,
+	.booster_3 {
+		display: none;
+	}
+	.booster_res1,
+	.booster_res2,
+	.booster_res3,
+	.booster_tab {
+		display: block;
+	}
+	.boost-center {
+		right: 0px;
+	}
+	svg,
+	.pulsating-circle::before {
+		right: 80px;
+	}
+	.home_new_img {
+		left: 26px;
+	}
+	#chat {
+		height: 67vh;
+		bottom: 110px;
+	}
+	.need-convince1 {
+		right: 12px;
+		top: 194px;
+	}
+	.cust-loop {
+		margin-bottom: 20px;
+	}
+	.icon-white {
+		padding: 6px 10px 10px 6px;
+	}
+	.navbar .dropdown-menu::after {
+		top: -8px;
+	}
+	.dropdown-menu {
+		top: 90%;
+	}
+	.banner_ctas {
+		text-align: left;
+	}
+	.home-banner-text {
+		font-size: 54px;
+	}
+	.home-container {
+		width: 100%;
+	}
+	.business-img {
+		max-width: 650px;
+		width: 100%;
+		top: 100px;
+	}
+	.business-img-uae {
+		top: -17px;
+		max-width: 391px;
+	}
+	.extra-gradient {
+		bottom: -66px;
+	}
+	.extra-gradient1,
+	.extra-gradient2 {
+		bottom: -109px;
+	}
+	.extra-gradient2 {
+		bottom: -114px;
+	}
+	.backdrop-uae {
+		background-position: -8px -262px;
+	}
+	.print-uae {
+		left: -168px;
+		top: 195px;
+	}
+	.home_articles {
+		height: 620px;
+	}
+	.home-banner-uae {
+		font-size: 30px;
+		line-height: 47px;
+	}
+	.carousel-control {
+		display: block;
+	}
+	.sliderview1 {
+		display: block;
+	}
+	.sliderview {
+		display: none;
+	}
+	.uae_banner {
+		display: none;
+	}
+	.uae_content {
+		float: none;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+	.banner_ctas-uae {
+		text-align: center;
+	}
+	.new-banner-uae {
+		padding-bottom: 50px;
+	}
+	.nav>li:last-child {
+		display: block;
+	}
+	.carousel-control.left,
+	.carousel-control.right {
+		background-image: none;
+	}
+	.uae-chevron {
+		margin-top: -20px !important;
+	}
+	.vatbox_con>h3 {
+		font-size: 22px;
+	}
+	.vat_head {
+		font-size: 32px;
+	}
+	.day_img {
+		margin-left: 104px;
+	}
+	.day_num {
+		margin-left: 172px;
+	}
+	.banner-flow-content {
+		top: 18%;
+	}
+	.banner-flow-content h1 {
+		font-size: 52px;
+	}
+	.banner-flow-content h3 {
+		font-size: 24px;
+	}
+	.common-sol {
+		width: 150px;
+		height: 150px;
+	}
+	.ret-spe {
+		transform: scale(0.7);
+		top: 30px;
+	}
+	.ret-con {
+		font-size: 20px;
+	}
+	.new-arrow {
+		top: 0%;
+	}
+	.aahar-section {
+		width: 100%;
+	}
+	.yb-top-content a {
+		text-decoration: underline;
+	}
+}
+
+@media only screen and (min-width:750px) and (max-width: 992px) {
+	.vat_head {
+		padding: 0 5px;
+	}
+	.ahar_home_cover {
+		align-items: center;
+		flex-direction: row-reverse;
+		background-position: center center;
+	}
+}
+
+@media only screen and (min-width:625px) and (max-width: 834px) {
+	.ahar_home_cover {
+		background-position: -298px;
+		flex-direction: initial;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width:992px) and (max-width: 1200px) {
+	.india-home-banner>.container {
+		width: 992px;
+		padding: 0px;
+	}
+	.home-banner-content,
+	.home-banner-img,
+	.uae-banner-img,
+	.uae-home-banner {
+		padding: 0px;
+	}
+	.supermarket_set_img {
+		height: 75px;
+		background-position: -8px -7px;
+	}
+	.need-convince1 {
+		right: 12px;
+		top: 267px;
+	}
+}
+
+@media all and (max-width:1100px) {
+	#desktop-footer {
+		display: none;
+	}
+	#footer {
+		height: auto;
+	}
+	#mobile-footer {
+		display: block;
+	}
+	.video-title>img {
+		width: 100%;
+	}
+	.corporate-video_img {
+		width: 65%;
+	}
+	#blog-section>div>.fp-scrollable {
+		height: auto !important;
+	}
+	#customer-story>img {
+		margin-top: 40px;
+	}
+	#restaurant_section h2,
+	#distribution_section h2,
+	#retail_section h2 {
+		font-size: 32px;
+	}
+	.gst_img {
+		margin-left: 160px;
+	}
+	.uae-home-banner {
+		left: 38%;
+	}
+	.uae-banner-img>h3 {
+		position: relative;
+		top: 0px;
+	}
+	.uae-home-banner {
+		margin-top: 46px;
+		top: -111px;
+	}
+	.gst_reg_new {
+		display: inline-block;
+		width: 86px;
+		height: 96px;
+		background-size: auto 561px;
+		background-position: -9px -461px;
+		margin-left: -90px;
+		margin-top: -55px;
+	}
+}
+
+@media all and (max-width: 1082px) {
+	/*.icon-white{
+		color:#fff;
+	}*/
+	.navbar-inverse {
+		background-color: #3d5164;
+		border-color: #3d5164;
+	}
+	.gst-home-banner-content {
+		float: right;
+	}
+	.gst-home-banner-sec {
+		background-position: left -270px center;
+	}
+	.new_top {
+		display: none;
+		visibility: hidden;
+	}
+	.nav.navbar-nav.navbar-right {
+		top: -10px;
+		position: relative;
+	}
+}
+
+@media all and (max-width: 1075px) {
+	.nav-area .menu li:first-child {
+		width: 140px
+	}
+	.nav-area .menu li:nth-child(2) {
+		width: 135px
+	}
+	.nav-area .menu li a span,
+	.nav-area-fnb .menu li a span,
+	.nav-area-snd .menu li a span {
+		background: none;
+		display: none;
+	}
+	.nav-area .menu {
+		width: 785px;
+		margin: 0 auto;
+	}
+	.nav-area-fnb .menu {
+		width: 512px;
+	}
+	.nav-area .menu li {
+		text-align: center;
+		width: 95px;
+	}
+	.nav-area-fnb .menu li {
+		text-align: center;
+		width: 125px;
+	}
+}
+
+@media all and (max-width:1024px) {
+	.supported-device-bg>div {
+		display: none;
+	}
+	.banner-content>h1 {
+		font-size: 30px;
+	}
+	.buz-solution,
+	.banner-btn {
+		margin-top: 0px;
+	}
+	.buz-solution ul {
+		font-size: 36px;
+	}
+	.ban-btn {
+		margin-top: 15px;
+	}
+	.banner-content {
+		height: 220px;
+	}
+	.uae-desk-cta {
+		display: none !important;
+	}
+	.uae-mob-cta {
+		display: inline-block !important;
+	}
+}
+
+@media all and (max-width:992px) {
+	.uae-home-vat{
+		padding: 30px 0;
+	}
+	.uae-home-vat .col-md-7{
+		margin: auto;
+		text-align: center;		
+	}
+	.uae_download_cta, .uae_vat_cta{
+		    max-width:  215px;
+	}
+	#navHeaderMenu>li:nth-child(4) {
+		display: none;
+	}
+	.blog-banner-img {
+		float: left;
+		left: 10%;
+		position: relative;
+	}
+	.blog-banner-img1 {
+		float: right;
+		position: relative;
+		right: 10%;
+		width: auto;
+	}
+	.nav-area-snd .menu {
+		left: 0;
+	}
+	.blog-banner-content,
+	.blog-banner-img {
+		width: auto;
+		left: auto;
+		right: auto;
+	}
+	#blog-section>div:first-child {
+		background-position: center bottom;
+	}
+	.customer-store-img {
+		display: none;
+	}
+	.uae-customers-logos,.uae-customers-logos-mob {
+		width: 100%;
+	}
+	#uae-banner,
+	#home-banner {
+		height: 480px;
+		margin: 20px 0px 20px 0px;
+		margin-top: 100px;
+	}
+	.blog-posts>div>div {
+		padding: 0px 0px;
+	}
+	.corporate-video_img {
+		padding: 30px 0px;
+	}
+	#customer-story>div {
+		background: none;
+		color: #000;
+	}
+	.home-left-quote,
+	.home-right-quote {
+		display: none;
+	}
+	.cust-text {
+		color: #000;
+	}
+	#registration-box,
+	#thanku-box {
+		margin-top: 40px;
+	}
+	#customer-story>img {
+		margin-top: 20px;
+	}
+	.home-video-content {
+		padding: 20px 20px 0px 20px;
+	}
+	#customer-story>.col-md-12>.col-md-6>.cust-text>span:nth-child(3) {
+		padding: 0px;
+	}
+	#customer-story>.col-md-12 {
+		padding: 20px;
+	}
+	#customer-story>.col-md-12>.col-md-6 {
+		padding: 0px;
+	}
+	.mobile-quote {
+		display: inline-block;
+	}
+	.blog-banner-content>p {
+		padding: 0px 20px
+	}
+	.blog-banner-img1 {
+		top: 30px
+	}
+	.home-mygofrugal>div>div>.col-md-6:nth-child(1) {
+		margin-top: 0px;
+	}
+	.inline-mobile-prefix {
+		top: 80px;
+	}
+	.home-mygofrugal>div>.col-md-6:nth-child(1) {
+		top: 50px;
+	}
+	#customer-story {
+		padding: 60px 0px 60px 0px;
+	}
+	.global_cust_count {
+		bottom: 90px;
+	}
+	.uae-customer-logo>div {
+		padding: 0px 15px 0px 15px;
+	}
+	.customer-collateral-btn {
+		bottom: 30px;
+	}
+	.business_boosters>.col-md-2,
+	.restaurant_section>.col-md-2,
+	.distribution_section>.col-md-2,
+	.retail_section>.col-md-2 {
+		margin: 10px 0px;
+	}
+	#restaurant_feature_section>.col-md-12,
+	#retail_feature_section>.col-md-12,
+	#distribution_feature_section>.col-md-12 {
+		margin-top: 25px;
+	}
+	#restaurant_section,
+	#distribution_section,
+	#retail_section {
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
+	#retail_feature_section>.col-md-12 {
+		padding: 0px;
+	}
+	.restaurant_section>.col-md-2:nth-child(3),
+	.retail_section>.col-md-2:nth-child(3) {
+		border: none;
+	}
+	.cust-video-section {
+		margin: 0px
+	}
+	.vertical_tab_reg {
+		display: block
+	}
+	.know_more_btn {
+		margin-top: 5px
+	}
+	/*.home_disp_tab_content>div>a>div {
+    margin-left: -15px;
+}*/
+	.home-mygofrugal-video_img {
+		display: none;
+	}
+	.product-video-mobile {
+		display: inline-block;
+	}
+	.home-product-video {
+		padding: 40px 10px 40px 10px;
+	}
+	.home-video-content {
+		padding: 20px 0px;
+	}
+	.home-banner-content {
+		left: auto;
+		margin: 40px 0px;
+		text-align: center;
+		width: auto;
+		position: inherit;
+	}
+	.uae-home-banner {
+		left: auto;
+		text-align: center;
+		width: auto;
+		position: inherit;
+	}
+	.uae-home-banner {
+		left: auto;
+		text-align: center;
+		width: auto;
+		position: inherit;
+	}
+	.india-home-banner-mobile {
+		background: url("/images/home-images/home-banner-bg.jpg");
+		background-position: left bottom;
+		background-repeat: no-repeat;
+	}
+	.home-banner-img-desk {
+		display: none;
+	}
+	.home-banner-img-mobile {
+		display: inline-block;
+	}
+	.home-banner-content>h1,
+	.home-banner-content>h3,
+	.uae-home-banner>h1,
+	.uae-home-banner>h3 {
+		display: none;
+	}
+	.home-banner-img>h1 {
+		font-size: 56px;
+		margin-bottom: 25px;
+		max-width: 550px;
+		display: block;
+		margin: 0 auto;
+	}
+	.home-banner-img>h3 {
+		font-size: 20px;
+		margin-top: 10px;
+		display: block;
+	}
+	.india-home-banner>.container {
+		width: 100%;
+		padding: 0px;
+	}
+	#homepage-banner>.col-md-12,
+	.india-home-banner-mobile,
+	.uae-banner-img {
+		padding: 0px;
+	}
+	.home-banner-content {
+		margin: 20px 0px 60px 0px;
+	}
+	.india-home-banner-mobile,
+	.uae-banner-img {
+		margin-top: 80px;
+	}
+	.home_disp_tab_content>h2 {
+		font-size: 28px;
+	}
+	.home_disp_tab_content>h3 {
+		font-size: 24px;
+	}
+	.gst_img>img {
+		margin-left: 0;
+		margin-top: 174px;
+		position: absolute;
+		z-index: 2147483647;
+	}
+	.gst_img>div {
+		width: 1px;
+		background-color: #fff;
+		height: 100px;
+	}
+	.home-banner-img>h1,
+	.uae-banner-img>h1 {
+		font-size: 44px;
+	}
+	.gst_img {
+		margin-top: -290px;
+		max-width: 106px;
+		width: 100%;
+		margin-left: 366px;
+	}
+	#yearbegin-process>div>div {
+		max-width: 425px;
+	}
+	#home_desk_reg_btn,
+	.uae_request {
+		display: none;
+	}
+	#home_mob_reg_btn,
+	.uae_request_resp {
+		display: block;
+	}
+	.uae-home-banner {
+		margin-top: 0px;
+	}
+	.vertical-cust-testimonial {
+		max-width: 700px;
+	}
+	.uae-banner-res {
+		top: 8px;
+	}
+	.earnsmart_business_con {
+		width: auto;
+	}
+	.booster {
+		display: none;
+	}
+	.reg_cta {
+		margin-bottom: 60px;
+		margin-top: 30px;
+	}
+	.sq_l,
+	.ss_l,
+	.is_l,
+	.wn1_l,
+	.wn2_l,
+	.is1_l,
+	.is3_l,
+	.mp_l,
+	.sj_l {
+		opacity: 1;
+	}
+	.boosters_desk {
+		margin-top: 30px;
+	}
+	svg,
+	.pulsating-circle::before {
+		display: none;
+	}
+	.gst-home-banner-sec {
+		background-position: left -370px center;
+	}
+	.gst-ready {
+		width: auto;
+		text-align: center;
+		left: 0;
+	}
+	.need-convince1 {
+		top: 99px;
+	}
+	.home-banner-text {
+		text-align: center;
+		font-size: 46px;
+		line-height: 51px;
+		margin-bottom: 20px;
+	}
+	.banner_ctas,
+	.home-banner-text-2 {
+		text-align: center
+	}
+	.new-banner {
+		background: rgba(0, 0, 0, 0) url("/images/home-images/bg-image.png") no-repeat scroll right -387px bottom 43px / cover;
+		text-align: center;
+	}
+	header {
+		height: 70px;
+	}
+	.new_top {
+		display: none !important;
+	}
+	.business-img {
+		top: -13px;
+	}
+	.banner_ctas {
+		display: none;
+	}
+	.banner_ctas1,
+	#gst_section_mobile {
+		display: block;
+	}
+	.home-banner-text-1 {
+		display: block;
+		font-size: 30px;
+	}
+	.banner_ctas1_desk,
+	.gradients,
+	.banner_icons {
+		display: none;
+	}
+	.home-container {
+		margin-top: 15px;
+	}
+	.home_articles {
+		height: auto;
+	}
+	.news_art {
+		display: block;
+	}
+	.print-uae {
+		left: 0;
+		top: 226px;
+	}
+	.uae_second {
+		display: block;
+	}
+	.india_home_first_uae {
+		border-top: 1px solid #eee;
+	}
+	.news-articles {
+		margin-left: 17px;
+	}
+	.home-banner-text-3 {
+		text-align: center;
+	}
+	.home-banner-text-1 {
+		margin-top: 65px;
+	}
+	.container-fluid-uae {
+		all: unset;
+		background: #382e5b;
+		/* Old Browsers */
+		background: -webkit-linear-gradient(left, #382e5b, #008cc7);
+		/*Safari 5.1-6*/
+		background: -o-linear-gradient(left, #382e5b, #008cc7);
+		/*Opera 11.1-12*/
+		background: -moz-linear-gradient(left, #382e5b, #008cc7);
+		/*Fx 3.6-15*/
+		background: linear-gradient(to right, #382e5b, #008cc7);
+		/*Standard*/
+		position: relative;
+		height: 400px;
+		display: block;
+		transform: none;
+	}
+	.container-fluid-uae::after {
+		all: unset
+	}
+	.backdrop-uae,
+	.backdrop-uae1 {
+		height: 400px;
+	}
+	.uae_cta {
+		float: none;
+		display: block;
+		margin: 10px auto;
+	}
+	.uae_h2 {
+		font-size: 19px;
+		text-align: center;
+		color: #fff;
+		margin: auto
+	}
+	.backdrop-uae {
+		background-position: -82px -262px;
+		width: 127px;
+		left: 0px;
+	}
+	.backdrop-uae1 {
+		background-position: -251px -347px;
+		right: 0;
+		width: 135px;
+	}
+	.vatbox-container-fluid {
+		margin-top: 0px;
+	}
+	.vatbox_img {
+		display: none;
+	}
+	.vatbox_mob,
+	.uae_mob {
+		display: block;
+	}
+	.vatbox_img {
+		background-size: 684px auto;
+		max-width: 360px;
+		width: 100%;
+		height: 262px;
+	}
+	.vatbox_img1 {
+		background-position: -1040px -16px;
+	}
+	.vatbox_img2 {
+		background-position: 2px -271px;
+	}
+	.vatbox_img3 {
+		background-position: -1040px 237px
+	}
+	.vatbox_con>h4 {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.vatbox_con {
+		text-align: center;
+		max-width: 445px;
+	}
+	.vat_cta {
+		float: none;
+	}
+	.vat_wrap {
+		margin: 0px auto 20px;
+		padding: 0 0 20px;
+	}
+	.carousel-indicators {
+		bottom: -78px;
+	}
+	.vat_list {
+		display: none;
+	}
+	.home-banner-uae {
+		text-align: center;
+		margin-top: 40px;
+	}
+	.uae_cta_desk {
+		display: none;
+	}
+	.uae_cta_mobi {
+		display: block;
+		margin: 10px auto;
+	}
+	.vatbox_img1,
+	.vatbox_img3 {
+		max-width: 320px;
+	}
+	.day_img {
+		margin-left: 30px;
+	}
+	.day_num {
+		margin-left: 97px;
+	}
+	.banner-flow-content {
+		top: 20%;
+	}
+	.common-sol {
+		width: 125px;
+		height: 125px;
+	}
+	.ret-spe {
+		transform: scale(0.6);
+		top: 15px;
+	}
+	.ret-con {
+		font-size: 20px;
+	}
+	.banner-flow-content h1 {
+		font-size: 47px;
+	}
+	.banner-flow-content h3 {
+		font-size: 22px;
+	}
+	.new-left {
+		left: 25%;
+	}
+	.sg-blog-section{
+		margin-bottom: 10px;
+	}
+}
+
+@media all and (min-width:992px) {
+	.business_boosters:hover {
+		color: #000;
+	}
+}
+
+@media all and (max-width:980px) {
+	.company-info {
+		margin-bottom: 40px;
+	}
+	.company-detail {
+		width: 90%;
+		margin: auto;
+	}
+	.customer-testimonial>div:first-child {
+		width: 90%;
+	}
+	#corporate-video {
+		width: 70%
+	}
+	.blog-banner-img {
+		left: 5%;
+	}
+	.blog-banner-img1 {
+		right: 5%;
+	}
+	.news-articles {
+		margin-left: 4px;
+	}
+}
+
+@media all and (max-width:836px) {
+	.arrow_up {
+		z-index: 999999;
+	}
+	.icon-white_res {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width:790px) {
+	.uae-home-banner {
+		display: block;
+		float: none;
+		left: 0;
+		margin: 0 auto;
+		padding-bottom: 51px;
+		top: 0;
+	}
+}
+
+@media only screen and (min-width:1000px) and (max-width: 1024px) {
+	.news-3 {
+		background-position: -9px -58px;
+		width: 217px;
+		transform: scale(0.8);
+		margin-left: -9px;
+	}
+	.news-2 {
+		transform: scale(0.9);
+		margin-left: -4px;
+	}
+}
+
+@media all and (max-width:768px) {
+	.container {
+		padding: 0px;
+	}
+	header #main-header {
+		padding: 0px;
+	}
+	.navbar-fixed-top {
+		position: fixed;
+		top: auto;
+	}
+	a.nav-expander {
+		position: relative;
+		top: auto;
+	}
+	.customer-quote {
+		margin: 140px auto 0px;
+	}
+	#secondry-no,
+	.removeglow {
+		display: none;
+	}
+	.hq-heading {
+		padding: 40px 0px 70px 0px;
+	}
+	.moving-building-bg {
+		animation: animatedBackground 200s linear infinite;
+	}
+	.hq-stripe {
+		display: none;
+	}
+	.banner-content {
+		top: 50px;
+	}
+	.home-assure-contact {
+		display: none;
+	}
+	.corporate-video_img {
+		padding: 25px 0px;
+	}
+	.corporate-video_img {
+		width: 80%;
+	}
+	.blog-banner-img {
+		left: 0%;
+	}
+	.blog-banner-img1 {
+		right: 0%;
+	}
+	.assure_index {
+		padding-right: 15px !important;
+	}
+	.country_dropdown {
+		left: -10px;
+	}
+	.country_dropdown-content {
+		margin-left: -26px;
+	}
+	#back-top {
+		bottom: 75px;
+		right: 8px;
+	}
+	#uae-banner>div>h1,
+	#home-banner>div>h1 {
+		font-size: 28px;
+	}
+	.business_boosters>.col-md-2,
+	.restaurant_section>.col-md-2,
+	.distribution_section>.col-md-2,
+	.retail_section>.col-md-2 {
+		font-size: 12px;
+	}
+	.assure_uae {
+		left: -18px;
+	}
+	.assure_home_mobile {
+		padding-right: 0px;
+	}
+	#restaurant_section>.col-md-offset-3 {
+		margin-left: 0%;
+	}
+	.uae_assure_header {
+		padding-right: 0;
+	}
+	#business_boosters,
+	#restaurant_section,
+	#distribution_section,
+	#retail_section {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.uae-banner-res {}
+	.vertical-cust-testimonial {
+		max-width: 400px;
+	}
+	.gst-home-banner-content {
+		display: inline-block;
+		float: right;
+	}
+	.gst-home-banner-sec {
+		background-position: left -516px center;
+	}
+	header {
+		height: 65px;
+	}
+	.uae-banner-res {
+		background: rgba(0, 0, 0, 0) url("/images/home-images/uae/uae-banner-visual-mobile.png");
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		display: block;
+		height: 205px;
+		position: relative;
+		text-align: center;
+		width: 348px;
+		margin-top: -20px;
+		display: block;
+		margin: 0 auto;
+	}
+	.carousel-showmanymoveone .carousel-control.right {
+		margin-right: 5px;
+	}
+	.carousel-showmanymoveone .carousel-control.left {
+		margin-left: 5px;
+	}
+	.news-articles {
+		margin-left: 15px;
+	}
+	.banner-flow-content {
+		top: 22%;
+	}
+	#back-top span {
+		display: none
+	}
+}
+
+@media all and (max-width:767px) {
+	#popup_gofrugal {
+		padding: 21px;
+   	 	background-position: 5px 9px;
+    	border: 2px solid #2659b7;
+	}
+	.reg_cta{
+		margin-top: 0px;
+	}
+	.india_home_first{
+		margin-top: 0px;
+	}
+	#business_boosters, #restaurant_section, #distribution_section{
+		    margin-top: 30px;
+	}
+	.retail_size,.app_nam{
+		text-decoration: underline;
+	}
+	.home-banner-uae{
+		margin-bottom: 15px
+	}
+	.uae_download_cta, .uae_vat_cta{
+		    margin-bottom: 10px!important;
+		    margin-top: 0!important;
+	}
+	
+}
+
+@media all and (max-width:750px) {
+	.vertical-double-quote-left,
+	.vertical-double-quote-right,
+	.day_num,
+	.day_img {
+		display: none;
+	}
+	.business_boosters {
+		border: none;
+	}
+	.print-desk {
+		display: none;
+	}
+	#popup_gofrugal,
+	#live_chat,
+	.rE1,
+	.rE2 {
+		display: block;
+	}
+	.business_boosters {
+		border: none;
+	}
+	.home-container {
+		margin-top: 0;
+	}
+	.new-banner {
+		background: rgba(0, 0, 0, 0) url("/images/home-images/bg-image.png") no-repeat scroll right -165px bottom 60px / cover;
+	}
+	.business-img {
+		width: 359px;
+	}
+	.home-banner-text {
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 31px;
+		margin-bottom: 10px;
+	}
+	.brand-logo {
+		top: -2px;
+	}
+	.icon-white {
+		padding: 17px 10px 10px 6px;
+	}
+	.hamburger--slider .hamburger-inner {
+		top: 10px;
+	}
+	.icon-small {
+		top: 28px;
+	}
+	.home-banner-text-2 {
+		font-size: 16px;
+	}
+	.home-banner-text-1 {
+		font-size: 22px;
+	}
+	.home_articles>h2 {
+		font-size: 21px;
+	}
+	.print-mob {
+		display: inline;
+		left: 100px;
+		top: 109px;
+	}
+	.news-articles {
+		margin: 0 auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.home-banner-uae {
+		margin-top: 20px;
+	}
+	.all_images {
+		height: 410px;
+	}
+	.common-sol {
+		margin: 20px 20px 11px 20px;
+	}
+	.banner-flow-content {
+		top: 18%;
+	}
+	.common-sol {
+		width: 100px;
+		height: 100px;
+	}
+	.ret-spe {
+		transform: scale(0.5);
+		top: 5px;
+		left: -14px;
+	}
+}
+
+@media all and (max-width:725px) {
+	.home-right-quote,
+	.home-left-quote {
+		display: none;
+	}
+	/*#uae-banner {
+    height: 480px;
+    margin:40px 0px -115px 10px;
+
+}*/
+	#corporate-video {
+		width: 80%;
+	}
+	.blog-banner-img {
+		float: none
+	}
+	.blog-banner-img1 {
+		display: none;
+	}
+	#Mapretail,
+	#Maprest,
+	#MapDist {
+		display: none;
+	}
+	#uae-seo-section {
+		padding: 0px 20px;
+		text-align: center;
+	}
+	#section1 {
+		background-position: center !important;
+	}
+	.sg_header {
+		left: 4px;
+	}
+}
+
+@media all and (max-width:680px) {
+	.uae_call_desktop {
+		display: none;
+	}
+	.uae_call_mob {
+		display: block;
+		width: 200px;
+	}
+	.uae_call_header {
+		width: 210px;
+	}
+	.assure_uae {
+		display: none;
+	}
+	.uae_assure_header {
+		width: 120px;
+	}
+	.need-convince1 {
+		display: none;
+	}
+	.gst_section {
+		display: none;
+	}
+	header {
+		height: 53px;
+	}
+	.print-mob {
+		left: 38px;
+	}
+	.new-left {
+		left: 13%;
+	}
+	.banner-flow-content {
+		top: 11%;
+	}
+}
+
+@media all and (max-width:625px) {
+	.mobile-banner {
+		display: block;
+		font-size: 30px;
+		line-height: 34px;
+	}
+	.video-container video {
+		display: none;
+	}
+	.banner-content>h1,
+	.banner-content>h1+div {
+		display: none;
+	}
+	.banner-container {
+		height: 385px;
+		min-height: 385px;
+		padding: 0;
+		background-size: cover;
+		background: -webkit-linear-gradient(left top, #3c223f, #1d5b73);
+		/* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, #3c223f, #1d5b73);
+		/* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right, #3c223f, #1d5b73);
+		/* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, #3c223f, #1d5b73);
+		/* Standard syntax (must be last) */
+	}
+	.video-container {
+		position: relative;
+		display: table;
+		width: 100%;
+		height: 385px;
+		background-size: auto 500px;
+		background-position: top center;
+	}
+	.banner-content {
+		color: white;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+		height: inherit;
+		position: relative;
+		top: 15px;
+		width: 100%;
+	}
+	.customer-logo {
+		display: table;
+		height: 400px;
+		padding: 0;
+		background-size: cover;
+		background-position: bottom center;
+	}
+	.customer-logo>div {
+		display: table-cell;
+		vertical-align: middle;
+		height: auto;
+		position: relative;
+	}
+	.customer-logo>div>div {
+		font-size: 24px;
+	}
+	.yearbegin-process-content>span:first-child {
+		display: none;
+	}
+	.yearbegin-process-content a>span {
+		font-size: 16px;
+	}
+	.yearbegin-process-content>div {
+		right: 10px;
+	}
+	.pos-content {
+		font-size: 24px;
+	}
+	#customer-story>img {
+		margin-top: 10px;
+	}
+	.cust-text {
+		font-size: 18px;
+	}
+	/*#uae-banner{
+	margin:40px 0px 0px 0px;
+}*/
+	.video-title {
+		font-size: 24px;
+		margin-top: 20px;
+	}
+	.video-title>img {
+		width: 100%
+	}
+	#retail-slide,
+	#restaurant-slide,
+	#distribution-slide {
+		margin: 25px;
+	}
+	.whats-now-img {
+		display: none;
+	}
+	.app-link {
+		padding: 0px;
+	}
+	#registration-box,
+	#thanku-box {
+		margin-top: 20px;
+	}
+	.uae-customer-logo>img,
+	#customer-story>img {
+		width: 80%;
+	}
+	#corporate-video {
+		width: 100%;
+	}
+	.corporate-video_img {
+		padding: 20px 0px;
+	}
+	.cust-text+div {
+		font-size: 20px;
+	}
+	.home-mygofrugal>div>div>div>h4 {
+		line-height: 1.5em
+	}
+	#back-top {
+		bottom: 110px;
+	}
+	.uae-customer-logo>div {
+		font-size: 22px;
+	}
+	.uae-customer-logo>img {
+		width: 75%;
+	}
+	.inline-mobile-prefix {
+		top: 60px;
+	}
+	.home-mygofrugal>div>.col-md-6:nth-child(1) {
+		top: 30px;
+	}
+	.assure_num {
+		display: none;
+	}
+	.brand-logo {
+		display: none;
+		display: none;
+		transform: none;
+	}
+	.brand-logo-responsive {
+		background-image: url("https://cdn-web.gofrugal.com/images/home-images/Logo-Dark-White-Sprite.svg");
+		background-position: -2px -214px;
+		background-repeat: no-repeat;
+		display: block;
+		height: 37px;
+		margin-top: 6px;
+		width: 155px;
+		z-index: 0;
+	}
+	.home_gofrugal_mobile,
+	.home_sellquick_img_mobile,
+	.home_sellsmart_img_mobile,
+	.home_servquick_img_mobile,
+	.home_servjoy_img_mobile,
+	.home_mypulse_img_mobile,
+	.home_earnsmart_img_mobile,
+	.home_whatsnow_img_mobile,
+	.rpos_label7_mobile,
+	.rpos_label6_mobile,
+	.hq_label_mobile,
+	.truepos_label_mobile,
+	.distribution_label_mobile,
+	.integration_label_mobile {
+		display: block;
+	}
+	.home_gofrugal,
+	.home_sellquick_img,
+	.home_sellsmart_img,
+	.home_servquick_img,
+	.home_servjoy_img,
+	.home_mypulse_img,
+	.home_earnsmart_img,
+	.home_whatsnow_img,
+	.rpos_label7,
+	.rpos_label6,
+	.hq_label,
+	.truepos_label,
+	.distribution_label,
+	.integration_label,
+	.home_gofrugal_truepos,
+	.rest_hq_label {
+		display: none;
+	}
+	.product_new_logo {
+		left: 68px;
+		top: -7px;
+	}
+	.home-mygofrugal-video_img {
+		width: 100%;
+	}
+	.home_disp_tab_content {
+		width: auto !important;
+		padding: 10px 10px;
+	}
+	#home-banner {
+		height: auto !important;
+	}
+	.home-product-video {
+		padding: 10px 0;
+	}
+	#logo-container {
+		margin: 0px
+	}
+	.gst_reg_new_dist {
+		margin-left: -20px;
+		margin-top: -48px;
+	}
+	.gst_reg_new_retail {
+		margin-left: -42px;
+		margin-top: -45px;
+	}
+	.home-banner-uae {
+		font-size: 31px;
+		line-height: 42px;
+	}
+	.uae_h2 {
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 28px;
+	}
+	.uae-chevron-right {
+		margin-right: -30px;
+	}
+	.uae-chevronn-left {
+		margin-left: -30px;
+	}
+	.vat_head {
+		font-size: 28px;
+	}
+	.vat_container {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.vatbox_con {
+		max-width: 360px;
+		padding: 0 10px;
+	}
+	.vatbox_con>h3 {
+		font-size: 17px;
+	}
+	.vatbox_con>h4 {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.vatbox-container-fluid {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.vat_list {
+		left: 12px;
+	}
+	.vat_list li::before {
+		position: relative;
+		left: -1px;
+	}
+	.uae-chevron {
+		display: none !important;
+	}
+	.vat_list {
+		font-size: 14px;
+	}
+	.uae_h2 {
+		display: none;
+	}
+	.banner-flow-content {
+		top: 21%;
+	}
+	.common-sol {
+		width: 90px;
+		height: 90px;
+	}
+	.ret-spe {
+		transform: scale(0.5);
+		top: -2px;
+		left: -19px;
+	}
+	.ret-con {
+		font-size: 15px;
+		position: relative;
+		top: -8px;
+	}
+	.common-sol {
+		margin: 20px 10px 11px 10px;
+	}
+	.banner-flow-content h3 {
+		font-size: 19px;
+		font-weight: 500;
+	}
+	#hero-carousel i {
+		left: 24px;
+	}
+	.new-left,
+	.new-right {
+		top: 79%;
+	}
+	.new-right {
+		left: -94%;
+	}
+	.new-left {
+		left: 45%;
+	}
+	.banner-flow-content h1 {
+		font-size: 40px;
+	}
+	.ahar_home_cover {
+		align-items: center;
+		background-position: -465px;
+		justify-content: center;
+	}
+}
+
+@media all and (max-width:560px) {
+	.retail_bg_circule+div>span:nth-child(2) {
+		float: left;
+		padding-left: 15px;
+		padding-top: 5px;
+	}
+	#desktop_retail_feature_section>.col-md-12>.retail_feature,
+	#desktop_restaurant_feature_section>.col-md-12>.restaurant_feature,
+	#desktop_distribution_feature_section>.col-md-12>.distribution_feature {
+		width: 100%;
+		padding: 5px 0px 5px 0px;
+		border-bottom: 1px solid #e5e5e5;
+		float: left;
+		margin-left: 30px;
+		margin-top: 0px;
+	}
+	#desktop_restaurant_feature_section>.col-md-12>.restaurant_feature {
+		border-bottom: 1px solid #fff;
+	}
+	.supermarket_logo_mob,
+	.departmental_store_logo_mob,
+	.pharma_logo_mob,
+	.apparel_footware_logo_mob,
+	.electrical_electronics_logo_mob,
+	.lifestyle_fashion_logo_mob,
+	.specialized_retail_logo_mob,
+	.restaurant_bar_logo_mob,
+	.qsr_logo_mob,
+	.bakery_logo_mob,
+	.food_court_logo_mob,
+	.packaged_food_logo_mob,
+	.lubricants_logo_mob,
+	.pharma_healthcare_logo_mob,
+	.specialized_distribution_logo_mob {
+		display: inline-block;
+	}
+	.retail_feature>div>span,
+	.restaurant_feature>div>span,
+	.distribution_feature>div>span {
+		float: left;
+		margin-left: 15px;
+	}
+	#retail_feature_section>h3,
+	#restaurant_feature_section>h3,
+	#distribution_feature_section>h3 {
+		margin-top: 0px;
+	}
+	.retail_feature>div>span:nth-child(2),
+	.restaurant_feature>div>span:nth-child(2),
+	.distribution_feature>div>span:nth-child(2) {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 15px;
+	}
+	#desktop_restaurant_feature_section>.col-md-12>.restaurant_feature:last-child,
+	#desktop_retail_feature_section>.col-md-12>.retail_feature:last-child,
+	#desktop_distribution_feature_section>.col-md-12>.distribution_feature:last-child {
+		border: none;
+	}
+	#restaurant_feature_section>.col-md-12,
+	#retail_feature_section>.col-md-12,
+	#distribution_feature_section>.col-md-12 {
+		margin-top: 5px;
+		margin-right: 50px;
+	}
+	.business_boosters>.col-md-2,
+	.restaurant_section>.col-md-2,
+	.retail_section>.col-md-2 {
+		width: 32%;
+		padding: 5px;
+	}
+	.distribution_section>.col-md-2 {
+		width: 48.5%;
+		padding: 5px;
+		display: inline-block;
+	}
+	.retail_bg_circule {
+		display: none;
+	}
+	.product_new_logo {
+		left: 56px;
+		top: -7px;
+	}
+	.home_disp_tab_content>div>a>div {
+		margin-left: auto;
+	}
+	.restaurant_feature_bg,
+	.retail_feature_bg,
+	.distribution_feature_bg {
+		display: block;
+	}
+	/*#restaurant_feature_section, #retail_feature_section, #distribution_feature_section{
+	display: inline-block;
+}*/
+	#open_distribution_feature,
+	#open_restaurant_feature,
+	#open_retail_feature {
+		display: block;
+	}
+	#desktop_retail_feature_section,
+	#desktop_restaurant_feature_section,
+	#desktop_distribution_feature_section {
+		display: inline-block;
+	}
+	#desktop_retail_feature_section>.col-md-12,
+	#desktop_restaurant_feature_section>.col-md-12,
+	#desktop_distribution_feature_section>.col-md-12 {
+		margin-right: 50px;
+	}
+	.vertical_home_mobile_content {
+		display: block;
+	}
+	.retail_section>div:last-child .restaurant_section>div:last-child {
+		margin-top: 20px;
+	}
+	.home-banner-img>img {
+		width: 50%;
+	}
+}
+
+@media all and (max-width:480px) {
+	.retail-trolly {
+		left: 0;
+		margin: 0;
+	}
+	.right-resp {
+		background-position: -213px -608px;
+		left: 7px;
+	}
+	.left-resp {
+		background-position: -178px -608px;
+		left: -8px;
+	}
+	img#corporate-video {
+		width: 100%;
+	}
+	.banner-cta {
+		width: 280px;
+		margin: 0 auto;
+	}
+	.ban-btn {
+		margin-top: 20px;
+	}
+	.smartreport-mobile {
+		display: block;
+		margin: 20px auto 30px auto;
+	}
+	.smartreport-section img {
+		display: none;
+	}
+	.smartreport-section>div:last-child>span {
+		display: block;
+		margin-bottom: 15px;
+	}
+	#registration-box,
+	#thanku-box {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.corporate-video_img {
+		padding: 15px 0px;
+	}
+	.blog-post-content{
+		border: inherit;
+		margin-bottom: 15px;
+	}
+	.sg-blog-section {
+    margin-top: 24px;
+    margin-bottom: 17px;
+	}
+	.blog-post-content>div>h4 {
+		line-height: 1.5em;
+		margin-bottom: 0px;
+	}
+	.blog-post-content>div>div {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+	.slide-img>h2 {
+		line-height: 1.3em;
+	}
+	.banner-contact-number {
+		font-size: 22px;
+	}
+	.company-info+div>a>img {
+		width: 100%;
+	}
+	.home-ban-btn {
+		margin-top: 10px;
+	}
+	.uae-banner-img>h1 {
+		margin-bottom: 10px;
+		position: relative;
+		top: -17px;
+		font-size: 31px;
+	}
+	.uae-banner-img>h3 {
+		font-size: 18px;
+		margin-top: 10px;
+		position: relative;
+		top: -14px;
+	}
+	.home-banner-img>h3,
+	.uae-banner-img>h3 {
+		font-size: 18px;
+		margin-top: 10px;
+		position: relative;
+		top: 0px;
+	}
+	.uae-banner-img>h3 {
+		top: 16px;
+	}
+	.home-banner-img>h1 {
+		font-size: 34px;
+		top: 0px
+	}
+	.uae-banner-img>h1 {
+		font-size: 31px;
+	}
+	.india-home-banner-mobile {
+		margin-top: 85px;
+	}
+	.uae-banner-img {
+		margin-top: 85px;
+	}
+	.cust-video-section h2,
+	.home_disp_tab_content>h2 {
+		font-size: 24px;
+	}
+	.home_disp_tab_content>h3 {
+		font-size: 18px;
+	}
+	#restaurant_section h2,
+	#distribution_section h2,
+	#retail_section h2,
+	.cust-video-section h2{
+		font-size: 24px;
+		font-weight: 400;
+	}
+	#restaurant_section h4,
+	#distribution_section h4,
+	#retail_section h4,
+	.cust-video-section h4{
+		font-size: 18px;
+		font-weight: 500;
+	}
+	#yearbegin-process>div>div {
+		height: 32px;
+		max-width: 60px;
+		top: -1px;
+	}
+	.vertical-cust-testimonial {
+		max-width: 320px;
+	}
+	.uae-customer-logos {
+		display: none;
+	}
+	.uae-customer-logos-resp {
+		display: block;
+	}
+	.single_market {
+		margin: 0 25px 0 0;
+	}
+	.supermarket_set,
+	.restaurant_set {
+		width: 175px;
+	}
+	.other_set_img {
+		left: 2px;
+		position: relative;
+	}
+	.bar_set_img {
+		position: relative;
+		top: -16px;
+	}
+	#retail_section>h4 {
+		line-height: 22px;
+	}
+	.retail_resp {
+		display: block;
+	}
+	.retail_desk {
+		display: none;
+	}
+	.supermarket_set1 {
+		top: 16px;
+		margin-bottom: 25px;
+	}
+	.home_big {
+		position: relative;
+		top: 16px;
+	}
+	.hyper_set_img {
+		top: 26px;
+	}
+	.retail_set,
+	.restaurant_sec_home,.distribution_sec_home {
+		margin-top: -10px;
+	}
+	#popup_gofrugal,
+	#live_chat,
+	.rE1,
+	.rE2 {
+		display: block;
+	}
+	#live_chat {
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		bottom: 90px;
+		width: 335px;
+	}
+	#chat {
+		left: 0;
+		right: 0;
+		width: 93%;
+		margin-right: auto;
+		margin-left: auto;
+		z-index: 999;
+		bottom: 96px;
+		height: 80vh;
+	}
+	#abc {
+		top: 0;
+		left: 0;
+		position: fixed;
+		overflow: auto;
+		z-index: 999;
+	}
+	#chatbot_live {
+		max-width: 335px !important;
+		width: 100%;
+	}
+	.popup_gofrugal {
+		bottom: 6px;
+		right: 5px;
+		z-index: 99998;
+	}
+	.tW,
+	.tW1 {
+		bottom: 0;
+		right: 0;
+		z-index: 99997;
+	}
+	#popup_notify {
+		bottom: 33px;
+		right: 3px;
+		z-index: 99999;
+	}
+	.abc_add {
+		background: rgba(0, 0, 0, 0.7);
+		width: 100%;
+		height: 100%;
+	}
+	body {
+		overflow: auto;
+	}
+	.body_add {
+		overflow: hidden;
+	}
+	.send_pop {
+		left: -46px;
+	}
+	.send-submit {
+		right: 20px;
+	}
+	.home-banner-img.uae-banner-img>h1 {
+		margin-top: 31px;
+	}
+	.res_nav {
+		z-index: 0;
+	}
+	.cust_sec>h2 {
+		font-size: 23px;
+	}
+	.cust_sec>h4 {
+		font-size: 16px;
+	}
+	.modal-header.text-center>h4 {
+		padding: 2px 10px;
+	}
+	.modal-header.text-center span {
+		display: block;
+	}
+	.header-background .close {
+		right: 2px;
+		margin-top: -15px;
+	}
+	.new-banner {
+		background: rgba(0, 0, 0, 0) url("/images/home-images/bg-image.png") no-repeat scroll right -387px bottom 85px / cover;
+	}
+	.brand-logo {
+		top: 4px;
+	}
+	.hamburger--slider .hamburger-inner {
+		top: 2px;
+	}
+	.icon-small {
+		top: 20px;
+	}
+	.business-img,
+	.business-img-uae {
+		display: none;
+	}
+	.business-img-res {
+		display: block;
+		margin: 0 auto;
+		max-width: 400px;
+		position: relative;
+		text-align: center;
+		top: 20px;
+		width: 100%;
+		left: 20px;
+	}
+	.home-banner-text-1 {
+		margin-top: 30px;
+	}
+	.home-banner-text-4 {
+		margin-top: 0px;
+	}
+	.home-banner-text-2 {
+		margin-bottom: 5px;
+	}
+	.home-container {
+		margin-bottom: 156px;
+	}
+	.home-container-uae {
+		margin-bottom: 38px;
+	}
+	.banner_ctas1 {
+		top: 50px;
+		position: relative;
+	}
+	.top-bar {
+		display: none;
+	}
+	.home_articles {
+		padding: 48px 0;
+	}
+	.print-mob {
+		top: 289px;
+	}
+	.banner_ctas1-resp {
+		margin-bottom: 20px;
+	}
+	.print-mob {
+		display: none;
+	}
+	.india_home_first_uae {
+		margin-top: 0;
+	}
+	.uae_second {
+		display: inline-block;
+	}
+	.font-uae {
+		font-size: 15px !important;
+		font-weight: bold !important;
+	}
+	.uae_btn {
+		font-size: 16px;
+		min-width: 202px;
+	}
+	.uae_request_resp {
+		display: block;
+		float: none;
+		top: 0;
+		width: 77%;
+		margin: 0 auto;
+	}
+	.uae_small {
+		display: inline-block;
+	}
+	.home-banner-text-4 {
+		margin-bottom: 0px;
+		position: relative;
+		top: 35px;
+	}
+	.new-banner-uae {
+		padding-bottom: 12px;
+	}
+	.vat_cta {
+		margin-top: 0;
+	}
+	
+}
+
+@media all and (max-width:429px) {
+	#search-mob,
+	#search {
+		display: none !important;
+	}
+	.icon-white_res {
+		display: none !important;
+	}
+	.icon-small {
+		display: block;
+	}
+	.small_search {
+		height: 10px;
+	}
+}
+
+@media all and (max-width:420px) {
+	body {
+		overflow-x: hidden;
+	}
+	.left-quote,
+	.right-quote {
+		display: none;
+	}
+	.customer-quote {
+		width: 100%;
+		height: auto;
+		margin-top: 120px;
+	}
+	.banner-slider {
+		width: 105px;
+	}
+	.link-content {
+		font-size: 14px;
+	}
+	.uae-customer-logo>div {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.global_cust_count {
+		bottom: 103px;
+	}
+	.happycustomer-sprite-img1,
+	.happycustomer-sprite-img2,
+	.happycustomer-sprite-img3 {
+		width: 267px;
+	}
+	.happycustomer-sprite-img1 {
+		background-position: -31px 0px;
+	}
+	.happycustomer-sprite-img2 {
+		background-position: -395px 0px;
+	}
+	.gst_img>img {
+		margin-top: 120px;
+		max-width: 100px;
+	}
+	.happycustomer-sprite-img1-uae,
+	.happycustomer-sprite-img2-uae,
+	.happycustomer-sprite-img3-uae {
+		width: 272px;
+	}
+	.happycustomer-sprite-img1 {
+		background-position: 0px 0px;
+		background-size: auto 415px;
+		height: 220px;
+	}
+	.happycustomer-sprite-img1-uae {
+		background-position: 0px 0px;
+		background-size: auto 220px;
+		height: 220px;
+	}
+	.happycustomer-sprite-img2 {
+		background-position: -281px 0;
+		background-size: auto 415px;
+		height: 220px;
+	}
+	.happycustomer-sprite-img2-uae {
+		background-position: -281px 0;
+		background-size: auto 220px;
+		height: 220px;
+	}
+	.aahar-content5 {
+		background: #32a901;
+		max-width: 217px;
+		margin: auto;
+		text-align: center;
+		padding: 3px 10px;
+		line-height: 19px;
+	}
+	.aahar-content2 {
+		font-size: 14px;
+		font-weight: bold;
+		color: #fff;
+	}
+	.aahar-content1 {
+		color: #eee207;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	.gst_reg_new {
+		display: inline-block;
+		width: 88px;
+		height: 81px;
+		background-size: auto 450px;
+		background-position: -7px -371px;
+		margin-left: -71px;
+		margin-top: -53px;
+	}
+}
+
+@media all and (max-width:380px) {
+	.supermarket_set,
+	.restaurant_set {
+		width: 160px;
+	}
+	.send_pop {
+		left: -20px;
+	}
+	.sell_appstore-black_chat-new {
+		background-position: -3px 4px;
+		background-size: 282px auto;
+		left: 23px !important;
+		width: 133px;
+	}
+	.sell_google_play-black_chat-new {
+		background-position: 136px 133px;
+		background-size: 282px auto;
+		width: 133px;
+	}
+	.home-banner-text {
+		font-size: 22px;
+	}
+	.business-img-res {
+		top: 11px;
+	}
+	.print-mob {
+		top: 225px;
+	}
+	.uae_mobile2 {
+		left: -29px;
+		top: 485px;
+	}
+	.cust-loop {
+		padding: 0;
+	}
+	header #main-header {
+		height: 48px;
+	}
+	.navbar {
+		min-height: 48px;
+	}
+	.banner-flow-content h1 {
+		font-size: 38px;
+	}
+	.banner-flow-content {
+		top: 19%;
+	}
+	.portrait-mobile{
+		display: block;
+	}
+}
+
+@media all and (max-width:360px) {
+	.uae-customer-logo>div,
+	.customer-logo>div>div {
+		font-size: 20px;
+	}
+	.slide-img>h2 {
+		font-size: 18px;
+	}
+	#restaurant_feature_section>.col-md-12,
+	#retail_feature_section>.col-md-12,
+	#distribution_feature_section>.col-md-12 {
+		margin-top: 5px;
+		margin-right: 20px;
+	}
+	.retail_feature,
+	.restaurant_feature,
+	.distribution_feature {
+		margin-left: 15px;
+	}
+	.uae_call {
+		font-size: 12px;
+	}
+	.uae_call_num {
+		font-size: 12px;
+	}
+	.uae_call_header {
+		width: 165px;
+	}
+	.uae_assure_header {
+		width: 96px;
+	}
+	#inline-email-otp {
+		position: absolute;
+	}
+	.home-otp-val {
+		left: 0px;
+	}
+	#yearbegin-process>div>div {
+		height: 32px;
+		max-width: 25px;
+		top: -1px;
+	}
+	.supermarket_set,
+	.restaurant_set {
+		width: 160px;
+	}
+	.uae_mobile2 {
+		left: -32px;
+		top: 463px;
+	}
+	/* .gst_reg_new {
+		display: inline-block;
+		width: 66px;
+		height: 71px;
+		background-size: auto 394px;
+		background-position: -2px -321px;
+		margin-left: -60px;
+		margin-top: -53px;
+	} */
+}
+
+@media all and (max-width:350px) {
+	.input-reg,
+	.otp-box,
+	#inline-reg-btn,
+	.home-otp-val,
+	.input-mob {
+		width: 72%
+	}
+	#inline-reg-btn {
+		min-width: 190px;
+	}
+	.inline-mobile-prefix {
+		z-index: 1;
+		margin-left: -80px;
+	}
+	.banner-slider {
+		display: none;
+	}
+	#uae-banner {
+		height: 350px;
+	}
+	#home-banner {
+		height: auto;
+	}
+	.restaurant_section>.col-md-2,
+	.distribution_section>.col-md-2,
+	.retail_section>.col-md-2 {
+		width: 45%;
+	}
+	.pop_mob_content {
+		width: 51.33%;
+	}
+	.GST_con {
+		font-size: 11px !important;
+	}
+	.GST_know {
+		font-size: 11px !important;
+	}
+	.common-sol {
+		margin: 20px 5px 11px 5px;
+	}
+	.banner-flow-content {
+		top: 22%;
+	}
+	.banner-flow-content h1 {
+		font-size: 32px;
+	}
+}
+
+@media all and (max-width:320px) {
+	.home-otp-val {
+		position: relative;
+	}
+	.supermarket_set,
+	.restaurant_set {
+		width: 138px;
+	}
+	.uae_mobile2 {
+		left: -59px;
+		top: 465px;
+	}
+}

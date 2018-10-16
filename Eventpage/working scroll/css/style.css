@@ -1,0 +1,83 @@
+html,
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: #888;
+  background: #2B2C2D;
+  overflow: hidden;
+}
+
+.tlContainer {
+  width: 90%;
+  height: 260px;
+  max-height: 360px;
+  background-color: #fff;
+  position: relative;
+  margin: 20px auto;
+  font-size: 1.5em;
+  border: 1px solid #555;
+  /* toggle this on/off to see the start/end positions of the content div */
+  overflow: hidden;
+}
+
+.tlContent {
+/*   holder of the boxes */
+  width: 12000px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: relative;
+  border: 1px solid red;
+}
+
+.tlBox {
+  width: 360px;
+  height: 100%;
+  margin: 0 5px 0 0;
+  float: left;
+  text-align: center;
+  color: #fff;
+  display: block;
+  border: 2px solid blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* #ctrl_slider {
+  width: 400px;
+  margin: 10px auto;
+} */
+#slider {
+/*   position:relative; */
+  width: 824px;
+  height:10px;
+  margin: 10px auto;
+  background: rgba(80,80,80,0.5);
+  border:1px solid rgba(102,102,102,0.5);
+}
+
+#sliderText {
+  text-align:center;
+}
+
+.clearfix:after {
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}

@@ -1,0 +1,149 @@
+#gft_close_chat {
+    background: transparent;
+    position: absolute;
+    right: 0px;
+    margin: 1px -23px 0px 0px;
+    width: 25px;
+    height: 80px;
+    background:#2a3342;
+    border-bottom-right-radius: 6px;
+}
+
+#gft_close_chat .chat-icons {
+    width: 22px;
+    border-radius: 100%;
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+    position: relative;
+    left: -2px;
+}
+
+#gft_close_chat .chat-icons img {
+    margin: 3px;
+    width: 100%;
+    max-width: 16px;
+    cursor: pointer;
+}
+
+#gft_chat_frame_live {
+    border-top-left-radius: 6px;
+}
+
+#gft_chat_frame_live iframe {
+    height: 65vh;
+    width: 360px;
+    border-top-left-radius: 6px;
+    border: 1px solid #e3e3e3;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* For IE 6/7 */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+#chat_header {
+    height: 45px;
+    position: relative;
+    top: 3px;
+}
+
+#gft_live-chat {
+    bottom: 0;
+    font-size: 12px;
+    right: 24px;
+    position: fixed;
+    width: 360px;
+}
+
+
+#gft_live-chat header {
+    background: linear-gradient(to top right, #404F70, #39597F);
+    border-radius: 7px 50px 0 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 7px 20px;
+}
+#gft_live-chat h4:before {
+    background: #1a8a34;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 8px;
+    margin: 0 8px 0 0;
+    width: 8px;
+}
+
+.chat-close {
+    background: #1b2126;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 10px;
+    height: 16px;
+    line-height: 16px;
+    margin: 2px 0 0 0;
+    text-align: center;
+    width: 16px;
+}
+
+.chat {
+    background: #fff;
+}
+.chat-message-counter {
+    background: #e62727 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    left: 0;
+    line-height: 24px;
+    margin: -10px 0 0 -10px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 24px;
+}
+.gft_chat_icon{
+  background: url("https://cdn-web.gofrugal.com/images/chat-icon-sprite.png")
+}
+.gft_chat_agent_icon{    
+    width: 30px;
+    height: 30px;
+    background-position: -190px -10px;
+    background-size: auto 137px;
+}
+.chat_minimize_icon{
+    width: 25px;
+    height: 25px;
+    background-position: -207px -82px;
+}
+.chat_maximize_icon{
+    width: 25px;
+    height: 25px;
+    background-position: -207px -108px;
+}
+@media all and (max-width: 1360px) {
+    #gft_chat_frame_live iframe {
+        height: 75vh;
+        width: 360px;
+        border-top-left-radius: 6px;
+    }
+}
