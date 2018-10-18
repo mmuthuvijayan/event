@@ -381,6 +381,11 @@ font-size: 40px;
 font-weight: 400;
 }
 </style>
+<style>
+	.col-md-12 span{
+		padding: 0px 12px 0px 12px;
+	}
+</style>
 
 <div id="primary" class="content-area">
 
@@ -424,18 +429,36 @@ font-weight: 400;
 
 								<?php 
 // the query
-$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1 , 'category_name' => 'cat-exibition')); ?>
+$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1 )); ?>
 
+								
 								<?php if ( $wpb_all_query->have_posts() ) : ?>
 
-
-
+<?PHP
+$year_count = array('2018' => 1, '2017'  => 1, '2016'  => 1, '2015'  => 1, '2014'  => 1, '2013'  => 1, '2012'  => 1, '2011'  => 1, '2010'  => 1, '2009'  => 1, '2008'  => 1, '2007'  => 1, '2006'  => 1, '2005'  => 1, '2004'  => 1);
+?>
 								<!-- the loop -->
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-								<div id="box1" class="tlBox" style="color: #000;">
+								<div id="box1" class="tlBox <?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
 									<a href="<?php the_permalink(); ?>">
 										<?php the_title(); ?>
+										<li class="icon-date"><?php $year=get_the_date( 'Y' ); ?></li>
 									</a>
+									<?php if ($year=="2018"){$year_count[0]=$year_count[0]+1; echo($year . $year_count[0]);}
+									else if ($year=="2017") {$year_count[1]=$year_count[1]+1; echo($year . $year_count[1]);}
+									else if ($year=="2016") {$year_count[2]=$year_count[2]+1; echo($year . $year_count[2]);}
+									else if ($year=="2015") {$year_count[3]=$year_count[3]+1; echo($year . $year_count[3]);}
+									else if ($year=="2014") {$year_count[4]=$year_count[4]+1; echo($year . $year_count[4]);}
+									else if ($year=="2013") {$year_count[5]=$year_count[5]+1; echo($year . $year_count[5]);}
+									else if ($year=="2012") {$year_count[6]=$year_count[6]+1; echo($year . $year_count[6]);}
+									else if ($year=="2011") {$year_count[7]=$year_count[7]+1; echo($year . $year_count[7]);}
+									else if ($year=="2010") {$year_count[8]=$year_count[8]+1; echo($year . $year_count[8]);}
+									else if ($year=="2009") {$year_count[9]=$year_count[9]+1; echo($year . $year_count[9]);}
+									else if ($year=="2008") {$year_count[10]=$year_count[10]+1; echo($year . $year_count[10]);}
+									else if ($year=="2007") {$year_count[11]=$year_count[11]+1; echo($year . $year_count[11]);}
+									else if ($year=="2006") {$year_count[12]=$year_count[12]+1; echo($year . $year_count[12]);}
+									else if ($year=="2005") {$year_count[13]=$year_count[13]+1; echo($year . $year_count[13]);}
+									else if ($year=="2004") {$year_count[14]=$year_count[14]+1; echo($year . $year_count[14]);} ?>
 								</div>
 								<?php endwhile; ?>
 								<!-- end of the loop -->
@@ -464,15 +487,41 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 					</div>
 					<div class="col-md-12">
-						<div class="col-md-4">
-							<span>2018</span>|
-							<span>2017</span>|
-							<span>2016</span>|
-							<span>2015</span>|
-							<span>2014</span>|
-						</div>
-						<div class="col-md-4">2</div>
-						<div class="col-md-4">3</div>
+						 
+							<span><a href="">2018</a></span>|
+							<span><a href="">2017</a></span>|
+							<span><a href="">2016</a></span>|
+							<span><a href="">2015</a></span>|
+							<span><a href="">2014</a></span>|
+							<span><a href="">2013</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction();">2012</a></span>|
+							<span><a href="">2011</a></span>|
+							<span><a href="">2010</a></span>|
+							<span><a href="">2009</a></span>|
+							<span><a href="">2008</a></span>|
+							<span><a href="">2007</a></span>|
+							<span><a href="">2006</a></span>|
+							
+							<span><a href="">2005</a></span>|
+							<span><a href="">2004</a></span>|
+				 
+ 				 <script>
+	 				 	 
+function myFunction() {
+	<?php
+
+  $leftVar = $year_count[6]*360;
+  echo "var leftu = '{$leftVar}';";
+  
+?>
+
+	$(".2012").parent().css({"transform":"translate3d('+ leftu+px +' , 0px, 0px)" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}
+ 
+</script>
+					 
 					</div>
 				</section>
 				<section>
@@ -491,7 +540,8 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 // the query
 $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1 , 'category_name' => 'cat-ceotalk')); ?>
 
-								<?php if ( $wpb_all_query->have_posts() ) : ?>
+
+								<?php  if ( $wpb_all_query->have_posts() ) : ?>
 
 
 
@@ -499,8 +549,11 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 								<div id="box1" class="tlBox" style="color: #000;">
 									<a href="<?php the_permalink(); ?>">
-										<?php the_title(); ?>
+										<?php the_title();   ?>
+
+										<li class="icon-date"><?php echo get_the_date( 'Y' ); ?></li>
 									</a>
+									 
 								</div>
 								<?php endwhile; ?>
 								<!-- end of the loop -->
