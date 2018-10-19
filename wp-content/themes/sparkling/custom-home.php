@@ -488,38 +488,189 @@ $year_count = array('2018' => 1, '2017'  => 1, '2016'  => 1, '2015'  => 1, '2014
 					</div>
 					<div class="col-md-12">
 						 
-							<span><a href="">2018</a></span>|
-							<span><a href="">2017</a></span>|
-							<span><a href="">2016</a></span>|
-							<span><a href="">2015</a></span>|
-							<span><a href="">2014</a></span>|
-							<span><a href="">2013</a></span>|
-							<span><a href="javascript:void(0);" onclick="myFunction();">2012</a></span>|
-							<span><a href="">2011</a></span>|
-							<span><a href="">2010</a></span>|
-							<span><a href="">2009</a></span>|
-							<span><a href="">2008</a></span>|
-							<span><a href="">2007</a></span>|
-							<span><a href="">2006</a></span>|
-							
-							<span><a href="">2005</a></span>|
-							<span><a href="">2004</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction();">2018</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction1();">2017</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction2();">2016</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction3();">2015</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction4();">2014</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction5();">2013</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction6();">2012</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction7();">2011</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction8();">2010</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction9();">2009</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction10();">2008</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction11();">2007</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction12();">2006</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction13();">2005</a></span>|
+							<span><a href="javascript:void(0);" onclick="myFunction14();">2004</a></span>
 				 
  				 <script>
 	 				 	 
 function myFunction() {
-	<?php
-
-  $leftVar = $year_count[6]*360;
-  echo "var leftu = '{$leftVar}';";
-  
+<?php
+	$leftVar  = "-".(0*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
 ?>
 
-	$(".2012").parent().css({"transform":"translate3d('+ leftu+px +' , 0px, 0px)" });
+	$(".2018").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}					 
+function myFunction1() {
+<?php
+	$leftVar  = "-".($year_count[0]*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2017").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
 	console.log(leftu);
   //document.getElementByClassName("2018").innerHTML = "Hello World";
 }
+function myFunction2() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1])*360)."px";
+	echo "var leftu = '{$leftVar}';";
  
+?>
+
+	$(".2016").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}
+function myFunction3() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2015").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}
+function myFunction4() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2014").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}					 
+function myFunction5() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2013").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}
+function myFunction6() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2012").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}	
+function myFunction7() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2011").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}	
+function myFunction8() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2010").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}	
+function myFunction9() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2009").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}
+function myFunction10() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2008").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}	
+function myFunction11() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2007").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}
+function myFunction12() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2006").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}
+function myFunction13() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2005").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}	
+function myFunction14() {
+<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*360)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+	$(".2004").parent().css({"transform":"translate3d(<?php echo $leftVar; ?>, 0px, 0px)", "transition":"ease 2s" });
+	console.log(leftu);
+  //document.getElementByClassName("2018").innerHTML = "Hello World";
+}					 
 </script>
 					 
 					</div>
