@@ -1,0 +1,19 @@
+#logo {
+
+    padding-top: 10px;
+
+}
+.nav.navbar-nav {
+
+    float: right;
+    position: relative;
+    z-index: 55;
+    right: 0;
+
+}
+.flexslider {
+
+ 
+    margin-top: -55px;
+
+}

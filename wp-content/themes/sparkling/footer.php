@@ -55,28 +55,22 @@
 				<div class="container-fluid" id="desktop-footer">
   <div class="row row-centered footer container">
     <div class="col-sm-3 col-centered" style="min-width:250px;">
-      <h3><a href="https://www.gofrugal.com/index.html">POS Software</a></h3>
+      <h3><a href="https://www.gofrugal.com/index.html">Retail POS Software</a></h3>
       <ul class="retcol">
-        <li> <a href="https://www.gofrugal.com/retail-solution.html" title="Retail point of sale software"><b>Retail POS Software</b></a></li>
-        <li> <a href="https://www.gofrugal.com/supermarket/retail-supermarket-pos.html">Supermarket &amp; Groceries</a> </li>
-        <li> <a href="https://www.gofrugal.com/supermarket/retail-hypermarket-grocery-pos.html">Hypermarket &amp; Grocery POS </a> </li>
+        
+        <li> <a href="https://www.gofrugal.com/supermarket/retail-supermarket-pos.html">Supermarket &amp; Hypermarket POS</a> </li>
         <li> <a href="https://www.gofrugal.com/healthcare/retail-pharmacy-pos.html">Pharma &amp; Healthcare POS</a></li>
         <li> <a href="https://www.gofrugal.com/lifestyle-fashion/retail-apparel-single.html">Apparel and Footwear POS</a> </li>
         <li> <a href="https://www.gofrugal.com/lifestyle-fashion/retail-lifestyle-fashion-pos.html?page=hfg">Lifestyle &amp; Fashion POS</a> </li>
-        <li> <a href="https://www.gofrugal.com/consumer-electronics/retail-consumer-electronics-pos.html">Electrical &amp; Electronics POS</a> </li>
-        <li> <a href="https://www.gofrugal.com/salon/spa-salon-pos-software.html">Spa &amp; Salon POS</a> </li>
-        <li><a href="https://www.gofrugal.com/specialized-retail/specialized-retail-pos.html?page=sra">Other Retail POS</a></li>
-      </ul>
-    </div>
-    <!--<div class="col-sm-2 col-centered">
-      <ul class="hoscol" style="margin-top:50px;">
-        <li style="padding-top:7px"><a href="https://www.gofrugal.com/restaurant-software.html" title="Restaurant point of sale software"><b>Restaurant Software</b></a></li>
-        <li><a href="https://www.gofrugal.com/restaurant/restaurant-pos-software.html">Restaurant &amp; Bar POS Software</a></li>
-        <li><a href="https://www.gofrugal.com/restaurant/quick-service-restaurant-pos.html">QSR POS Software</a></li>
-        <li><a href="https://www.gofrugal.com/bakery/bakery-pos-software.html">Bakery &amp; Sweet Shop POS</a></li>
+        <li> <a href="https://www.gofrugal.com/consumer-electronics/retail-consumer-electronics-pos.html">Electrical &amp; Electrical & Electronics POS</a> </li>
+        <li><a href="https://www.gofrugal.com/specialized-retail/specialized-retail-pos.html?page=sra">Specialized Retail POS</a></li>
+   
+        <li style="padding-top:7px"><a href="https://www.gofrugal.com/restaurant-software.html" title="Restaurant point of sale software"><b>Restaurant & QSR POS</b></a></li>
+        <li><a href="https://www.gofrugal.com/restaurant/restaurant-pos-software.html">Restaurant &amp; Bar POS</a></li>
+        <li><a href="https://www.gofrugal.com/restaurant/quick-service-restaurant-pos.html">Software Quick Service Restaurants POS</a></li>
+        <li><a href="https://www.gofrugal.com/bakery/bakery-pos-software.html">Bakery &amp; Confectionery POS</a></li>
         <li><a href="https://www.gofrugal.com/foodcourt/food-court-pos.html">Food Court POS</a></li>
-        <li><a href="https://www.gofrugal.com/foodtruck/food-truck-pos-software.html">Food Truck POS</a></li>
-      </ul>
+        </ul>
       <ul class="hoscol">
         <li style="padding-top:7px"><a href="https://www.gofrugal.com/distribution-management-software.html" title="Distribution Management Software"><b>Sales &amp; Distribution</b></a></li>
         <li><a href="https://www.gofrugal.com/sales-distribution/fmcg-food-cosmetics-software.html"> FMCG &amp; Packaged Foods</a></li>
@@ -84,7 +78,7 @@
         <li><a href="https://www.gofrugal.com/sales-distribution/lubricant-management-software.html"> Lubricants </a></li>
         <li><a href="https://www.gofrugal.com/sales-distribution/specialized-distribution-software.html"> Specialized Distribution </a></li>
       </ul>
-    </div>-->
+    </div> 
     <div class="col-sm-3 col-centered">
       <h3><a href="https://www.gofrugal.com/offering.html">Offerings</a></h3>
       <ul>

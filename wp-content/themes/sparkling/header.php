@@ -31,6 +31,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 
 <?php wp_head(); ?>
 
+<link rel="stylesheet" href="http://10.0.1.84/event/wp-content/themes/sparkling/custom-style.css" type="text/css" media="all">
 </head>
 
 <body <?php body_class(); ?>>
@@ -71,7 +72,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 															<?php } ?>
 														</div><!-- end of #logo -->
 						</div>
-						<?php sparkling_header_menu(); // main navigation ?>
+						
 					</div>
 				</div>
 			</div>
@@ -88,8 +89,11 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
  
 	<div id="content" class="site-content">
 
+<div class="container"><?php sparkling_header_menu(); // main navigation ?></div>
 		<div class="top-section">
+
 			<?php sparkling_featured_slider(); ?>
+
 			<?php sparkling_call_for_action(); ?>
 		</div>
 
