@@ -9,7 +9,8 @@
 
 get_header();
 ?>
-<link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+<link rel="stylesheet" href="http://10.0.1.84/event/wp-content/themes/sparkling/jquery-ui.css" type="text/css" media="all">
 
 <style>
 	/* colors */
@@ -318,13 +319,12 @@ get_header();
 		top: 0;
 		left: 0;
 		position: relative;
-		border: 1px solid red;
 	}
 	
 	.tlBox {
-		width: 360px;
-		height: 100%;
-		margin: 0 5px 0 0;
+		width: 220px;
+		height: 180px;
+		margin: 10px 18px 0 0;
 		float: left;
 		text-align: center;
 		color: #fff;
@@ -378,7 +378,7 @@ get_header();
 		animation-duration: 1s;
 		animation-delay: 0s;
 		font-size: 40px;
-		font-weight: 400;
+		font-weight: 800;
 	}
 </style>
 <style>
@@ -392,8 +392,21 @@ get_header();
 
 	<main id="main" class="site-main" role="main">
 
+		<button onClick="<?php $cattest = 'cat-slider' ?>">ghfafafj</button>
+	<?php
+	function datattt(){
+ 		;
+		echo $cattest;
+}
+	?>
 
-
+		
+		 
+		
+		  
+		
+		<input type="hidden" value="" class="cat_val">		
+		
 		<div class="tabs">
 			<input type="radio" id="tab1" name="tab-control" checked>
 			<input type="radio" id="tab2" name="tab-control">
@@ -423,20 +436,11 @@ get_header();
 
 						<div class="tlContainer clearfix">
 							<div class="slider_cont_1">
-
-
-
-
-
 								<?php 
-// the query
-$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1 )); ?>
-
-
+								// the query
+$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' => $cattest )); ?>
 								<?php if ( $wpb_all_query->have_posts() ) : ?>
-
 								<?php
-								
 								$year_count = array( '2018' => 1, '2017' => 1, '2016' => 1, '2015' => 1, '2014' => 1, '2013' => 1, '2012' => 1, '2011' => 1, '2010' => 1, '2009' => 1, '2008' => 1, '2007' => 1, '2006' => 1, '2005' => 1, '2004' => 1 );
 								?>
 								<!-- the loop - year wise post count -->
@@ -447,30 +451,57 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 									   the_post_thumbnail( 'medium' );
 										the_title();
 										?>
-
-										 
-											<?php $year=get_the_date( 'Y' ); ?>
-										 
+										<?php $year=get_the_date( 'Y' ); ?>
 									</a>
 									<?php
-									
-								 
-									if ($year=="2018"){$year_count[0]=$year_count[0]+1; echo($year . $year_count[0]);}
-									else if ($year=="2017") {$year_count[1]=$year_count[1]+1; echo($year . $year_count[1]);}
-									else if ($year=="2016") {$year_count[2]=$year_count[2]+1; echo($year . $year_count[2]);}
-									else if ($year=="2015") {$year_count[3]=$year_count[3]+1; echo($year . $year_count[3]);}
-									else if ($year=="2014") {$year_count[4]=$year_count[4]+1; echo($year . $year_count[4]);}
-									else if ($year=="2013") {$year_count[5]=$year_count[5]+1; echo($year . $year_count[5]);}
-									else if ($year=="2012") {$year_count[6]=$year_count[6]+1; echo($year . $year_count[6]);}
-									else if ($year=="2011") {$year_count[7]=$year_count[7]+1; echo($year . $year_count[7]);}
-									else if ($year=="2010") {$year_count[8]=$year_count[8]+1; echo($year . $year_count[8]);}
-									else if ($year=="2009") {$year_count[9]=$year_count[9]+1; echo($year . $year_count[9]);}
-									else if ($year=="2008") {$year_count[10]=$year_count[10]+1; echo($year . $year_count[10]);}
-									else if ($year=="2007") {$year_count[11]=$year_count[11]+1; echo($year . $year_count[11]);}
-									else if ($year=="2006") {$year_count[12]=$year_count[12]+1; echo($year . $year_count[12]);}
-									else if ($year=="2005") {$year_count[13]=$year_count[13]+1; echo($year . $year_count[13]);}
-									else if ($year=="2004") {$year_count[14]=$year_count[14]+1; echo($year . $year_count[14]);}
-									
+
+									if ( $year == "2018" ) {
+										$year_count[ 0 ] = $year_count[ 0 ] + 1;
+										echo( $year . $year_count[ 0 ] );
+									} else if ( $year == "2017" ) {
+										$year_count[ 1 ] = $year_count[ 1 ] + 1;
+										echo( $year . $year_count[ 1 ] );
+									} else if ( $year == "2016" ) {
+										$year_count[ 2 ] = $year_count[ 2 ] + 1;
+										echo( $year . $year_count[ 2 ] );
+									} else if ( $year == "2015" ) {
+										$year_count[ 3 ] = $year_count[ 3 ] + 1;
+										echo( $year . $year_count[ 3 ] );
+									} else if ( $year == "2014" ) {
+										$year_count[ 4 ] = $year_count[ 4 ] + 1;
+										echo( $year . $year_count[ 4 ] );
+									} else if ( $year == "2013" ) {
+										$year_count[ 5 ] = $year_count[ 5 ] + 1;
+										echo( $year . $year_count[ 5 ] );
+									} else if ( $year == "2012" ) {
+										$year_count[ 6 ] = $year_count[ 6 ] + 1;
+										echo( $year . $year_count[ 6 ] );
+									} else if ( $year == "2011" ) {
+										$year_count[ 7 ] = $year_count[ 7 ] + 1;
+										echo( $year . $year_count[ 7 ] );
+									} else if ( $year == "2010" ) {
+										$year_count[ 8 ] = $year_count[ 8 ] + 1;
+										echo( $year . $year_count[ 8 ] );
+									} else if ( $year == "2009" ) {
+										$year_count[ 9 ] = $year_count[ 9 ] + 1;
+										echo( $year . $year_count[ 9 ] );
+									} else if ( $year == "2008" ) {
+										$year_count[ 10 ] = $year_count[ 10 ] + 1;
+										echo( $year . $year_count[ 10 ] );
+									} else if ( $year == "2007" ) {
+										$year_count[ 11 ] = $year_count[ 11 ] + 1;
+										echo( $year . $year_count[ 11 ] );
+									} else if ( $year == "2006" ) {
+										$year_count[ 12 ] = $year_count[ 12 ] + 1;
+										echo( $year . $year_count[ 12 ] );
+									} else if ( $year == "2005" ) {
+										$year_count[ 13 ] = $year_count[ 13 ] + 1;
+										echo( $year . $year_count[ 13 ] );
+									} else if ( $year == "2004" ) {
+										$year_count[ 14 ] = $year_count[ 14 ] + 1;
+										echo( $year . $year_count[ 14 ] );
+									}
+
 									?>
 								</div>
 								<?php endwhile; ?>
@@ -524,7 +555,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 								switch ( year ) {
 									case 2018:
 										<?php
-	$leftVar  = "-".(0*360)."px";
+	$leftVar  = "-".(0*238)."px";
 	//echo "var leftu = '{$leftVar}';"; to convert php variable to script variable
  
 ?>
@@ -532,12 +563,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',0);	
+										$( "#year_slider_1" ).slider( 'value', 0 );
 										return year;
 										break;
 									case 2017:
 										<?php
-	$leftVar  = "-".($year_count[0]*360)."px";
+	$leftVar  = "-".($year_count[0]*238)."px";
 	
  
 ?>
@@ -546,13 +577,13 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',10);	
+										$( "#year_slider_1" ).slider( 'value', 10 );
 										return year;
 										break;
 
 									case 2016:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1])*238)."px";
 	
  
 ?>
@@ -561,13 +592,13 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',17);	
+										$( "#year_slider_1" ).slider( 'value', 17 );
 										return year;
 
 										break;
 									case 2015:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*238)."px";
 	
  
 ?>
@@ -577,12 +608,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transition": "ease 2s"
 										} );
 
-										$("#year_slider_1").slider('value',23);
+										$( "#year_slider_1" ).slider( 'value', 23 );
 										return year;
 										break;
 									case 2014:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*238)."px";
 	
  
 ?>
@@ -591,12 +622,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',30);
+										$( "#year_slider_1" ).slider( 'value', 30 );
 										return year;
 										break;
 									case 2013:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*238)."px";
 	
  
 ?>
@@ -605,12 +636,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',36);
+										$( "#year_slider_1" ).slider( 'value', 36 );
 										return year;
 										break;
 									case 2012:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*238)."px";
 	
  
 ?>
@@ -619,12 +650,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',43);
+										$( "#year_slider_1" ).slider( 'value', 43 );
 										return year;
 										break;
 									case 2011:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -633,12 +664,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',50);
+										$( "#year_slider_1" ).slider( 'value', 50 );
 										return year;
 										break;
 									case 2010:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -647,12 +678,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',56);
+										$( "#year_slider_1" ).slider( 'value', 56 );
 										return year;
 										break;
 									case 2009:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -661,12 +692,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',62);
+										$( "#year_slider_1" ).slider( 'value', 62 );
 										return year;
 										break;
 									case 2008:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -674,12 +705,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',69);
+										$( "#year_slider_1" ).slider( 'value', 69 );
 										return year;
 										break;
 									case 2007:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -688,12 +719,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',75);
+										$( "#year_slider_1" ).slider( 'value', 75 );
 										return year;
 										break;
 									case 2006:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -702,12 +733,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',81);
+										$( "#year_slider_1" ).slider( 'value', 81 );
 										return year;
 										break;
 									case 2005:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -715,12 +746,12 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',88);
+										$( "#year_slider_1" ).slider( 'value', 88 );
 										return year;
 										break;
 									case 2004:
 										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*360)."px";
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*238)."px";
 	echo "var leftu = '{$leftVar}';";
  
 ?>
@@ -728,7 +759,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
 											"transition": "ease 2s"
 										} );
-										$("#year_slider_1").slider('value',94);
+										$( "#year_slider_1" ).slider( 'value', 94 );
 										return year;
 										break;
 								}
@@ -818,38 +849,109 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 </div>
 </div>
 <!--Section Start-->
-<div class="container-fluid" style="background-color: #ecf2f6; height:500px;">
+<div class="container-fluid" style="background-color: #ecf2f6; padding: 90px 0px;">
 
 	<div class="container">
 
+
+
+
+
+
 		<div class="row">
-			<div class="col-md-6">
-				<h1>In the news</h1>
-				<div class="news-title" style="border-top: 1px solid #dbdbdb; margin-top:10px;">
-					<h3>Post - GST, Tiruppur has Enormous Opportunities In ERP Accounting</h3>
-					<span class="author vcard"><a class="url fn n" href="http://10.0.1.84/event/author/admin/">by admin, </a></span><time class="entry-date published" datetime="2018-10-12T07:17:56+00:00">October 12, 2018</time>
+			<div class="col-md-7">
+				<h1 style="border-bottom: 1px solid #dbdbdb; padding-bottom: 20px;  ">In the news</h1>
+
+				<?php 
+// the query
+$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3 , 'category_name' => 'cat-news')); ?>
+
+
+				<?php  if ( $wpb_all_query->have_posts() ) : ?>
+
+
+
+				<!-- the loop -->
+				<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+
+
+
+				<div class="news-title" style="border-bottom: 1px solid #dbdbdb; margin-bottom: 5px; padding-bottom: 10px; ">
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
+					<span class="author vcard">
+						<?php echo get_the_author_meta('display_name', $author_id); ?>, </span>
+					<time class="entry-date published">
+						<?php echo get_the_date('M d Y');?>
+					</time>
 				</div>
-				<div class="news-title" style="border-top: 1px solid #dbdbdb;margin-top:10px;">
-					<h3>GST Brings Discipline IN Business Process : Gofrugal</h3>
-					<span class="author vcard"><a class="url fn n" href="http://10.0.1.84/event/author/admin/">by admin, </a></span><time class="entry-date published" datetime="2018-10-12T07:17:56+00:00">October 12, 2018</time>
-				</div>
-				<div class="news-title" style="border-top: 1px solid #dbdbdb;margin-top:10px;">
-					<h3>Interviewing Candidates is easy now with INTERVIEWDESK!!!</h3>
-					<span class="author vcard"><a class="url fn n" href="http://10.0.1.84/event/author/admin/">by admin, </a></span><time class="entry-date published" datetime="2018-10-12T07:17:56+00:00">October 12, 2018</time>
-				</div>
+
+
+				<?php endwhile; ?>
+				<!-- end of the loop -->
+
+
+
+				<?php wp_reset_postdata(); ?>
+
+				<?php else : ?>
+				<p>
+					<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+				</p>
+				<?php endif; ?>
+				<a style="float:right;" href="<?php the_permalink(); ?>">More news »</a>
+
 			</div>
 
 
-			<div class="col-md-6">
-				<div class="" style="background-color: #FFF; padding: 30px; margin:20px;">
-					<strong><span style="margin-bottom: 20px;">Your android phone is the new stock taking device, Imagine?</span></strong>
-					<img src="http://10.0.1.84/event/wp-content/uploads/2018/10/instok-image.jpg" style="display: inline-block ">
-					<div style="display: inline-block;max-width:200px;margin-left: 5px;vertical-align: top;">
-						GoFrugal has recently launched Stock taking app call"GoFrugal Instock" which people can quickly takes stocks without any hassels...
+			<div class="col-md-5">
+				<div class="" style="background-color: #FFF;margin: 20px 0 5px 0px;padding: 40px 25px;box-shadow: 0px 0px 3px 2px #ccc;">
+					<?php 
+				// the query	
+				$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>1 , 'category_name' => 'cat-pressrelease')); ?>
+
+
+					<?php  if ( $wpb_all_query->have_posts() ) : ?>
+
+
+
+					<!-- the loop -->
+					<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+
+
+
+					<div class="news-title">
+						<h3 style="line-height: 1.5;">
+							<?php the_title();?>
+						</h3>
+						<?php the_post_thumbnail( 'medium' ); ?>
+						<div style="display: inline-block;max-width:200px;margin-left: 5px;vertical-align: top;">
+							<?php the_excerpt(); ?>
+							<a style="float:right;" href="<?php the_permalink(news-media); ?>">Read More &#187;</a>
+						</div>
+
+
 					</div>
 
-				</div>
 
+					<?php endwhile; ?>
+					<!-- end of the loop -->
+
+
+
+					<?php wp_reset_postdata(); ?>
+
+					<?php else : ?>
+					<p>
+						<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+					</p>
+					<?php endif; ?>
+
+
+
+
+
+				</div>
+				<a style="float:right;" href="<?php the_permalink(); ?>">More news »</a>
 			</div>
 		</div>
 	</div>
@@ -857,7 +959,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 <!--Section Ends-->
 
 <!--Section Start-->
-<div class="container-fluid" style="height:500px;">
+<div class="container-fluid" style="padding: 80px 0px;">
 
 	<div class="container">
 

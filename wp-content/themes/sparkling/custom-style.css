@@ -17,3 +17,44 @@
     margin-top: -55px;
 
 }
+#nav-cus {
+display:grid;
+}
+#nav-cus a{
+
+color:#FFF;
+}
+
+#nav-cus a:hover{
+background-color:transparent;
+
+}
+.active {
+
+    font-weight: bold;
+
+}
+
+
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.7em;
+    height: 1.7em;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.ui-state-default {
+
+    border: 5px solid #fff;
+    font-weight: normal;
+    background-color: #3978f3;
+    border-radius: 13px;
+    box-shadow: 0px 1px 2px 1px #CCC;
+
+}
+
+ 

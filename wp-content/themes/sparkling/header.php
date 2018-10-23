@@ -86,10 +86,10 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 
 <span class="sr-only">Next</span>
 
- 
+ <div class="container" id="nav-cus"><?php sparkling_header_menu(); // main navigation ?></div>
 	<div id="content" class="site-content">
 
-<div class="container"><?php sparkling_header_menu(); // main navigation ?></div>
+
 		<div class="top-section">
 
 			<?php sparkling_featured_slider(); ?>

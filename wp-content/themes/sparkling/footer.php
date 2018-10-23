@@ -38,6 +38,11 @@
     vertical-align: top;
 
 }
+li {
+
+    list-style: none;
+
+}	
 	
 </style>
 
@@ -59,6 +64,7 @@
       <ul class="retcol">
         
         <li> <a href="https://www.gofrugal.com/supermarket/retail-supermarket-pos.html">Supermarket &amp; Hypermarket POS</a> </li>
+		<li> <a href="https://www.gofrugal.com/healthcare/retail-pharmacy-pos.html">Fruits &amp; Vegetables POS</a></li>  
         <li> <a href="https://www.gofrugal.com/healthcare/retail-pharmacy-pos.html">Pharma &amp; Healthcare POS</a></li>
         <li> <a href="https://www.gofrugal.com/lifestyle-fashion/retail-apparel-single.html">Apparel and Footwear POS</a> </li>
         <li> <a href="https://www.gofrugal.com/lifestyle-fashion/retail-lifestyle-fashion-pos.html?page=hfg">Lifestyle &amp; Fashion POS</a> </li>
