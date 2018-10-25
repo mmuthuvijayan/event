@@ -11,12 +11,11 @@
     right: 0;
 
 }
+
 .flexslider {
-
- 
-    margin-top: -55px;
-
+    margin-top: -80px;
 }
+
 #nav-cus {
 display:grid;
 }
@@ -57,4 +56,12 @@ background-color:transparent;
 
 }
 
- 
+
+.but-down {
+    background-color: #397BF3;
+    font-size: 10px;
+    padding: 1px 9px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 0px 0px 0px 10px;
+}

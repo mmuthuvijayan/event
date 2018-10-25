@@ -32,6 +32,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 <?php wp_head(); ?>
 
 <link rel="stylesheet" href="http://10.0.1.84/event/wp-content/themes/sparkling/custom-style.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://10.0.1.84/event/wp-content/themes/sparkling/footer-cust-style.css" type="text/css" media="all">
 </head>
 
 <body <?php body_class(); ?>>
@@ -48,6 +49,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 			<div class="container">
 				<div class="row">
 					<div class="site-navigation-inner col-sm-12">
+						
 						<div class="navbar-header">
 							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 								<span class="sr-only">Toggle navigation</span>
@@ -72,7 +74,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 															<?php } ?>
 														</div><!-- end of #logo -->
 						</div>
-						
+						<div style="color: #FFF;text-align: end; margin: 13px 0 auto;"><span>Retail </span> | <span> Restaurant</span> | <span> Sales & Distribution</span> | <span> What's New </span><span class="but-down">FREE DOWNLOAD</span></div>
 					</div>
 				</div>
 			</div>
@@ -86,7 +88,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 
 <span class="sr-only">Next</span>
 
- <div class="container" id="nav-cus"><?php sparkling_header_menu(); // main navigation ?></div>
+ <div class="container" id="nav-cus"><?php  sparkling_header_menu();  // main navigation ?></div>
 	<div id="content" class="site-content">
 
 

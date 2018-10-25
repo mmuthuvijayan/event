@@ -198,18 +198,19 @@ html[xmlns] .slides {
 }
 
 .flex-control-nav li {
-    margin: 0 6px;
+    margin: 0 10px;
     display: inline-block;
     zoom: 1;
     *display: inline;
 }
 
 .flex-control-paging li a {
-    width: 25px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
+	border-radius: 15px;
     display: block;
     background: #DA4453;
-    background: rgba(59, 59, 59, 0.5);
+    background: #989898;
     cursor: pointer;
     text-indent: -9999px;
     -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
@@ -224,8 +225,8 @@ html[xmlns] .slides {
 }
 
 .flex-control-paging li a.flex-active {
-    background: #DA4453;
-    background: rgba(59, 59, 59, 0.9);
+    
+    background: #FFF;
     cursor: default;
 }
 
@@ -246,11 +247,11 @@ html[xmlns] .slides {
     max-width: 100%;
     display: block;
     margin: auto;
-    width: auto;
+    width: 100%;
 }
 
 .flex-control-nav {
-    bottom: 10px;
+    bottom: 75px;
     z-index: 1000;
 }
 
@@ -259,41 +260,41 @@ html[xmlns] .slides {
 }
 
 .flex-caption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    padding: 0 30px;
-    display: inline-block;
-    max-width: 1170px;
-    margin: auto;
-    bottom: 50px;
+ position: absolute;	
+left: 0;
+right: 0;
+z-index: 1;
+display: inline-block;
+max-width: 1170px;
+margin: auto;
+top: 20%;
+text-align: center;
 }
 
 .flex-caption .excerpt {
-    background: rgb(59, 59, 59);
-    background: rgba(59, 59, 59, 0.8);
+  
     display: block;
-    color: #ddd;
-    max-width: 600px;
+    color: #fff;
+    font-size: 25px;
     padding: 12px 20px;
 }
 
 .flex-caption h2 {
-    background: rgb(218, 68, 83);
-    background: rgba(218, 68, 83, 0.7);
+	background-color: transparent!important;
+  
     font-weight: 400;
-    font-size: 24px;
+    font-size: 35px;
     max-width: 640px;
     display: inline-block;
     padding: 12px 20px;
     margin-bottom: 0;
     color: #fff;
+	margin:0 auto;
+	
 }
 
 a:hover .flex-caption h2 {
-    background-color: #363636;
+  
 }
 
 .flex-control-nav {

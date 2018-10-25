@@ -126,6 +126,7 @@ if ( ! function_exists( 'sparkling_header_menu' ) ) :
 				'menu_class'      => 'nav navbar-nav',
 				'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
 				'walker'          => new WP_Bootstrap_Navwalker(),
+				
 			)
 		);
 	} /* end header menu */

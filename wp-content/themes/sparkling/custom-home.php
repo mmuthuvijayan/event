@@ -37,23 +37,22 @@ get_header();
 	
 	.tabs .content section h2,
 	.tabs ul li label {
-		font-family: "Montserrat";
-		font-weight: bold;
-		font-size: 18px;
-		color: #428BFF;
-	}
+		font-size: 14px;
+	 	}
 	
 	.tabs ul {
 		list-style-type: none;
-		padding-left: 0;
-		display: flex;
-		flex-direction: row;
-		margin-bottom: 0px;
-		justify-content: space-between;
-		align-items: flex-end;
-		flex-wrap: wrap;
-		border-bottom: 1px solid #d7e3ed;
-		padding-bottom: 7px;
+    	padding-left: 0px;
+    	display: flex;
+    	flex-direction: row;
+    	margin-bottom: 0px;
+    	justify-content: space-between;
+    	align-items: flex-end;
+    	flex-wrap: wrap;
+    	border-bottom: 1px solid #d7e3ed;
+    	padding-bottom: 7px;
+    	width: 75%;
+    	margin: 0 auto;
 	}
 	
 	.tabs ul li {
@@ -101,7 +100,7 @@ get_header();
 	
 	.tabs .slider .indicator {
 		position: relative;
-		width: 220px;
+		width: 180px;
 		max-width: 100%;
 		background: #d7e3ed;
 		height: 40px;
@@ -114,7 +113,7 @@ get_header();
 	.tabs .slider .indicator::after {
 		content: '';
 		position: absolute;
-		left: 47%;
+		left: 30%;
 		top: 100%;
 		width: 0;
 		height: 0;
@@ -163,6 +162,15 @@ get_header();
 		cursor: default;
 		color: #000;
 	}
+	label {
+    margin-bottom: 0;
+	font-weight: normal;
+}
+.tabs input[name="tab-control"]:nth-of-type(1):checked~ ul> li:nth-child(1)> label { font-weight: bold; }
+.tabs input[name="tab-control"]:nth-of-type(2):checked~ ul> li:nth-child(2)> label { font-weight: bold; }
+.tabs input[name="tab-control"]:nth-of-type(3):checked~ ul> li:nth-child(3)> label { font-weight: bold; }
+.tabs input[name="tab-control"]:nth-of-type(4):checked~ ul> li:nth-child(4)> label { font-weight: bold; }
+
 	
 	@media (max-width: 600px) {
 		.tabs input[name="tab-control"]:nth-of-type(1):checked~ ul> li:nth-child(1)> label {
@@ -171,8 +179,8 @@ get_header();
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(1):checked~ .slider {
-		-webkit-transform: translateX(0%);
-		transform: translateX(0%);
+		-webkit-transform: translateX(36%);
+		transform: translateX(36%);
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(1):checked~ .content> section:nth-child(1) {
@@ -191,8 +199,8 @@ get_header();
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(2):checked~ .slider {
-		-webkit-transform: translateX(100%);
-		transform: translateX(100%);
+		-webkit-transform: translateX(112%);
+		transform: translateX(112%);
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(2):checked~ .content> section:nth-child(2) {
@@ -211,8 +219,8 @@ get_header();
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(3):checked~ .slider {
-		-webkit-transform: translateX(200%);
-		transform: translateX(200%);
+		-webkit-transform: translateX(186%);
+		transform: translateX(186%);
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(3):checked~ .content> section:nth-child(3) {
@@ -231,8 +239,8 @@ get_header();
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(4):checked~ .slider {
-		-webkit-transform: translateX(300%);
-		transform: translateX(300%);
+		-webkit-transform: translateX(261%);
+		transform: translateX(261%);
 	}
 	
 	.tabs input[name="tab-control"]:nth-of-type(4):checked~ .content> section:nth-child(4) {
@@ -306,7 +314,7 @@ get_header();
 		position: relative;
 		margin: 20px auto;
 		font-size: 1.5em;
-		border: 1px solid #555;
+		
 		/* toggle this on/off to see the start/end positions of the content div */
 		overflow: hidden;
 	}
@@ -329,7 +337,7 @@ get_header();
 		text-align: center;
 		color: #fff;
 		display: block;
-		border: 2px solid blue;
+		/*border: 2px solid blue;*/
 	}
 	
 	.red {
@@ -380,10 +388,70 @@ get_header();
 		font-size: 40px;
 		font-weight: 800;
 	}
+	.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3;
+	background:#397BF3;
+	font-weight: normal;
+	color: #555555;
+	border:5px solid #FFF;
+	border-radius:15px;
+	box-shadow:2px 2px 2px 2px #CCC;
+	box-shadow: 1px 1px 15px 1px #bbb;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: default;
+    touch-action: none;
+    outline: none;
+    margin-top: -1px;
+}
+
+.ui-widget-content .ui-state-active {
+	 
+    z-index: 2;
+    width: 2em;
+    height: 2em;
+    cursor: default;
+    touch-action: none;
+    margin-top: -5px;
+    outline: none;
+
+}
+div #year_slider_1 {
+    border: 2px solid #c7d8e5;
+    border-radius: 0px;
+    height: 14px;
+    width: 96%;
+    margin: 0 auto;
+    background-color: #f7fbff;
+}
+.acolor_u_b
+{
+	float: right;
+    color: #397BF3;
+    font-weight: bold;
+    text-decoration: underline;
+    float: right;
+}
+.entry-date  {
+	color:#a5a6a6;
+
+}
+.author
+{
+	color:#a5a6a6;
+
+} 
+
 </style>
 <style>
 	.col-md-12 span {
-		padding: 0px 12px 0px 12px;
+		    padding: 0px 10px 0px 12px;
 	}
 </style>
 
@@ -391,21 +459,40 @@ get_header();
 
 
 	<main id="main" class="site-main" role="main">
+<!--
 
-		<button onClick="<?php $cattest = 'cat-slider' ?>">ghfafafj</button>
-	<?php
-	function datattt(){
- 		;
-		echo $cattest;
-}
-	?>
+	<form method="post" action="">
+		<input type="hidden" name="cat-slider">
+				
+		<input type="submit" value="cat-slider">
+		
+	</form>	
+-->
+	
+		<!--<button class="button">cat-news</button>
+	<script>
+		$('.button').click(function() {
+			
+			$.ajax({  type: "POST",  url: "http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php",  data: { catname: "cat-news" },  dataType: 'json',	 
+}).done(function(response) {
+	 response.result
+});   	
+			
+			
+//			 $.post("http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php", { 
+//        catname: 'cat-news' 
+//    }, function(data){
+//
+//        var theResult = data;
+//}, 'json' );
+		
+			
+			
+    });
+								</script>-->
 
+		<input type="hidden" class="buttval" value="cat-slider">
 		
-		 
-		
-		  
-		
-		<input type="hidden" value="" class="cat_val">		
 		
 		<div class="tabs">
 			<input type="radio" id="tab1" name="tab-control" checked>
@@ -434,11 +521,34 @@ get_header();
 					<div>
 						<!--Code of sliding content-->
 
-						<div class="tlContainer clearfix">
-							<div class="slider_cont_1">
-								<?php 
-								// the query
-$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' => $cattest )); ?>
+						<div class="tlContainer clearfix" id="#draggable1">
+			
+						<div class="slider_cont_1" id="#draggable">
+			<script>				
+							
+									$('.button').click(function() {
+			
+			$.ajax({  type: "POST",  url: "http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php",  data: { catname: "cat-news" },  dataType: 'json',	 
+}).done(function(response) {
+	 response.result
+});   	
+				
+//			 $.post("http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php", { 
+//        catname: 'cat-news' 
+//    }, function(data){
+//
+//        var theResult = data;
+//}, 'json' );
+		
+			
+			
+    });
+	
+							<?php 
+			
+			$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' =>  $catname ));?>
+							</script>
+	
 								<?php if ( $wpb_all_query->have_posts() ) : ?>
 								<?php
 								$year_count = array( '2018' => 1, '2017' => 1, '2016' => 1, '2015' => 1, '2014' => 1, '2013' => 1, '2012' => 1, '2011' => 1, '2010' => 1, '2009' => 1, '2008' => 1, '2007' => 1, '2006' => 1, '2005' => 1, '2004' => 1 );
@@ -449,7 +559,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 									<a href="<?php the_permalink(); ?>">
 										<?php  
 									   the_post_thumbnail( 'medium' );
-										the_title();
+										/*the_title();*/
 										?>
 										<?php $year=get_the_date( 'Y' ); ?>
 									</a>
@@ -457,13 +567,13 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 									if ( $year == "2018" ) {
 										$year_count[ 0 ] = $year_count[ 0 ] + 1;
-										echo( $year . $year_count[ 0 ] );
+										//echo( $year . $year_count[ 0 ] );
 									} else if ( $year == "2017" ) {
 										$year_count[ 1 ] = $year_count[ 1 ] + 1;
-										echo( $year . $year_count[ 1 ] );
+										//echo( $year . $year_count[ 1 ] );
 									} else if ( $year == "2016" ) {
 										$year_count[ 2 ] = $year_count[ 2 ] + 1;
-										echo( $year . $year_count[ 2 ] );
+										//echo( $year . $year_count[ 2 ] );
 									} else if ( $year == "2015" ) {
 										$year_count[ 3 ] = $year_count[ 3 ] + 1;
 										echo( $year . $year_count[ 3 ] );
@@ -521,16 +631,25 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 							</div>
 						</div>
+					
 						<!--<div id="year_slider_cont_1">Use the slider to scroll through colored panels</div>-->
 						<div id="year_slider_1"></div>
 
 						<!--Code of sliding content-->
 
-
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <script>
+  $(function() {
+    $( "#draggable" ).draggable();
+    $( "#draggable1" ).draggable({containment: "parent"});
+  });
+  </script>
 
 
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-12" style="margin-top: 15px;">
 
 						<span><a href="javascript:void(0);" onclick="myFunction(2018);">2018</a></span>|
 						<span><a href="javascript:void(0);" onclick="myFunction(2017);">2017</a></span>|
@@ -898,13 +1017,13 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 					<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
 				</p>
 				<?php endif; ?>
-				<a style="float:right;" href="<?php the_permalink(); ?>">More news »</a>
+				<a class="acolor_u_b" href="<?php the_permalink(); ?>">More news »</a>
 
 			</div>
 
 
 			<div class="col-md-5">
-				<div class="" style="background-color: #FFF;margin: 20px 0 5px 0px;padding: 40px 25px;box-shadow: 0px 0px 3px 2px #ccc;">
+				<div class="" style="background-color: #FFF;margin: 20px 0 5px 0px;padding: 40px 20px;box-shadow: 0px 0px 3px 2px #ccc;">
 					<?php 
 				// the query	
 				$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>1 , 'category_name' => 'cat-pressrelease')); ?>
@@ -926,7 +1045,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 						<?php the_post_thumbnail( 'medium' ); ?>
 						<div style="display: inline-block;max-width:200px;margin-left: 5px;vertical-align: top;">
 							<?php the_excerpt(); ?>
-							<a style="float:right;" href="<?php the_permalink(news-media); ?>">Read More &#187;</a>
+							<a class="acolor_u_b" href="<?php the_permalink(news-media); ?>">Read More &#187;</a>
 						</div>
 
 
@@ -951,7 +1070,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 
 				</div>
-				<a style="float:right;" href="<?php the_permalink(); ?>">More news »</a>
+				<a class="acolor_u_b" href="<?php the_permalink(); ?>">More news »</a>
 			</div>
 		</div>
 	</div>
