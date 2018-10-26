@@ -74,7 +74,7 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 															<?php } ?>
 														</div><!-- end of #logo -->
 						</div>
-						<div style="color: #FFF;text-align: end; margin: 13px 0 auto;"><span>Retail </span> | <span> Restaurant</span> | <span> Sales & Distribution</span> | <span> What's New </span><span class="but-down">FREE DOWNLOAD</span></div>
+						<div class="top-nav"><span> <a href="https://www.gofrugal.com/retail-solution.html">Retail</a> </span> | <span><a href="https://www.gofrugal.com/restaurant-software.html">Restaurant</a> </span> | <span> <a href="https://www.gofrugal.com/distribution-management-software.html">Sales & Distribution</a></span> | <span> <a href="https://www.gofrugal.com/blog/">What's New </a></span><span class="but-down"><a href="">FREE DOWNLOAD</a></span></div>
 					</div>
 				</div>
 			</div>

@@ -1,20 +1,20 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
-	$featured_image_args = array(
+	/*$featured_image_args = array(
 		'class' => 'single-featured',
 	);
 	if ( is_page_template( 'page-fullwidth.php' ) ) {
 		the_post_thumbnail( 'sparkling-featured-fullwidth', $featured_image_args );
 	} else {
 		the_post_thumbnail( 'sparkling-featured', $featured_image_args );
-	}
+	}*/
 	?>
 	<div class="post-inner-content">
 				<header class="entry-header page-header">
 
 			<h1 class="entry-title "><?php the_title(); ?></h1>
 
-			<div class="entry-meta">
+			<!-- <div class="entry-meta">
 				<?php sparkling_posted_on(); ?>
 
 				<?php
@@ -40,7 +40,7 @@
 					?>
 				<?php endif; ?>
 
-			</div><!-- .entry-meta -->
+			</div> --><!-- .entry-meta -->
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">

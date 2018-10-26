@@ -19,7 +19,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) :
 				the_post();
-?>
+?>	<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 

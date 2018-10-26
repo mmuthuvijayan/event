@@ -229,6 +229,7 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 					}
 					if ( get_the_excerpt() != '' ) {
 						echo '<div class="excerpt">' . get_the_excerpt() . '</div>';
+						echo '<span class="excerpt-a">Know more »</a>';
 					}
 					echo '</div>';
 					echo '</a></li>';
@@ -238,8 +239,36 @@ if ( ! function_exists( 'sparkling_featured_slider' ) ) :
 			echo '</ul>';
 			echo ' </div>';
 		}// End if().
+
+
+
+
+//code for header slider image in post single page
+		if ( is_single() && of_get_option( 'sparkling_slider_checkbox' ) == 1 ) {
+			echo '<div class="flexslider">';
+			echo '<ul class="slides">';
+
+			 
+while ( have_posts() ) :
+		
+		//Multipost thumbnail
+			the_post();
+			if (class_exists('MultiPostThumbnails')) : 
+ 
+MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
+			
+ 
+endif;
+endwhile; // end of the loop.
+
+ 
+			echo '</ul>';
+			echo ' </div>';
+		}// End if().
 	}
 endif;
+
+//code ends for header slider image in post single page
 
 /**
  * function to show the footer info, copyright information
