@@ -6,7 +6,7 @@
 .top-nav{
 text-align: end; 
 margin: 13px 0 auto;
-color: #FFF;
+color: #888;
 }
 
 .top-nav span a{
@@ -14,6 +14,9 @@ color: #FFF;
 font-size:13px;
 padding: 0 5px;
 
+}
+.navbar-nav > li:nth-child(4) {
+    padding-right: 0px;
 }
 
 .but-down {
@@ -84,8 +87,28 @@ background-color:transparent;
 {
     display: block;
     color: #fff;
-    font-size: 20px;
+    font-size:185%;
     padding: 12px 20px;
 text-decoration:underline;
 font-weight:400;
+}
+
+.flexslider .slides img {
+
+    width: 100%;
+
+}
+.post-inner-content
+{
+border:none!important;
+padding: 20px 50px;
+}
+
+.entry-title{
+font-size:20px;
+font-weight:bold;
+}
+
+div #gallery-1 {
+    display: none;
 }

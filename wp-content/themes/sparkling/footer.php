@@ -113,7 +113,7 @@
   <div class="row" style="background-color:#181e28;">
     <div class="col-xs-12">
       <div class="copy-right"> <span> <a href="../privacy-policy.html" target="_blank">Privacy Policy</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="../license-agreement.html" target="_blank">License Agreement</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="../terms_services.html" target="_blank">Terms of Service</a> </span>
-        <p> ©<script type="text/javascript">document.write(new Date().getFullYear());</script>2018 GoFrugal Technologies. All rights reserved. </p>
+        <p> ©<script type="text/javascript">document.write(new Date().getFullYear());</script> GoFrugal Technologies. All rights reserved. </p>
       </div>
     </div>
   </div>
@@ -121,7 +121,7 @@
   <div class="row mobile-footer text-center">
     <div class="col-xs-12">
       <p><a href="../about.html">About Us</a> | <a href="https://careers.gofrugal.com/">Careers</a> | <a href="../blog/" target="_blank">Blog</a> | <a href="../contact.html">Contact Us</a> </p>
-      <p>Copyright © <script type="text/javascript">document.write(new Date().getFullYear());</script>2018. GoFrugal Technologies. All Rights Reserved.</p>
+      <p>Copyright © <!-- <script type="text/javascript">document.write(new Date().getFullYear());</script> -->2018. GoFrugal Technologies. All Rights Reserved.</p>
     </div>
   </div>
 </div>

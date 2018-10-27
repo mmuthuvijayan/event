@@ -113,12 +113,12 @@ get_header();
 	.tabs .slider .indicator::after {
 		content: '';
 		position: absolute;
-		left: 30%;
+		left: 43%;
 		top: 100%;
 		width: 0;
 		height: 0;
-		border-left: 5px solid transparent;
-		border-right: 5px solid transparent;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
 		border-top: 7px solid #d7e3ed;
 		clear: both;
 	}
@@ -435,8 +435,13 @@ div #year_slider_1 {
 	float: right;
     color: #397BF3;
     font-weight: bold;
-    text-decoration: underline;
     float: right;
+    margin-top: 5px;
+}
+.acolor_u_b:hover
+{
+color: #397BF3;	
+text-decoration: underline;
 }
 .entry-date  {
 	color:#a5a6a6;
@@ -649,7 +654,7 @@ div #year_slider_1 {
 
 
 					</div>
-					<div class="col-md-12" style="margin-top: 15px;">
+					<div class="col-md-12" style="margin-top: 15px; color:#eee;">
 
 						<span><a href="javascript:void(0);" onclick="myFunction(2018);">2018</a></span>|
 						<span><a href="javascript:void(0);" onclick="myFunction(2017);">2017</a></span>|
@@ -995,7 +1000,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 
 
-				<div class="news-title" style="border-bottom: 1px solid #dbdbdb; margin-bottom: 5px; padding-bottom: 10px; ">
+				<div class="news-title" style="border-bottom: 1px solid #dbdbdb; margin-bottom: 5px; padding-bottom: 15px; ">
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h3>
 					<span class="author vcard">
 						<?php echo get_the_author_meta('display_name', $author_id); ?>, </span>
@@ -1023,7 +1028,7 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 
 			<div class="col-md-5">
-				<div class="" style="background-color: #FFF;margin: 20px 0 5px 0px;padding: 40px 20px;box-shadow: 0px 0px 3px 2px #ccc;">
+				<div class="" style="background-color: #FFF;margin: 40px 0 5px 0px;padding: 40px 0px 35px 20px;box-shadow: 0px 0px 3px 2px #ccc;">
 					<?php 
 				// the query	
 				$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>1 , 'category_name' => 'cat-pressrelease')); ?>
@@ -1039,11 +1044,11 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 
 
 					<div class="news-title">
-						<h3 style="line-height: 1.5;">
+						<h3 style="line-height: 1.5;" class="entry-title">
 							<?php the_title();?>
 						</h3>
 						<?php the_post_thumbnail( 'medium' ); ?>
-						<div style="display: inline-block;max-width:200px;margin-left: 5px;vertical-align: top;">
+						<div style="display: inline-block;max-width:200px;margin-left: 10px;vertical-align: top; margin-top: -6px;">
 							<?php the_excerpt(); ?>
 							<a class="acolor_u_b" href="<?php the_permalink(news-media); ?>">Read More &#187;</a>
 						</div>

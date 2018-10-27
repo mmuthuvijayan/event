@@ -267,8 +267,9 @@ z-index: 1;
 display: inline-block;
 max-width: 1170px;
 margin: auto;
-top: 20%;
+top: 25%;
 text-align: center;
+transform: translateY(0%);
 }
 
 .flex-caption .excerpt {
@@ -283,7 +284,7 @@ text-align: center;
 	background-color: transparent!important;
   
     font-weight: 400;
-    font-size: 35px;
+    font-size: 240%;;
     max-width: 640px;
     display: inline-block;
     padding: 12px 20px;
