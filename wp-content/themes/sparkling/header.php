@@ -31,8 +31,8 @@ if ( isset( $_SERVER['HTTP_USER_AGENT'] ) && ( strpos( $_SERVER['HTTP_USER_AGENT
 
 <?php wp_head(); ?>
 
-<link rel="stylesheet" href="http://10.0.1.84/event/wp-content/themes/sparkling/custom-style.css" type="text/css" media="all">
-<link rel="stylesheet" href="http://10.0.1.84/event/wp-content/themes/sparkling/footer-cust-style.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://localhost/event/wp-content/themes/sparkling/custom-style.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://localhost/event/wp-content/themes/sparkling/footer-cust-style.css" type="text/css" media="all">
 </head>
 
 <body <?php body_class(); ?>>
