@@ -6,12 +6,9 @@
  *
  * @package sparkling
  */
-
 get_header();
 ?>
-
 <link rel="stylesheet" href="http://10.0.1.84/event/wp-content/themes/sparkling/jquery-ui.css" type="text/css" media="all">
-
 <style>
 	/* colors */
 	/* tab setting */
@@ -38,21 +35,21 @@ get_header();
 	.tabs .content section h2,
 	.tabs ul li label {
 		font-size: 14px;
-	 	}
+	}
 	
 	.tabs ul {
 		list-style-type: none;
-    	padding-left: 0px;
-    	display: flex;
-    	flex-direction: row;
-    	margin-bottom: 0px;
-    	justify-content: space-between;
-    	align-items: flex-end;
-    	flex-wrap: wrap;
-    	border-bottom: 1px solid #d7e3ed;
-    	padding-bottom: 7px;
-    	width: 75%;
-    	margin: 0 auto;
+		padding-left: 0px;
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 0px;
+		justify-content: space-between;
+		align-items: flex-end;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #d7e3ed;
+		padding-bottom: 7px;
+		width: 75%;
+		margin: 0 auto;
 	}
 	
 	.tabs ul li {
@@ -162,15 +159,27 @@ get_header();
 		cursor: default;
 		color: #000;
 	}
+	
 	label {
-    margin-bottom: 0;
-	font-weight: normal;
-}
-.tabs input[name="tab-control"]:nth-of-type(1):checked~ ul> li:nth-child(1)> label { font-weight: bold; }
-.tabs input[name="tab-control"]:nth-of-type(2):checked~ ul> li:nth-child(2)> label { font-weight: bold; }
-.tabs input[name="tab-control"]:nth-of-type(3):checked~ ul> li:nth-child(3)> label { font-weight: bold; }
-.tabs input[name="tab-control"]:nth-of-type(4):checked~ ul> li:nth-child(4)> label { font-weight: bold; }
-
+		margin-bottom: 0;
+		font-weight: normal;
+	}
+	
+	.tabs input[name="tab-control"]:nth-of-type(1):checked~ ul> li:nth-child(1)> label {
+		font-weight: bold;
+	}
+	
+	.tabs input[name="tab-control"]:nth-of-type(2):checked~ ul> li:nth-child(2)> label {
+		font-weight: bold;
+	}
+	
+	.tabs input[name="tab-control"]:nth-of-type(3):checked~ ul> li:nth-child(3)> label {
+		font-weight: bold;
+	}
+	
+	.tabs input[name="tab-control"]:nth-of-type(4):checked~ ul> li:nth-child(4)> label {
+		font-weight: bold;
+	}
 	
 	@media (max-width: 600px) {
 		.tabs input[name="tab-control"]:nth-of-type(1):checked~ ul> li:nth-child(1)> label {
@@ -314,13 +323,14 @@ get_header();
 		position: relative;
 		margin: 20px auto;
 		font-size: 1.5em;
-		
 		/* toggle this on/off to see the start/end positions of the content div */
 		overflow: hidden;
 	}
 	
 	.slider_cont_1,
-	.slider_cont_2,.slider_cont_3 {
+	.slider_cont_2,
+	.slider_cont_3,
+	.slider_cont_4 {
 		/*   holder of the boxes */
 		width: 12000px;
 		height: 100%;
@@ -388,117 +398,108 @@ get_header();
 		font-size: 40px;
 		font-weight: 800;
 	}
+	
 	.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-	border: 1px solid #d3d3d3;
-	background:#397BF3;
-	font-weight: normal;
-	color: #555555;
-	border:5px solid #FFF;
-	border-radius:15px;
-	box-shadow:2px 2px 2px 2px #CCC;
-	box-shadow: 1px 1px 15px 1px #bbb;
-}
-.ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    width: 1.5em;
-    height: 1.5em;
-    cursor: default;
-    touch-action: none;
-    outline: none;
-    margin-top: -1px;
-}
-
-.ui-widget-content .ui-state-active {
-	 
-    z-index: 2;
-    width: 2em;
-    height: 2em;
-    cursor: default;
-    touch-action: none;
-    margin-top: -5px;
-    outline: none;
-
-}
-div #year_slider_1 {
-    border: 2px solid #c7d8e5;
-    border-radius: 0px;
-    height: 14px;
-    width: 96%;
-    margin: 0 auto;
-    background-color: #f7fbff;
-}
-.acolor_u_b
-{
-	float: right;
-    color: #397BF3;
-    font-weight: bold;
-    float: right;
-    margin-top: 5px;
-}
-.acolor_u_b:hover
-{
-color: #397BF3;	
-text-decoration: underline;
-}
-.entry-date  {
-	color:#a5a6a6;
-
-}
-.author
-{
-	color:#a5a6a6;
-
-} 
-
+	.ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+		border: 1px solid #d3d3d3;
+		background: #397BF3;
+		font-weight: normal;
+		color: #555555;
+		border: 5px solid #FFF;
+		border-radius: 15px;
+		box-shadow: 2px 2px 2px 2px #CCC;
+		box-shadow: 1px 1px 15px 1px #bbb;
+	}
+	
+	.ui-slider .ui-slider-handle {
+		position: absolute;
+		z-index: 2;
+		width: 1.5em;
+		height: 1.5em;
+		cursor: default;
+		touch-action: none;
+		outline: none;
+		margin-top: -1px;
+	}
+	
+	.ui-widget-content .ui-state-active {
+		z-index: 2;
+		width: 2em;
+		height: 2em;
+		cursor: default;
+		touch-action: none;
+		margin-top: -5px;
+		outline: none;
+	}
+	
+	div #year_slider_1,
+	div #year_slider_2,
+	div #year_slider_3,
+	div #year_slider_4 {
+		border: 2px solid #c7d8e5;
+		border-radius: 0px;
+		height: 14px;
+		width: 96%;
+		margin: 0 auto;
+		background-color: #f7fbff;
+	}
+	
+	.acolor_u_b {
+		float: right;
+		color: #397BF3;
+		font-weight: bold;
+		float: right;
+		margin-top: 5px;
+	}
+	
+	.acolor_u_b:hover {
+		color: #397BF3;
+		text-decoration: underline;
+	}
+	
+	.entry-date {
+		color: #a5a6a6;
+	}
+	
+	.author {
+		color: #a5a6a6;
+	}
 </style>
 <style>
-	.col-md-12 span {
-		    padding: 0px 10px 0px 12px;
+	.slider_cont_year span {
+		padding: 0px 10px 0px 12px;
+	}
+	.slider_cont_year span:last-child{
+		display: none;
 	}
 </style>
 
 <div id="primary" class="content-area">
-
-
 	<main id="main" class="site-main" role="main">
 <!--
-
 	<form method="post" action="">
 		<input type="hidden" name="cat-slider">
-				
 		<input type="submit" value="cat-slider">
-		
 	</form>	
 -->
-	
-		<!--<button class="button">cat-news</button>
+<!--<button class="button">cat-news</button>
 	<script>
 		$('.button').click(function() {
-			
-			$.ajax({  type: "POST",  url: "http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php",  data: { catname: "cat-news" },  dataType: 'json',	 
+		$.ajax({  type: "POST",  url: "http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php",  data: { catname: "cat-news" },  dataType: 'json',	 
 }).done(function(response) {
 	 response.result
-});   	
-			
-			
-//			 $.post("http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php", { 
-//        catname: 'cat-news' 
+});   		
+//		 $.post("http://10.0.1.84/event/wp-content/themes/sparkling/category-filter.php", { 
+//       catname: 'cat-news' 
 //    }, function(data){
 //
 //        var theResult = data;
 //}, 'json' );
-		
-			
-			
-    });
-								</script>-->
-
+		});
 		<input type="hidden" class="buttval" value="cat-slider">
-		
-		
+	</script>-->
+
 		<div class="tabs">
 			<input type="radio" id="tab1" name="tab-control" checked>
 			<input type="radio" id="tab2" name="tab-control">
@@ -511,41 +512,103 @@ text-decoration: underline;
 				</li>
 				<li title="Customer Event"><label for="tab3" role="button"><br><span>CUSTOMER EVENT</span></label>
 				</li>
-				<li title="GoFrugal Corner"><label for="tab4" role="button">
-</svg><br><span>GOFRUGAL CORNER</span></label>
-				
-
+				<li title="GoFrugal Corner"><label for="tab4" role="button"><span>GOFRUGAL CORNER</span></label>
 				</li>
 			</ul>
-
 			<div class="slider">
 				<div class="indicator"></div>
 			</div>
+
+			
 			<div class="content">
 				<!-- section1 -->
 				<section>
 					<div>
 						<!--Code of sliding content-->
+					<div class="tlContainer clearfix">
+
+<div class="slider_cont_1">
+<?php 
+	$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' =>  '' ));
+?>
+	<?php if ( $wpb_all_query->have_posts() ) : ?>
+	<?php
+	$year_count = array( '2018' => 1, '2017' => 1, '2016' => 1, '2015' => 1, '2014' => 1, '2013' => 1, '2012' => 1, '2011' => 1, '2010' => 1, '2009' => 1, '2008' => 1, '2007' => 1, '2006' => 1, '2005' => 1, '2004' => 1 );
+	?>
+	<!-- the loop - year wise post count -->
+	<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
+	<div id="box1" class="tlBox ex-event<?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
+	<a href="<?php the_permalink(); ?>">
+	<?php
+		the_post_thumbnail( 'medium' );
+		the_title(); 
+	?>
+	<?php $year=get_the_date( 'Y' ); ?>
+	</a>
+	<?php
+		$y=2018;
+		$i=0;
+		for($i=0; $i< 15 ;$i++){
+		if ( $year == $y ) {
+			$year_count[ $i ] = $year_count[ $i ] + 1;
+			// echo( $year . " " . $year_count[ $i ] );
+		}
+		$y=$y-1;
+		$i=$i+1;	
+		}
+		?>
+	</div>
+	<?php endwhile; ?>
+
+						<!-- end of the loop -->
+
+	<?php wp_reset_postdata(); ?>
+
+			<?php else : ?>
+			<p>
+				<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
+			</p>
+			<?php endif; ?>
+		</div>
+	</div>
+
+	<!--<div id="year_slider_cont_1">Use the slider to scroll through colored panels</div>-->
+			<div id="year_slider_1"></div>
+
+			<!--Code of sliding content-->
+
+		</div>
+		<div class="col-md-12 slider_cont_year" style="margin-top: 15px; color:#eee;">
+			<?php
+			for ( $y = 2018; $y >= 2004; $y-- ) {
+				echo( '<span><a href="javascript:void(0);" onclick="yearSliderBind(' . $y . ',1)";>' . $y . '</a></span> <span style="padding:0">|</span>' );
+			}
+			?>
+		</div>
+	</section>
+			<!-- section2 -->
+				<section>
+					<div>
+						<!--Code of sliding content-->
 
 						<div class="tlContainer clearfix">
-			
-						<div class="slider_cont_1">
-			<script>				
+
+							<div class="slider_cont_2">
+								<script>
+									<?php 
 							
-									
-	
-							<?php 
-			
-			$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' =>  $catname ));?>
-							</script>
-	
+			$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' =>  $catname ));
+
+		?>
+								</script>
+
 								<?php if ( $wpb_all_query->have_posts() ) : ?>
 								<?php
 								$year_count = array( '2018' => 1, '2017' => 1, '2016' => 1, '2015' => 1, '2014' => 1, '2013' => 1, '2012' => 1, '2011' => 1, '2010' => 1, '2009' => 1, '2008' => 1, '2007' => 1, '2006' => 1, '2005' => 1, '2004' => 1 );
 								?>
 								<!-- the loop - year wise post count -->
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-								<div id="box1" class="tlBox <?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
+								<div id="box1" class="tlBox ceo-talk<?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
 									<a href="<?php the_permalink(); ?>">
 										<?php  
 									   the_post_thumbnail( 'medium' );
@@ -553,57 +616,7 @@ text-decoration: underline;
 										?>
 										<?php $year=get_the_date( 'Y' ); ?>
 									</a>
-									<!-- <?php
 
-
-									if ( $year == "2018" ) {
-										$year_count[ 0 ] = $year_count[ 0 ] + 1;
-										//echo( $year . $year_count[ 0 ] );
-									} else if ( $year == "2017" ) {
-										$year_count[ 1 ] = $year_count[ 1 ] + 1;
-										//echo( $year . $year_count[ 1 ] );
-									} else if ( $year == "2016" ) {
-										$year_count[ 2 ] = $year_count[ 2 ] + 1;
-										//echo( $year . $year_count[ 2 ] );
-									} else if ( $year == "2015" ) {
-										$year_count[ 3 ] = $year_count[ 3 ] + 1;
-										echo( $year . $year_count[ 3 ] );
-									} else if ( $year == "2014" ) {
-										$year_count[ 4 ] = $year_count[ 4 ] + 1;
-										echo( $year . $year_count[ 4 ] );
-									} else if ( $year == "2013" ) {
-										$year_count[ 5 ] = $year_count[ 5 ] + 1;
-										echo( $year . $year_count[ 5 ] );
-									} else if ( $year == "2012" ) {
-										$year_count[ 6 ] = $year_count[ 6 ] + 1;
-										echo( $year . $year_count[ 6 ] );
-									} else if ( $year == "2011" ) {
-										$year_count[ 7 ] = $year_count[ 7 ] + 1;
-										echo( $year . $year_count[ 7 ] );
-									} else if ( $year == "2010" ) {
-										$year_count[ 8 ] = $year_count[ 8 ] + 1;
-										echo( $year . $year_count[ 8 ] );
-									} else if ( $year == "2009" ) {
-										$year_count[ 9 ] = $year_count[ 9 ] + 1;
-										echo( $year . $year_count[ 9 ] );
-									} else if ( $year == "2008" ) {
-										$year_count[ 10 ] = $year_count[ 10 ] + 1;
-										echo( $year . $year_count[ 10 ] );
-									} else if ( $year == "2007" ) {
-										$year_count[ 11 ] = $year_count[ 11 ] + 1;
-										echo( $year . $year_count[ 11 ] );
-									} else if ( $year == "2006" ) {
-										$year_count[ 12 ] = $year_count[ 12 ] + 1;
-										echo( $year . $year_count[ 12 ] );
-									} else if ( $year == "2005" ) {
-										$year_count[ 13 ] = $year_count[ 13 ] + 1;
-										echo( $year . $year_count[ 13 ] );
-									} else if ( $year == "2004" ) {
-										$year_count[ 14 ] = $year_count[ 14 ] + 1;
-										echo( $year . $year_count[ 14 ] );
-									}
-
-									?> -->
 									<?php $y=2018;
 									$i=0;
 									for($i=0; $i<=14;$i++){
@@ -635,566 +648,53 @@ text-decoration: underline;
 
 							</div>
 						</div>
-					
+
 						<!--<div id="year_slider_cont_1">Use the slider to scroll through colored panels</div>-->
-						<div id="year_slider_1"></div>
-
-						<!--Code of sliding content-->
-
- 					</div>
-					<div class="col-md-12" style="margin-top: 15px; color:#eee;">
-
-						<?php
-
-						for($y=2018; $y>=2005; $y--){
-echo('<span><a href="javascript:void(0);" onclick="myFunction('.$y.')";>'.$y.'</a></span>|');
-					}
-
-						 ?>
-						
-						<span><a href="javascript:void(0);" onclick="myFunction(2004);">2004</a></span>
-
-						<script>
-							function myFunction( year ) {
-
-
-								switch ( year ) {
-									case 2018:
-										<?php
-	$leftVar  = "-".(0*238)."px";
-	//echo "var leftu = '{$leftVar}';"; to convert php variable to script variable
- 
-?>
-										$( ".2018" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 0 );
-										return year;
-										break;
-									case 2017:
-										<?php
-	$leftVar  = "-".($year_count[0]*238)."px";
-	
- 
-?>
-
-										$( ".2017" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 10 );
-										return year;
-										break;
-
-									case 2016:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1])*238)."px";
-	
- 
-?>
-
-										$( ".2016" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 17 );
-										return year;
-
-										break;
-									case 2015:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*238)."px";
-	
- 
-?>
-
-										$( ".2015" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-
-										$( "#year_slider_1" ).slider( 'value', 23 );
-										return year;
-										break;
-									case 2014:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*238)."px";
-	
- 
-?>
-
-										$( ".2014" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 30 );
-										return year;
-										break;
-									case 2013:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*238)."px";
-	
- 
-?>
-
-										$( ".2013" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 36 );
-										return year;
-										break;
-									case 2012:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*238)."px";
-	
- 
-?>
-
-										$( ".2012" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 43 );
-										return year;
-										break;
-									case 2011:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2011" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 50 );
-										return year;
-										break;
-									case 2010:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2010" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 56 );
-										return year;
-										break;
-									case 2009:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2009" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 62 );
-										return year;
-										break;
-									case 2008:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2008" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 69 );
-										return year;
-										break;
-									case 2007:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2007" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 75 );
-										return year;
-										break;
-									case 2006:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2006" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 81 );
-										return year;
-										break;
-									case 2005:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2005" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 88 );
-										return year;
-										break;
-									case 2004:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2004" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 94 );
-										return year;
-										break;
-								}
-
-							}
-						</script>
-
-					</div>
-				</section>
-				<!-- section2 -->
-				<section>
-
-					<div>
-						<!--Code of sliding content-->
-
-						<div class="tlContainer clearfix">
-							<div class="slider_cont_2">
-
-
-
-
-
-								<?php 
-// the query
-$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1 , 'category_name' => 'cat-ceotalk')); ?>
-
-
-								<?php  if ( $wpb_all_query->have_posts() ) : ?>
-
-
-
-								<!-- the loop -->
-								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-								<div id="box1" class="tlBox" style="color: #000;">
-									<a href="<?php the_permalink(); ?>">
-										<?php the_title();   ?>
-
-										<li class="icon-date">
-											<?php echo get_the_date( 'Y' ); ?>
-										</li>
-									</a>
-
-								</div>
-								<?php endwhile; ?>
-								<!-- end of the loop -->
-
-
-
-								<?php wp_reset_postdata(); ?>
-
-								<?php else : ?>
-								<p>
-									<?php _e( 'Sorry, no posts matched your criteria.' ); ?>
-								</p>
-								<?php endif; ?>
-
-
-
-							</div>
-						</div>
-						<!--<div id="year_slider_cont_2">Use the slider to scroll through colored panels</div>-->
 						<div id="year_slider_2"></div>
 
 						<!--Code of sliding content-->
-<div class="col-md-12" style="margin-top: 15px; color:#eee;">
+
+					</div>
+					<div class="col-md-12 slider_cont_year" style="margin-top: 15px; color:#eee;">
 
 						<?php
 
-						for($y=2018; $y>=2005; $y--){
-echo('<span><a href="javascript:void(0);" onclick="myFunction('.$y.')";>'.$y.'</a></span>|');
-					}
+						for ( $y = 2018; $y >= 2004; $y-- ) {
+				echo( '<span><a href="javascript:void(0);" onclick="yearSliderBind(' . $y . ',2)";>' . $y . '</a></span> <span style="padding:0">|</span>' );
+			}
 
-						 ?>
+						?>
+
 						
-						<span><a href="javascript:void(0);" onclick="myFunction(2004);">2004</a></span>
-
-						<script>
-							function myFunction( year ) {
-
-
-								switch ( year ) {
-									case 2018:
-										<?php
-	$leftVar  = "-".(0*238)."px";
-	//echo "var leftu = '{$leftVar}';"; to convert php variable to script variable
- 
-?>
-										$( ".2018" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 0 );
-										return year;
-										break;
-									case 2017:
-										<?php
-	$leftVar  = "-".($year_count[0]*238)."px";
-	
- 
-?>
-
-										$( ".2017" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 10 );
-										return year;
-										break;
-
-									case 2016:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1])*238)."px";
-	
- 
-?>
-
-										$( ".2016" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 17 );
-										return year;
-
-										break;
-									case 2015:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*238)."px";
-	
- 
-?>
-
-										$( ".2015" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-
-										$( "#year_slider_2" ).slider( 'value', 23 );
-										return year;
-										break;
-									case 2014:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*238)."px";
-	
- 
-?>
-
-										$( ".2014" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 30 );
-										return year;
-										break;
-									case 2013:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*238)."px";
-	
- 
-?>
-
-										$( ".2013" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 36 );
-										return year;
-										break;
-									case 2012:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*238)."px";
-	
- 
-?>
-
-										$( ".2012" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 43 );
-										return year;
-										break;
-									case 2011:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2011" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 50 );
-										return year;
-										break;
-									case 2010:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2010" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 56 );
-										return year;
-										break;
-									case 2009:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2009" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 62 );
-										return year;
-										break;
-									case 2008:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2008" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 69 );
-										return year;
-										break;
-									case 2007:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2007" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 75 );
-										return year;
-										break;
-									case 2006:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2006" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 81 );
-										return year;
-										break;
-									case 2005:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2005" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 88 );
-										return year;
-										break;
-									case 2004:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2004" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_2" ).slider( 'value', 94 );
-										return year;
-										break;
-								}
-
-							}
-						</script>
-
-					</div>
-
-
-
 					</div>
 				</section>
+
+
 				<!-- section3 -->
 				<section>
 					<div>
 						<!--Code of sliding content-->
 
 						<div class="tlContainer clearfix">
-			
-						<div class="slider_cont_3">
-			<script>				
-							
-									
-	
-							<?php 
+
+							<div class="slider_cont_3">
+								<script>
+									<?php 
 			
 			$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' =>  $catname ));?>
-							</script>
-	
+								</script>
+
 								<?php if ( $wpb_all_query->have_posts() ) : ?>
 								<?php
 								$year_count = array( '2018' => 1, '2017' => 1, '2016' => 1, '2015' => 1, '2014' => 1, '2013' => 1, '2012' => 1, '2011' => 1, '2010' => 1, '2009' => 1, '2008' => 1, '2007' => 1, '2006' => 1, '2005' => 1, '2004' => 1 );
 								?>
 								<!-- the loop - year wise post count -->
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-								<div id="box1" class="tlBox <?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
+								<div id="box1" class="tlBox cust-event<?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
 									<a href="<?php the_permalink(); ?>">
 										<?php  
 									   the_post_thumbnail( 'medium' );
-										/*the_title();*/
+										 the_title(); 
 										?>
 										<?php $year=get_the_date( 'Y' ); ?>
 									</a>
@@ -1229,244 +729,27 @@ echo('<span><a href="javascript:void(0);" onclick="myFunction('.$y.')";>'.$y.'</
 
 							</div>
 						</div>
-					
+
 						<!--<div id="year_slider_cont_1">Use the slider to scroll through colored panels</div>-->
 						<div id="year_slider_3"></div>
 
 						<!--Code of sliding content-->
 
- 					</div>
-					<div class="col-md-12" style="margin-top: 15px; color:#eee;">
+					</div>
+					<div class="col-md-12 slider_cont_year" style="margin-top: 15px; color:#eee;">
 
 						<?php
 
-						for($y=2018; $y>=2005; $y--){
-echo('<span><a href="javascript:void(0);" onclick="myFunction('.$y.')";>'.$y.'</a></span>|');
-					}
+						for ( $y = 2018; $y >= 2004; $y-- ) {
+				echo( '<span><a href="javascript:void(0);" onclick="yearSliderBind(' . $y . ',3)";>' . $y . '</a></span> <span style="padding:0">|</span>' );
+			}
 
-						 ?>
+						?>
+
 						
-						<span><a href="javascript:void(0);" onclick="myFunction(2004);">2004</a></span>
-					 
-
-						<script>
-							function myFunction( year ) {
 
 
-								switch ( year ) {
-									case 2018:
-										<?php
-	$leftVar  = "-".(0*238)."px";
-	//echo "var leftu = '{$leftVar}';"; to convert php variable to script variable
- 
-?>
-										$( ".2018" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 0 );
-										return year;
-										break;
-									case 2017:
-										<?php
-	$leftVar  = "-".($year_count[0]*238)."px";
-	
- 
-?>
 
-										$( ".2017" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 10 );
-										return year;
-										break;
-
-									case 2016:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1])*238)."px";
-	
- 
-?>
-
-										$( ".2016" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 17 );
-										return year;
-
-										break;
-									case 2015:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*238)."px";
-	
- 
-?>
-
-										$( ".2015" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-
-										$( "#year_slider_3" ).slider( 'value', 23 );
-										return year;
-										break;
-									case 2014:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*238)."px";
-	
- 
-?>
-
-										$( ".2014" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 30 );
-										return year;
-										break;
-									case 2013:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*238)."px";
-	
- 
-?>
-
-										$( ".2013" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 36 );
-										return year;
-										break;
-									case 2012:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*238)."px";
-	
- 
-?>
-
-										$( ".2012" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 43 );
-										return year;
-										break;
-									case 2011:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2011" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 50 );
-										return year;
-										break;
-									case 2010:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2010" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 56 );
-										return year;
-										break;
-									case 2009:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2009" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 62 );
-										return year;
-										break;
-									case 2008:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2008" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 69 );
-										return year;
-										break;
-									case 2007:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2007" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 75 );
-										return year;
-										break;
-									case 2006:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2006" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 81 );
-										return year;
-										break;
-									case 2005:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2005" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 88 );
-										return year;
-										break;
-									case 2004:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2004" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_3" ).slider( 'value', 94 );
-										return year;
-										break;
-								}
-
-							}
-						</script>
 
 					</div>
 				</section>
@@ -1476,28 +759,25 @@ echo('<span><a href="javascript:void(0);" onclick="myFunction('.$y.')";>'.$y.'</
 						<!--Code of sliding content-->
 
 						<div class="tlContainer clearfix">
-			
-						<div class="slider_cont_3">
-			<script>				
-							
-									
-	
-							<?php 
+
+							<div class="slider_cont_4">
+								<script>
+									<?php 
 			
 			$wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, 'category_name' =>  $catname ));?>
-							</script>
-	
+								</script>
+
 								<?php if ( $wpb_all_query->have_posts() ) : ?>
 								<?php
 								$year_count = array( '2018' => 1, '2017' => 1, '2016' => 1, '2015' => 1, '2014' => 1, '2013' => 1, '2012' => 1, '2011' => 1, '2010' => 1, '2009' => 1, '2008' => 1, '2007' => 1, '2006' => 1, '2005' => 1, '2004' => 1 );
 								?>
 								<!-- the loop - year wise post count -->
 								<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
-								<div id="box1" class="tlBox <?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
+								<div id="box1" class="tlBox gocorner<?php echo get_the_date( 'Y' ); ?>" style="color: #000;">
 									<a href="<?php the_permalink(); ?>">
 										<?php  
 									   the_post_thumbnail( 'medium' );
-										/*the_title();*/
+										 the_title(); 
 										?>
 										<?php $year=get_the_date( 'Y' ); ?>
 									</a>
@@ -1534,243 +814,24 @@ echo('<span><a href="javascript:void(0);" onclick="myFunction('.$y.')";>'.$y.'</
 
 							</div>
 						</div>
-					
+
 						<!--<div id="year_slider_cont_1">Use the slider to scroll through colored panels</div>-->
-						<div id="year_slider_3"></div>
+						<div id="year_slider_4"></div>
 
 						<!--Code of sliding content-->
 
- 					</div>
-					<div class="col-md-12" style="margin-top: 15px; color:#eee;">
+					</div>
+					<div class="col-md-12 slider_cont_year" style="margin-top: 15px; color:#eee;">
 
 						<?php
 
-						for($y=2018; $y>=2005; $y--){
-echo('<span><a href="javascript:void(0);" onclick="myFunction('.$y.')";>'.$y.'</a></span>|');
-					}
+for ( $y = 2018; $y >= 2004; $y-- ) {
+				echo( '<span><a href="javascript:void(0);" onclick="yearSliderBind(' . $y . ',4)";>' . $y . '</a></span> <span style="padding:0">|</span>' );
+			}
 
-						 ?>
+						?>
+
 						
-						<span><a href="javascript:void(0);" onclick="myFunction(2004);">2004</a></span>
-
-						<script>
-							function myFunction( year ) {
-
-
-								switch ( year ) {
-									case 2018:
-										<?php
-	$leftVar  = "-".(0*238)."px";
-	//echo "var leftu = '{$leftVar}';"; to convert php variable to script variable
- 
-?>
-										$( ".2018" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 0 );
-										return year;
-										break;
-									case 2017:
-										<?php
-	$leftVar  = "-".($year_count[0]*238)."px";
-	
- 
-?>
-
-										$( ".2017" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 10 );
-										return year;
-										break;
-
-									case 2016:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1])*238)."px";
-	
- 
-?>
-
-										$( ".2016" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 17 );
-										return year;
-
-										break;
-									case 2015:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*238)."px";
-	
- 
-?>
-
-										$( ".2015" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-
-										$( "#year_slider_1" ).slider( 'value', 23 );
-										return year;
-										break;
-									case 2014:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*238)."px";
-	
- 
-?>
-
-										$( ".2014" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 30 );
-										return year;
-										break;
-									case 2013:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*238)."px";
-	
- 
-?>
-
-										$( ".2013" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 36 );
-										return year;
-										break;
-									case 2012:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*238)."px";
-	
- 
-?>
-
-										$( ".2012" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 43 );
-										return year;
-										break;
-									case 2011:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2011" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 50 );
-										return year;
-										break;
-									case 2010:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2010" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 56 );
-										return year;
-										break;
-									case 2009:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2009" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 62 );
-										return year;
-										break;
-									case 2008:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2008" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 69 );
-										return year;
-										break;
-									case 2007:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2007" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 75 );
-										return year;
-										break;
-									case 2006:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-
-										$( ".2006" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 81 );
-										return year;
-										break;
-									case 2005:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2005" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 88 );
-										return year;
-										break;
-									case 2004:
-										<?php
-	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*238)."px";
-	echo "var leftu = '{$leftVar}';";
- 
-?>
-										$( ".2004" ).parent().css( {
-											"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
-											"transition": "ease 2s"
-										} );
-										$( "#year_slider_1" ).slider( 'value', 94 );
-										return year;
-										break;
-								}
-
-							}
-						</script>
 
 					</div>
 				</section>
@@ -1961,91 +1022,274 @@ $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish
 	//responsive timeline animation.
 	//values recorded once, nothing changes on resize
 	// var tl = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:1}) 
-	var tl = new TimelineMax()
-		// make the timeline duration equal to the number of boxes (in seconds)
-	tl.to( ".slider_cont_1", _boxCount, {
-		xPercent: -100,
-		force3D: true
-	} );
-	tl.pause();
+	var tl = [ "tl1", "tl2", "tl3", "tl4" ];
+	for ( var i = 0; i < tl.length; i++ ) {
+		timeSlider( tl[ i ], ( i + 1 ) )
+	}
 
-	var tl1 = new TimelineMax()
-		// make the timeline duration equal to the number of boxes (in seconds)
-	tl1.to( ".slider_cont_2", _boxCount, {
-		xPercent: -100,
-		force3D: true
-	} );
-	tl1.pause();
-	// tl.play(); 
+	function timeSlider( val, index ) {
+		console.log( val, index )
+		val = new TimelineMax()
+			// make the timeline duration equal to the number of boxes (in seconds)
+		val.to( ".slider_cont_" + index, _boxCount, {
+			xPercent: -100,
+			force3D: true
+		} );
+		val.pause();
 
-		var tl2 = new TimelineMax()
-		// make the timeline duration equal to the number of boxes (in seconds)
-	tl2.to( ".slider_cont_3", _boxCount, {
-		xPercent: -100,
-		force3D: true
-	} );
-	tl2.pause();
-	// tl.play();
+		varctrl = $( "#year_slider_" + index ),
+			ctrlValue = {
+				value: 0
+			};
 
-	varctrl = $( "#year_slider_1" ),
-		ctrlValue = {
-			value: 0
-		};
-	varctrl2 = $( "#year_slider_2" ),
-		ctrlValue = {
-			value: 0
-		};
-	varctrl3 = $( "#year_slider_3" ),
-		ctrlValue = {
-			value: 0
-		};
+		varctrl.slider( {
+			range: false,
+			min: 0,
+			max: 100,
+			step: .1,
+			start: function () {
+				val.pause();
+			},
+			slide: function ( event, ui ) {
+					val.progress( ui.value / 100 );
+				}
+				// },
+				// stop:function() {
+				//   tl.play();
+				// }
+		} );
+
+		val.eventCallback( "onUpdate", function () {
+			ctrlValue.value = val.progress() * 100;
+			varctrl.slider( ctrlValue );
+		} );
+	}
 
 
-	varctrl.slider( {
-		range: false,
-		min: 0,
-		max: 100,
-		step: .1,
-		start: function () {
-			tl.pause();
-		},
-		slide: function ( event, ui ) {
-				tl.progress( ui.value / 100 );
-			}
-			// },
-			// stop:function() {
-			//   tl.play();
-			// }
+function yearSliderBind( year, index ) {
+	
+	var cat ='';
+	if(index == 1){
+		cat = "ex-event"
+	} else if(index == 2){
+		cat = "ceo-talk"
+	} else if(index == 3){
+		cat = "cust-event"
+	} else if(index == 4){
+		cat = "gocorner"
+	}
+	switch ( year ) {
+	case 2018:
+<?php
+	$leftVar  = 0;
+	//echo "var leftu = '{$leftVar}';"; to convert php variable to script variable
+?>
+	$( "."+cat+"2018" ).parent().css( {
+		"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+		"transition": "ease 2s"
 	} );
-	varctrl2.slider( {
-		range: false,
-		min: 0,
-		max: 100,
-		step: .1,
-		start: function () {
-			tl1.pause();
-		},
-		slide: function ( event, ui ) {
-				tl1.progress( ui.value / 100 );
-			}
-			// },
-			// stop:function() {
-			//   tl.play();
-			// }
-	} );
+				$( "#year_slider_"+index ).slider( 'value', 0 );
+				// return year;
+				break;
+			case 2017:
+				<?php
+	$leftVar  = "-".($year_count[0]*238)."px";
+	
+ 
+?>
 
-	tl.eventCallback( "onUpdate", function () {
-		ctrlValue.value = tl.progress() * 100;
-		varctrl.slider( ctrlValue );
-	} );
-	tl1.eventCallback( "onUpdate", function () {
-		ctrlValue.value = tl1.progress() * 100;
-		varctrl2.slider( ctrlValue );
-	} );
-	tl2.eventCallback( "onUpdate", function () {
-		ctrlValue.value = tl2.progress() * 100;
-		varctrl3.slider( ctrlValue );
-	} );
+				$( "."+cat+"2017" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 10 );
+				return year;
+				break;
+
+			case 2016:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1])*238)."px";
+	
+ 
+?>
+
+				$( "."+cat+"2016" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 17 );
+				return year;
+
+				break;
+			case 2015:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2])*238)."px";
+	
+ 
+?>
+
+				$( "."+cat+"2015" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+
+				$( "#year_slider_"+index ).slider( 'value', 23 );
+				return year;
+				break;
+			case 2014:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3])*238)."px";
+	
+ 
+?>
+
+				$( "."+cat+"2014" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 30 );
+				return year;
+				break;
+			case 2013:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4])*238)."px";
+	
+ 
+?>
+
+				$( "."+cat+"2013" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 36 );
+				return year;
+				break;
+			case 2012:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5])*238)."px";
+	
+ 
+?>
+
+				$( "."+cat+"2012" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 43 );
+				return year;
+				break;
+			case 2011:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+				$( "."+cat+"2011" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 50 );
+				return year;
+				break;
+			case 2010:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+				$( "."+cat+"2010" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 56 );
+				return year;
+				break;
+			case 2009:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+				$( "."+cat+"2009" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 62 );
+				return year;
+				break;
+			case 2008:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+				$( "."+cat+"2008" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 69 );
+				return year;
+				break;
+			case 2007:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+				$( "."+cat+"2007" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 75 );
+				return year;
+				break;
+			case 2006:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+
+				$( "."+cat+"2006" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 81 );
+				return year;
+				break;
+			case 2005:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+				$( "."+cat+"2005" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 88 );
+				return year;
+				break;
+			case 2004:
+				<?php
+	$leftVar  = "-".(($year_count[0]+$year_count[1]+$year_count[2]+$year_count[3]+$year_count[4]+$year_count[5]+$year_count[6]+$year_count[7]+$year_count[8]+$year_count[9]+$year_count[10]+$year_count[11]+$year_count[12]+$year_count[13])*238)."px";
+	echo "var leftu = '{$leftVar}';";
+ 
+?>
+				$( "."+cat+"2004" ).parent().css( {
+					"transform": "translate3d(<?php echo $leftVar; ?>, 0px, 0px)",
+					"transition": "ease 2s"
+				} );
+				$( "#year_slider_"+index ).slider( 'value', 94 );
+				return year;
+				break;
+		}
+
+	}
 </script>
 <!--Scripts of Sliding content-->
 
